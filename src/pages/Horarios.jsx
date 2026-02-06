@@ -1,32 +1,15 @@
-import { Container, Heading, Text, Stack, Box} from "@chakra-ui/react";
-import Header from "../components/layout/Header";
-import Footer from "../components/layout/Footer";
+import { Box, Heading, Text, Stack } from "@chakra-ui/react";
 
 export default function Horarios() {
-    return (
-        <>
-            <Header />
-            <Container maxW="container.md" py={10}>
-                <Heading mb={6}>Horários de Missa</Heading>
+  return (
+    <Box px={10} py={16}>
+      <Heading mb={6}>Horários das Missas</Heading>
 
-                <Stack spacing={4}>
-                    <Box p={4} shadow="md" borderWidth="1px" borderRadius="md">
-                        <Text fontWeight="bold">Domingo</Text>
-                        <Text>08:00 - 18:00</Text>
-                    </Box>
-
-                    <Box p={4} shadow="md" borderWidth="1px" borderRadius="md">
-                        <Text fontWeight="bold">Quarta-feira</Text>
-                        <Text>19:30</Text>
-                    </Box>
-                    
-                    <Box p={4} shadow="md" borderWidth="1px" borderRadius="md">
-                        <Text fontWeight="bold">Sexta-feira</Text>
-                        <Text>19:30</Text>
-                    </Box>
-                </Stack>
-            </Container>
-            <Footer />
-        </>
-    );
+      <Stack spacing={4}>
+        <Text><strong>Domingo:</strong> 08:00 · 19:00</Text>
+        <Text><strong>Quarta-feira:</strong> 19:30</Text>
+        <Text><strong>Confissões:</strong> Sexta 18:00</Text>
+      </Stack>
+    </Box>
+  );
 }

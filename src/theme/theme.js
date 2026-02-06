@@ -4,7 +4,7 @@ const theme = extendTheme({
   colors: {
     brand: {
       gold: "#D4AF37",
-      blue: "#2C3E50",
+      blue: "#1E3A8A",
     },
   },
   fonts: {
