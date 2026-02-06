@@ -3,53 +3,33 @@ import { Link as RouterLink } from "react-router-dom";
 
 export default function Hero() {
   return (
-    <Box
-      minH="70vh"
-      display="flex"
-      alignItems="center"
-      justifyContent="center"
-      textAlign="center"
-      bg="white"
-      position="relative"
-    >
-      {/* Cruz de fundo */}
-      <Box
-        position="absolute"
-        fontSize="300px"
-        opacity={0.05}
-        color="gold"
-      >
-        ✝
-      </Box>
+    <Box textAlign="center" py={24} px={6}>
+      <Heading fontSize="4xl">Paróquia Sagrado Coração</Heading>
 
-      <Stack spacing={6} zIndex={1}>
-        <Heading size="2xl">Paróquia Sagrado Coração</Heading>
+      <Text mt={2} color="yellow.500" fontWeight="bold">
+        Paraná - Brasil
+      </Text>
 
-        <Text color="goldenrod" fontWeight="bold">
-          Paraná - Brasil
-        </Text>
+      <Text mt={4} maxW="600px" mx="auto">
+        Venha celebrar sua fé conosco. Todos são bem-vindos!
+      </Text>
 
-        <Text maxW="600px">
-          Venha celebrar sua fé conosco. Todos são bem-vindos!
-        </Text>
+      <Stack direction="row" justify="center" mt={8} spacing={4}>
+        <Button
+          colorScheme="yellow"
+          as={RouterLink}
+          to="/horarios"
+        >
+          Ver Horários das Missas
+        </Button>
 
-        <Stack direction="row" spacing={4} justify="center">
-          <Button
-            colorScheme="yellow"
-            as={RouterLink}
-            to="/horarios"
-          >
-            Ver Horários das Missas
-          </Button>
-
-          <Button
-            variant="outline"
-            as={RouterLink}
-            to="/contato"
-          >
-            Entre em Contato
-          </Button>
-        </Stack>
+        <Button
+          variant="outline"
+          as={RouterLink}
+          to="/contato"
+        >
+          Entre em Contato
+        </Button>
       </Stack>
     </Box>
   );

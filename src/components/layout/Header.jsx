@@ -1,15 +1,39 @@
-import { Box, Flex, Link } from "@chakra-ui/react";
-import { Link as RouterLink } from "react-router-dom";
+import { Box, Flex, Link, Container } from "@chakra-ui/react";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
-    <Box bg="blue.700" p={4} color="white">
-      <Flex justify="space-between">
-        <Link as={RouterLink} to="/">Início</Link>
-        <Link as={RouterLink} to="/sobre">Sobre</Link>
-        <Link as={RouterLink} to="/eventos">Eventos</Link>
-        <Link as={RouterLink} to="/contato">Contato</Link>
-      </Flex>
+    <Box bg="white" boxShadow="sm" py={4}>
+      <Container maxW="container.lg">
+        <Flex justify="space-between" align="center">
+          <Link
+            as={NavLink}
+            to="/"
+            fontWeight="bold"
+            fontSize="lg"
+            _hover={{ textDecoration: "none" }}
+          >
+            ✝ Sagrado Coração
+          </Link>
+
+          <Flex gap={6}>
+            {["/", "/sobre", "/eventos", "/contato"].map((path, i) => (
+              <Link
+                key={i}
+                as={NavLink}
+                to={path}
+                _hover={{ color: "brand.gold" }}
+                _activeLink={{
+                  color: "brand.gold",
+                  fontWeight: "bold",
+                }}
+              >
+                {["Início", "Sobre", "Eventos", "Contato"][i]}
+              </Link>
+            ))}
+          </Flex>
+        </Flex>
+      </Container>
     </Box>
   );
 }
