@@ -1,7 +1,7 @@
 import { eventos } from "../data/eventosData";
-import { EventCard } from "../components/eventos/EventCard";
-import { Header } from "../components/layout/Header";
-import { Footer } from "../components/layout/Footer";
+import EventCard from "../components/eventos/EventCard";
+import Header from "../components/layout/Header";
+import Footer from "../components/layout/Footer";
 import { SimpleGrid } from "@chakra-ui/react";
 
 export default function Eventos() {
@@ -9,8 +9,13 @@ export default function Eventos() {
         <>
             <Header />
             <SimpleGrid columns={[1, 2, 3]} spacing ={6} p={6}>
-                {eventos.map(evento >= (
-                    <EventCard key={evento.id} {...evento} />
+                {eventos.map((evento) >= (
+                    <EventCard
+                        key={evento.id}
+                        titulo={evento.titulo}
+                        data={evento.data}
+                        descricao={evento.descricao} 
+                    />
                 ))}
             </SimpleGrid>
             <Footer />
