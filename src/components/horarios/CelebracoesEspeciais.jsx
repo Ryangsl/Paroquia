@@ -1,60 +1,106 @@
-import { Box, Heading, Text, SimpleGrid, Container } from "@chakra-ui/react";
-
-const especiais = [
-  {
-    titulo: "✝ Primeira Sexta-feira",
-    desc: "Adoração ao Sagrado Coração",
-    hora: "Após missa das 19h"
-  },
-  {
-    titulo: "🌹 Primeiro Sábado",
-    desc: "Devoção ao Imaculado Coração",
-    hora: "Após missa das 7h"
-  },
-  {
-    titulo: "🕯 Adoração ao Santíssimo",
-    desc: "Todas as quintas-feiras",
-    hora: "18h – 19h"
-  },
-  {
-    titulo: "📿 Terço Mariano",
-    desc: "Todas as quartas-feiras",
-    hora: "18:30"
-  }
-];
+import {
+  Box,
+  Heading,
+  Text,
+  SimpleGrid,
+  VStack,
+} from "@chakra-ui/react";
 
 export default function CelebracoesEspeciais() {
+  const celebracoes = [
+    {
+      icon: "✝️",
+      titulo: "Primeira Sexta-feira",
+      descricao: "Adoração ao Sagrado Coração de Jesus",
+      horario: "Após a missa das 19:00",
+    },
+    {
+      icon: "🌹",
+      titulo: "Primeiro Sábado",
+      descricao: "Devoção ao Imaculado Coração de Maria",
+      horario: "Após a missa das 07:00",
+    },
+    {
+      icon: "🕯️",
+      titulo: "Adoração ao Santíssimo",
+      descricao: "Todas as quintas-feiras",
+      horario: "18:00 – 19:00",
+    },
+    {
+      icon: "📿",
+      titulo: "Terço Mariano",
+      descricao: "Todas as quartas-feiras",
+      horario: "18:30",
+    },
+  ];
+
   return (
     <Box py={20} bg="gray.50">
-      <Container maxW="container.lg">
-        <Heading textAlign="center" mb={4}>
-          Celebrações Especiais
-        </Heading>
+      <VStack spacing={4} mb={12}>
+        <Heading size="xl">Celebrações Especiais</Heading>
 
-        <Box w="60px" h="4px" bg="brand.gold" mx="auto" mb={12} />
+        <Box w="70px" h="4px" bg="brand.gold" borderRadius="full" />
 
-        <SimpleGrid columns={{ base: 1, md: 4 }} spacing={8}>
-          {especiais.map((item, i) => (
+        <Text color="gray.600" textAlign="center">
+          Momentos especiais de espiritualidade e devoção
+        </Text>
+      </VStack>
+
+      <SimpleGrid
+        maxW="1200px"
+        mx="auto"
+        px={6}
+        columns={{ base: 1, md: 2, lg: 4 }}
+        spacing={8}
+      >
+        {celebracoes.map((item, index) => (
+          <Box
+            key={index}
+            bg="white"
+            p={8}
+            borderRadius="2xl"
+            boxShadow="sm"
+            textAlign="center"
+            transition="all 0.3s"
+            _hover={{
+              transform: "translateY(-6px)",
+              boxShadow: "lg",
+            }}
+          >
+            {/* Ícone */}
             <Box
-              key={i}
-              bg="white"
-              p={6}
-              borderRadius="xl"
-              boxShadow="sm"
-              textAlign="center"
+              w="60px"
+              h="60px"
+              bg="brand.gold"
+              color="white"
+              fontSize="24px"
+              borderRadius="full"
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+              mx="auto"
+              mb={5}
             >
-              <Heading size="sm" mb={3}>
-                {item.titulo}
-              </Heading>
-
-              <Text color="gray.600">{item.desc}</Text>
-              <Text fontWeight="bold" mt={2}>
-                {item.hora}
-              </Text>
+              {item.icon}
             </Box>
-          ))}
-        </SimpleGrid>
-      </Container>
+
+            {/* Título */}
+            <Heading size="md" mb={3}>
+              {item.titulo}
+            </Heading>
+
+            {/* Descrição */}
+            <Text color="gray.600" fontSize="sm" mb={3}>
+              {item.descricao}
+            </Text>
+
+            {/* Horário */}
+            <Text fontWeight="semibold" color="brand.blue">
+              {item.horario}
+            </Text>
+          </Box>
+        ))}
+      </SimpleGrid>
     </Box>
   );
 }
