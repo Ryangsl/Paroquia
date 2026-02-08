@@ -47,27 +47,37 @@ export default function Header() {
           <Flex gap={2} align="center">
             {navItems.map((item) => (
               <Link
-                key={item.path}
-                as={NavLink}
-                to={item.path}
-                px={4}
-                py={2}
-                fontSize="sm"
-                fontWeight="medium"
-                borderRadius="md"
-                color="gray.600"
-                position="relative"
-                transition="all 0.25s ease"
-                _hover={{
-                  color: "gray.900",
-                  bg: "gray.50",
-                }}
-                _activeLink={{
-                  color: "brand.gold",
-                  bg: "gray.100",
-                  fontWeight: "semibold",
-                }}
-              >
+                  as={NavLink}
+                  to={item.path}
+                  px={4}
+                  py={2}
+                  fontSize="sm"
+                  fontWeight="medium"
+                  borderRadius="md"
+                  color="gray.600"
+                  position="relative"
+                  transition="all 0.25s ease"
+                  _after={{
+                    content: '""',
+                    position: "absolute",
+                    left: "50%",
+                    bottom: "0",
+                    width: "0%",
+                    height: "2px",
+                    bg: "brand.gold",
+                    transition: "all 0.3s ease",
+                    transform: "translateX(-50%)",
+                  }}
+                  _hover={{
+                    color: "gray.900",
+                    _after: { width: "70%" }
+                  }}
+                  _activeLink={{
+                    color: "brand.gold",
+                    _after: { width: "70%" }
+                  }}
+                >
+
                 {item.label}
               </Link>
             ))}
