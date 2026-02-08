@@ -1,7 +1,7 @@
-import { Box, Flex, Link, Container, HStack, Text } from "@chakra-ui/react";
+import { Box, Flex, Link, Container, Text } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
 
-const menuItems = [
+const navItems = [
   { label: "Início", path: "/" },
   { label: "Sobre Nós", path: "/sobre" },
   { label: "Horários", path: "/horarios" },
@@ -14,59 +14,64 @@ export default function Header() {
   return (
     <Box
       bg="white"
-      borderBottom="1px solid"
-      borderColor="gray.200"
       position="sticky"
       top="0"
-      zIndex="999"
+      zIndex="1000"
+      boxShadow="sm"
+      borderBottom="1px solid"
+      borderColor="gray.100"
     >
       <Container maxW="container.xl">
-        <Flex h="72px" align="center" justify="space-between">
-          
-          {/* LOGO + NOME */}
-          <HStack spacing={3}>
-            <Text fontSize="24px" color="yellow.500">
+        <Flex
+          h="72px"
+          align="center"
+          justify="space-between"
+        >
+          {/* Logo */}
+          <Flex align="center" gap={3}>
+            <Text fontSize="xl" color="brand.gold">
               ✝
             </Text>
 
             <Text
-              fontWeight="600"
+              fontWeight="semibold"
               fontSize="lg"
               color="gray.700"
-              letterSpacing="0.5px"
+              letterSpacing="0.3px"
             >
               Sagrado Coração
             </Text>
-          </HStack>
+          </Flex>
 
-          {/* MENU */}
-          <HStack spacing={8}>
-            {menuItems.map((item) => (
+          {/* Menu */}
+          <Flex gap={2} align="center">
+            {navItems.map((item) => (
               <Link
                 key={item.path}
                 as={NavLink}
                 to={item.path}
                 px={4}
                 py={2}
+                fontSize="sm"
+                fontWeight="medium"
                 borderRadius="md"
-                fontWeight="500"
                 color="gray.600"
+                position="relative"
+                transition="all 0.25s ease"
                 _hover={{
-                  textDecoration: "none",
-                  color: "yellow.600",
+                  color: "gray.900",
                   bg: "gray.50",
                 }}
                 _activeLink={{
-                  color: "yellow.600",
-                  bg: "yellow.50",
-                  fontWeight: "600",
+                  color: "brand.gold",
+                  bg: "gray.100",
+                  fontWeight: "semibold",
                 }}
               >
                 {item.label}
               </Link>
             ))}
-          </HStack>
-
+          </Flex>
         </Flex>
       </Container>
     </Box>
