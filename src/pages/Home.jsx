@@ -9,10 +9,9 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <InfoBar />
       <WelcomeSection />
+      <InfoBar />
       <QuickCards />
-      <Valores />
       <ChamadaFinal />
     </>
   );

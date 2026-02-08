@@ -23,8 +23,8 @@ export default function WelcomeSection() {
         />
 
         <SimpleGrid columns={[1, 2, 3]} spacing={8}>
-          <Box p={8} bg="gray.50" borderRadius="lg" boxShadow="md">
-            <Heading size="md" mb={3}>
+          <Box p={20} bg="gray.50" borderRadius="lg" boxShadow="md">
+            <Heading size="md" mb={2}>
               Nossa Paróquia
             </Heading>
             <Text>
