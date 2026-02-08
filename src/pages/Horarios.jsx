@@ -1,23 +1,15 @@
-import Header from "../components/layout/Header";
-import Footer from "../components/layout/Footer";
-
-import HorariosHero from "../components/horarios/HorariosHero";
-import HorariosMissas from "../components/horarios/HorariosMissas";
+import HeroHorarios from "../components/horarios/HeroHorarios";
+import MissasHorarios from "../components/horarios/MissasHorarios";
 import CelebracoesEspeciais from "../components/horarios/CelebracoesEspeciais";
 import OutrosSacramentos from "../components/horarios/OutrosSacramentos";
-import InfoImportante from "../components/horarios/InfoImportante";
 
 export default function Horarios() {
   return (
     <>
-      <Header />
-      <HorariosHero />
-      <HorariosMissas />
+      <HeroHorarios />
+      <MissasHorarios />
       <CelebracoesEspeciais />
       <OutrosSacramentos />
-      <InfoImportante />
-
-      <Footer />
     </>
   );
 }
