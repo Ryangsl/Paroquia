@@ -3,15 +3,17 @@ import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
-    <Box
-      minH="90vh"
-      display="flex"
-      alignItems="center"
-      justifyContent="center"
-      textAlign="center"
-      px={6}
-      bgGradient="linear(to-b, white, gray.50)"
-    >
+      <Box
+        minH={{ base: "60vh", md: "70vh" }}
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+        textAlign="center"
+        px={6}
+        pt={10}
+        pb={6}
+      >
+
       <Stack spacing={6} maxW="720px">
         <Heading
           fontSize={{ base: "3xl", md: "5xl" }}
