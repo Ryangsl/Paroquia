@@ -1,30 +1,45 @@
-import Header from "../components/layout/Header";
-import Footer from "../components/layout/Footer";
+import { Container, Heading, SimpleGrid, Box } from "@chakra-ui/react";
 import EventCard from "../components/eventos/EventCard";
-import { eventos } from "../data/eventosData";
-import { SimpleGrid, Container, Heading } from "@chakra-ui/react";
+import { getProximosEventos } from "../utils/eventosUtils";
+import AtividadesRegulares from "../components/eventos/AtividadesRegulares";
 
 export default function Eventos() {
+  const proximos = getProximosEventos();
+
   return (
-    <>
-      <Header />
+    <Box>
 
-      <Container maxW="container.lg" py={10}>
-        <Heading mb={6}>Eventos</Heading>
-
-        <SimpleGrid columns={[1, 2, 3]} spacing={6}>
-          {eventos.map((evento) => (
-            <EventCard
-              key={evento.id}
-              titulo={evento.titulo}
-              data={evento.data}
-              descricao={evento.descricao}
-            />
-          ))}
-        </SimpleGrid>
+      {/* TÍTULO DA PÁGINA */}
+      <Container maxW="container.lg" py={16}>
+        <Heading textAlign="center" mb={4} fontSize={{ base: "3xl", md: "5xl" }}>
+          Eventos da Paróquia
+        </Heading>
       </Container>
 
-      <Footer />
-    </>
+      {/* PRÓXIMOS EVENTOS */}
+      <Container maxW="container.lg" pb={20}>
+        <Heading textAlign="center" mb={12}>
+          Próximos Eventos
+        </Heading>
+
+        <SimpleGrid columns={[1]} spacing={8}>
+  {proximos.map((evento) => (
+    <EventCard
+      key={evento.id}
+      titulo={evento.titulo}
+      data={evento.dataCalculada}
+      descricao={evento.descricao}
+      local={evento.local}
+      horario={evento.horario}
+    />
+  ))}
+</SimpleGrid>
+
+      </Container>
+
+      {/* ATIVIDADES REGULARES */}
+      <AtividadesRegulares />
+
+    </Box>
   );
 }

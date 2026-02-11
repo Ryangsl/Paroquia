@@ -9,8 +9,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <WelcomeSection />
-      <InfoBar />
+     <InfoBar />
     </>
   );
 }
