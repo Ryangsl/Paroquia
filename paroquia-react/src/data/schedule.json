@@ -10,13 +10,13 @@
         "icon": "🌅",
         "title": "Missas Matinais",
         "times": [
-          { "day": "Segunda-feira", "time": "7:00h" },
+          { "day": "Segunda-feira", "time": "08h30, 10h30 e 19h" },
           { "day": "Terça-feira", "time": "7:00h" },
           { "day": "Quarta-feira", "time": "7:00h" },
           { "day": "Quinta-feira", "time": "7:00h" },
           { "day": "Sexta-feira", "time": "7:00h" },
           { "day": "Sábado", "time": "7:00h" },
-          { "day": "Domingo", "time": "8:00h" }
+          { "day": "Domingo", "time": "08h30, 10h30 e 19h" }
         ]
       },
       {
@@ -50,7 +50,7 @@
       {
         "icon": "✝️",
         "title": "Primeira Sexta-feira",
-        "description": "Adoração ao Sagrado Coração de Jesus",
+        "description": "Adoração ao Nossa Senhora Aparecida",
         "time": "Após a missa das 19:00h"
       },
       {

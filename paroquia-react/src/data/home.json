@@ -9,12 +9,12 @@
     ]
   },
   "highlights": {
-    "sectionTitle": "Bem-vindo à Nossa Comunidade",
+    "sectionTitle": "Bem-vindo à Nossa Paróquia",
     "items": [
       {
         "icon": "⛪",
         "title": "Nossa Paróquia",
-        "description": "Conheça a história, missão e valores da Paróquia Sagrado Coração de Jesus.",
+        "description": "Conheça a história, missão e valores da Paróquia Nossa Senhora Aparecida.",
         "linkText": "Saiba Mais →",
         "linkHref": "/sobre"
       },

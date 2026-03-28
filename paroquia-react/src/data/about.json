@@ -1,12 +1,12 @@
 {
   "pageHeader": {
     "title": "Sobre Nossa Paróquia",
-    "subtitle": "Conheça a história e missão da Paróquia Sagrado Coração de Jesus"
+    "subtitle": "Conheça a história e missão da Paróquia Nossa Senhora Aparecida"
   },
   "history": {
     "title": "Nossa História",
     "paragraphs": [
-      "A Paróquia Sagrado Coração de Jesus é uma comunidade católica vibrante localizada em Uberaba, Minas Gerais, Brasil. Fundada com o propósito de servir a Deus e à nossa comunidade, temos sido um farol de fé, esperança e amor para todos que buscam uma conexão mais profunda com Cristo.",
+      "A Paróquia Nossa Senhora Aparecida é uma comunidade católica vibrante localizada em Uberaba - Brasil. Fundada com o propósito de servir a Deus e à nossa comunidade, temos sido um farol de fé, esperança e amor para todos que buscam uma conexão mais profunda com Cristo.",
       "Nossa paróquia tem suas raízes firmemente plantadas nos ensinamentos da Igreja Católica Apostólica Romana, e ao longo dos anos, temos crescido não apenas em número, mas também em espírito e compromisso com os valores cristãos."
     ]
   },
@@ -31,7 +31,7 @@
   },
   "imagePlaceholder": {
     "icon": "✟",
-    "text": "Sagrado Coração de Jesus"
+    "text": "Nossa Senhora Aparecida"
   },
   "values": {
     "sectionTitle": "Nossos Valores",

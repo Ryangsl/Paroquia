@@ -1,6 +1,6 @@
 # Paroquia Sagrado Coracao de Jesus
 
-Site institucional da Paroquia Sagrado Coracao de Jesus - Uberaba, Brasil.
+Site institucional da Paroquia Nossa Senhora Aparecida - Uberaba, Brasil.
 
 ## Stack
 
