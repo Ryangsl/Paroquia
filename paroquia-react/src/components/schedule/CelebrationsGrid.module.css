@@ -1,0 +1,56 @@
+.specialCelebrations {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--primary-color);
+}
+
+.celebrationsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.celebrationCard {
+    background-color: var(--secondary-color);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    transition: transform var(--transition-speed) var(--ease-spring),
+                box-shadow var(--transition-speed) var(--ease-out),
+                border-color var(--transition-speed) var(--ease-out);
+    border: 2px solid transparent;
+}
+
+.celebrationCard:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--accent-light);
+}
+
+.celebrationIcon {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.celebrationCard h3 {
+    font-family: var(--font-heading);
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-xs);
+    font-size: 1.2rem;
+}
+
+.celebrationCard p {
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-xs);
+    line-height: 1.6;
+}
+
+.celebrationTime {
+    display: inline-block;
+    color: var(--accent-dark);
+    font-weight: 600;
+    background: var(--bg-accent-subtle);
+    padding: 4px 14px;
+    border-radius: var(--radius-full);
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
+}

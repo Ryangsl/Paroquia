@@ -1,0 +1,91 @@
+.events {
+    background-color: var(--primary-color);
+}
+
+.eventsGrid {
+    display: grid;
+    gap: var(--spacing-md);
+}
+
+.eventCard {
+    display: flex;
+    gap: var(--spacing-md);
+    background-color: var(--secondary-color);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-lg);
+    border-left: 4px solid var(--accent-color);
+    transition: all var(--transition-speed) var(--ease-spring);
+    box-shadow: var(--shadow-xs);
+}
+
+.eventCard:hover {
+    transform: translateX(5px) scale(1.01);
+    box-shadow: var(--shadow-md);
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.eventDate {
+    background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-dark) 100%);
+    color: var(--primary-color);
+    padding: var(--spacing-sm);
+    border-radius: var(--radius-md);
+    text-align: center;
+    min-width: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: var(--shadow-gold);
+}
+
+.day {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.month {
+    font-size: 1rem;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+.eventInfo h3 {
+    font-family: var(--font-heading);
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.eventTime {
+    color: var(--accent-color);
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+}
+
+.eventLocation {
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.eventDescription {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+    .eventCard {
+        flex-direction: column;
+    }
+
+    .eventDate {
+        width: 100%;
+    }
+}

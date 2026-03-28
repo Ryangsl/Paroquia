@@ -1,0 +1,78 @@
+.schedule {
+    background-color: var(--secondary-color);
+}
+
+.scheduleGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.scheduleCard {
+    background-color: var(--primary-color);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-speed) var(--ease-spring),
+                box-shadow var(--transition-speed) var(--ease-out),
+                opacity 0.6s ease;
+    border-top: 4px solid transparent;
+    border-image: linear-gradient(90deg, var(--accent-color), var(--accent-light)) 1;
+    border-image-slice: 1;
+    border-image-width: 4px 0 0 0;
+    position: relative;
+}
+
+.scheduleCard:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scheduleIcon {
+    font-size: 2.8rem;
+    margin-bottom: var(--spacing-sm);
+    width: 70px;
+    height: 70px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-accent-subtle);
+    border-radius: var(--radius-full);
+    line-height: 1;
+}
+
+.scheduleCard h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.scheduleTimes p {
+    margin-bottom: var(--spacing-xs);
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.scheduleTimes strong {
+    color: var(--text-primary);
+}
+
+.scheduleNote {
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: var(--spacing-xs);
+    color: var(--text-secondary);
+}

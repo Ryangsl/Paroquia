@@ -1,0 +1,115 @@
+{
+  "pageHeader": {
+    "title": "Entre em Contato",
+    "subtitle": "Estamos aqui para atendê-lo. Fale conosco!"
+  },
+  "contactInfo": {
+    "title": "Informações de Contato",
+    "intro": "Entre em contato conosco através dos canais abaixo ou preencha o formulário. Teremos prazer em atendê-lo!",
+    "items": [
+      {
+        "icon": "📍",
+        "title": "Endereço",
+        "lines": [
+          "Paróquia Sagrado Coração de Jesus",
+          "Curitiba - Paraná",
+          "R. Alberto Pasqualini, 654",
+          "CEP: 81550-310"
+        ]
+      },
+      {
+        "icon": "📞",
+        "title": "Telefones",
+        "entries": [
+          { "label": "Secretaria", "value": "(41) XXXX-XXXX" },
+          { "label": "WhatsApp", "value": "(41) 9XXXX-XXXX" },
+          { "label": "Emergências", "value": "(41) 9XXXX-XXXX" }
+        ]
+      },
+      {
+        "icon": "✉️",
+        "title": "Email",
+        "entries": [
+          { "label": "Geral", "value": "contato@sagradocoracaouberaba.com.br" },
+          { "label": "Secretaria", "value": "secretaria@sagradocoracaouberaba.com.br" },
+          { "label": "Pároco", "value": "padre@sagradocoracaouberaba.com.br" }
+        ]
+      },
+      {
+        "icon": "⏰",
+        "title": "Horário de Atendimento",
+        "entries": [
+          { "label": "Segunda a Sexta", "value": "8:00h - 12:00h | 14:00h - 17:00h" },
+          { "label": "Sábado", "value": "8:00h - 12:00h" },
+          { "label": "Domingo", "value": "Apenas durante as missas" }
+        ]
+      },
+      {
+        "icon": "🌐",
+        "title": "Redes Sociais",
+        "socialButtons": [
+          { "label": "📘 Facebook", "url": "#" },
+          { "label": "📷 Instagram", "url": "#" },
+          { "label": "📹 YouTube", "url": "#" }
+        ]
+      }
+    ]
+  },
+  "form": {
+    "title": "Envie sua Mensagem",
+    "intro": "Preencha o formulário abaixo e entraremos em contato o mais breve possível.",
+    "subjects": [
+      { "value": "", "label": "Selecione um assunto" },
+      { "value": "informacoes", "label": "Informações Gerais" },
+      { "value": "batismo", "label": "Batismo" },
+      { "value": "casamento", "label": "Casamento" },
+      { "value": "catequese", "label": "Catequese" },
+      { "value": "eventos", "label": "Eventos" },
+      { "value": "pastoral", "label": "Pastorais e Ministérios" },
+      { "value": "outro", "label": "Outro" }
+    ]
+  },
+  "map": {
+    "sectionTitle": "Como Chegar",
+    "iframeSrc": "https://www.google.com/maps/embed?pb=!3m2!1spt-BR!2sbr!4v1765926049167!5m2!1spt-BR!2sbr!6m8!1m7!1sUqvhi2mIZLdTblo-AT_Xzg!2m2!1d-25.48409913069485!2d-49.20846188365402!3f130.79155741002174!4f1.1922486366787695!5f0.7820865974627469",
+    "title": "Localização da Paróquia",
+    "subtitle": "Curitiba - Paraná, Brasil"
+  },
+  "faq": {
+    "sectionTitle": "Perguntas Frequentes",
+    "items": [
+      {
+        "question": "❓ Como faço para batizar meu filho?",
+        "answer": "Entre em contato com a secretaria paroquial para agendar o batismo. É necessário fazer um curso de preparação para pais e padrinhos com antecedência mínima de 30 dias."
+      },
+      {
+        "question": "❓ Quais documentos preciso para casar na igreja?",
+        "answer": "Certidão de nascimento atualizada (menos de 6 meses), comprovante de residência, RG e CPF. É obrigatório fazer o curso de noivos. Agende com 6 meses de antecedência."
+      },
+      {
+        "question": "❓ Como posso participar de um ministério?",
+        "answer": "Procure a secretaria paroquial ou fale diretamente com o coordenador do ministério de seu interesse após as missas. Todos são bem-vindos!"
+      },
+      {
+        "question": "❓ Há estacionamento na igreja?",
+        "answer": "Sim, temos estacionamento disponível para os fiéis. Recomendamos chegar com antecedência nos horários de maior movimento."
+      },
+      {
+        "question": "❓ Como posso fazer uma doação?",
+        "answer": "Você pode fazer doações durante as missas, na secretaria paroquial ou através de transferência bancária. Entre em contato para mais informações."
+      },
+      {
+        "question": "❓ A igreja é acessível para cadeirantes?",
+        "answer": "Sim, nossa igreja possui rampas de acesso e banheiros adaptados para pessoas com mobilidade reduzida."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Visite Nossa Paróquia!",
+    "text": "Venha nos conhecer pessoalmente. Você é sempre bem-vindo!",
+    "buttons": [
+      { "label": "Ver Horários das Missas", "href": "/horarios", "variant": "primary" },
+      { "label": "Conheça Nossa História", "href": "/sobre", "variant": "secondary" }
+    ]
+  }
+}

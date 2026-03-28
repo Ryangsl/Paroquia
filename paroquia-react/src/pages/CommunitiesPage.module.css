@@ -1,0 +1,78 @@
+.intro {
+    background-color: var(--primary-color);
+}
+
+.intro h2 {
+    font-family: var(--font-heading);
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.8rem;
+    letter-spacing: -0.01em;
+}
+
+.intro p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: var(--spacing-sm);
+    max-width: 800px;
+}
+
+.communitiesSection {
+    background-color: var(--secondary-color);
+}
+
+.communitiesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.communityCard {
+    background-color: var(--primary-color);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-speed) var(--ease-spring),
+                box-shadow var(--transition-speed) var(--ease-out),
+                border-color var(--transition-speed) var(--ease-out);
+    border-bottom: 3px solid transparent;
+}
+
+.communityCard:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+    border-image: linear-gradient(90deg, var(--accent-color), var(--accent-light)) 1;
+    border-image-slice: 1;
+    border-image-width: 0 0 3px 0;
+}
+
+.communityIcon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.communityCard h3 {
+    font-family: var(--font-heading);
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.3rem;
+}
+
+.communityCard p {
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.6;
+}
+
+.location {
+    display: inline-block;
+    color: var(--accent-dark);
+    font-weight: 600;
+    font-size: 0.9rem;
+    background-color: var(--bg-accent-subtle);
+    padding: 4px 14px;
+    border-radius: var(--radius-full);
+    letter-spacing: 0.02em;
+}

@@ -1,0 +1,42 @@
+.importantNotes {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--bg-warm);
+}
+
+.notesContent {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--bg-warm) 100%);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    border-left: 4px solid var(--accent-color);
+    box-shadow: var(--shadow-sm);
+}
+
+.notesContent h2 {
+    font-family: var(--font-heading);
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.notesList {
+    list-style: none;
+}
+
+.notesList li {
+    padding: var(--spacing-xs) 0 var(--spacing-xs) var(--spacing-sm);
+    color: var(--text-secondary);
+    line-height: 1.8;
+    position: relative;
+    padding-left: calc(var(--spacing-sm) + 8px);
+}
+
+.notesList li::before {
+    content: '\2713';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-weight: 700;
+    font-size: 1rem;
+}

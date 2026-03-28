@@ -1,0 +1,50 @@
+.mapSection {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--secondary-color);
+}
+
+.mapPlaceholder {
+    background-color: var(--primary-color);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-lg);
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.mapContent {
+    max-width: 100%;
+    width: 100%;
+}
+
+.mapIcon {
+    font-size: 3.5rem;
+    margin-bottom: var(--spacing-sm);
+    display: block;
+}
+
+.mapContent h3 {
+    font-family: var(--font-heading);
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.mapContent p {
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.6;
+}
+
+.mapEmbed {
+    margin-top: var(--spacing-sm);
+}
+
+.mapEmbed iframe {
+    max-width: 100%;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+}

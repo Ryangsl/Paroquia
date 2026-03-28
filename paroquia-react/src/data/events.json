@@ -1,0 +1,129 @@
+{
+  "pageHeader": {
+    "title": "Eventos e Atividades",
+    "subtitle": "Participe das atividades e eventos da nossa comunidade paroquial"
+  },
+  "upcomingEvents": {
+    "sectionTitle": "Próximos Eventos",
+    "events": [
+      {
+        "day": "15",
+        "month": "JAN",
+        "title": "Missa Especial de Domingo",
+        "time": "⏰ 10:00h",
+        "location": "📍 Igreja Matriz",
+        "description": "Celebração especial com coro e adoração ao Santíssimo Sacramento. Após a missa, teremos confraternização no salão paroquial."
+      },
+      {
+        "day": "20",
+        "month": "JAN",
+        "title": "Grupo de Oração",
+        "time": "⏰ 19:30h",
+        "location": "📍 Salão Paroquial",
+        "description": "Encontro semanal do grupo de oração com louvor, partilha da Palavra e intercessão. Todos são bem-vindos!"
+      },
+      {
+        "day": "25",
+        "month": "JAN",
+        "title": "Catequese Infantil",
+        "time": "⏰ 15:00h",
+        "location": "📍 Salas de Catequese",
+        "description": "Aulas de catequese para crianças e preparação para primeira comunhão. Inscrições abertas na secretaria."
+      },
+      {
+        "day": "28",
+        "month": "JAN",
+        "title": "Encontro de Jovens",
+        "time": "⏰ 18:00h",
+        "location": "📍 Salão Paroquial",
+        "description": "Encontro mensal da Pastoral da Juventude com dinâmicas, reflexões e momento de oração."
+      },
+      {
+        "day": "02",
+        "month": "FEV",
+        "title": "Festa de Nossa Senhora",
+        "time": "⏰ 16:00h",
+        "location": "📍 Igreja Matriz",
+        "description": "Celebração especial em honra a Nossa Senhora com procissão, missa solene e bênção."
+      },
+      {
+        "day": "10",
+        "month": "FEV",
+        "title": "Bazar Beneficente",
+        "time": "⏰ 9:00h - 17:00h",
+        "location": "📍 Pátio da Igreja",
+        "description": "Bazar com roupas, calçados, utensílios e artesanato. Renda revertida para obras sociais da paróquia."
+      }
+    ]
+  },
+  "regularActivities": {
+    "sectionTitle": "Atividades Regulares",
+    "description": "Atividades que acontecem semanalmente em nossa paróquia",
+    "activities": [
+      {
+        "day": "Segunda-feira",
+        "title": "Grupo de Estudos Bíblicos",
+        "time": "⏰ 19:30h - 21:00h",
+        "description": "Estudo aprofundado da Palavra de Deus com reflexões e partilhas."
+      },
+      {
+        "day": "Terça-feira",
+        "title": "Pastoral da Família",
+        "time": "⏰ 20:00h - 21:30h",
+        "description": "Encontros para casais e famílias com temas sobre relacionamentos e fé."
+      },
+      {
+        "day": "Quarta-feira",
+        "title": "Terço Mariano",
+        "time": "⏰ 18:30h - 19:00h",
+        "description": "Oração do Santo Terço em comunidade antes da missa."
+      },
+      {
+        "day": "Quinta-feira",
+        "title": "Adoração ao Santíssimo",
+        "time": "⏰ 18:00h - 19:00h",
+        "description": "Momento de adoração e contemplação diante do Santíssimo Sacramento."
+      },
+      {
+        "day": "Sexta-feira",
+        "title": "Grupo de Oração",
+        "time": "⏰ 19:30h - 21:00h",
+        "description": "Louvor, oração e partilha em comunidade."
+      },
+      {
+        "day": "Sábado",
+        "title": "Catequese de Adultos",
+        "time": "⏰ 14:00h - 16:00h",
+        "description": "Formação para adultos que desejam receber os sacramentos."
+      },
+      {
+        "day": "Domingo",
+        "title": "Escola Dominical",
+        "time": "⏰ 9:00h - 10:30h",
+        "description": "Atividades religiosas e recreativas para crianças."
+      }
+    ]
+  },
+  "groupsMinistries": {
+    "sectionTitle": "Grupos e Ministérios",
+    "description": "Conheça os grupos e ministérios ativos em nossa paróquia",
+    "groups": [
+      { "icon": "🎵", "title": "Coral Paroquial", "description": "Ensaios às quintas-feiras às 20h. Aberto para novos integrantes." },
+      { "icon": "👨‍👩‍👧‍👦", "title": "Pastoral Familiar", "description": "Encontros mensais para fortalecimento das famílias." },
+      { "icon": "👶", "title": "Pastoral da Criança", "description": "Acompanhamento de gestantes e crianças até 6 anos." },
+      { "icon": "🎓", "title": "Pastoral da Juventude", "description": "Atividades e formação para jovens de 15 a 29 anos." },
+      { "icon": "👴", "title": "Pastoral dos Idosos", "description": "Encontros e atividades para a terceira idade." },
+      { "icon": "🍞", "title": "Pastoral da Caridade", "description": "Assistência aos necessitados da comunidade." },
+      { "icon": "🏥", "title": "Pastoral da Saúde", "description": "Visitas a enfermos e hospitais." },
+      { "icon": "📖", "title": "Círculo Bíblico", "description": "Estudo e reflexão sobre as Sagradas Escrituras." }
+    ]
+  },
+  "cta": {
+    "title": "Participe das Nossas Atividades!",
+    "text": "Venha fazer parte da nossa comunidade. Todos são bem-vindos!",
+    "buttons": [
+      { "label": "Entre em Contato", "href": "/contato", "variant": "primary" },
+      { "label": "Ver Horários", "href": "/horarios", "variant": "secondary" }
+    ]
+  }
+}

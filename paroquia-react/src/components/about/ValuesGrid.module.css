@@ -1,0 +1,53 @@
+.values {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--secondary-color);
+}
+
+.valuesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.valueCard {
+    background-color: var(--primary-color);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-speed) var(--ease-spring),
+                box-shadow var(--transition-speed) var(--ease-out),
+                border-color var(--transition-speed) var(--ease-out);
+    border-bottom: 3px solid transparent;
+}
+
+.valueCard:hover {
+    transform: scale(1.02);
+    box-shadow: var(--shadow-lg);
+    border-bottom-color: var(--accent-color);
+}
+
+.valueIcon {
+    font-size: 2.8rem;
+    margin-bottom: var(--spacing-sm);
+    width: 72px;
+    height: 72px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-accent-subtle);
+    border-radius: var(--radius-full);
+    line-height: 1;
+}
+
+.valueCard h3 {
+    font-family: var(--font-heading);
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.3rem;
+}
+
+.valueCard p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+}

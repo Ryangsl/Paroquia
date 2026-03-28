@@ -1,0 +1,47 @@
+{
+  "pageHeader": {
+    "title": "Nossas Comunidades",
+    "subtitle": "Conheça as comunidades que fazem parte da nossa paróquia"
+  },
+  "intro": {
+    "title": "Comunidades Paroquiais",
+    "paragraphs": [
+      "A Paróquia Sagrado Coração de Jesus é composta por diversas comunidades que se reúnem para celebrar a fé, compartilhar experiências e servir ao próximo. Cada comunidade tem suas características próprias, mas todas compartilham os mesmos valores cristãos.",
+      "Nossas comunidades são espaços de acolhimento e fraternidade, onde os fiéis podem viver sua fé de forma mais próxima e participativa. Convidamos você a conhecer e participar de uma de nossas comunidades."
+    ]
+  },
+  "communities": [
+    {
+      "icon": "⛪",
+      "title": "Comunidade Matriz",
+      "description": "Comunidade central da paróquia, localizada na Igreja Matriz.",
+      "location": "Igreja Matriz - Centro"
+    },
+    {
+      "icon": "🏠",
+      "title": "Comunidade São José",
+      "description": "Comunidade dedicada a São José, com encontros semanais e celebrações.",
+      "location": "Capela São José - Bairro Norte"
+    },
+    {
+      "icon": "🏠",
+      "title": "Comunidade Nossa Senhora",
+      "description": "Comunidade mariana com forte devoção e atividades pastorais.",
+      "location": "Capela Nossa Senhora - Bairro Sul"
+    },
+    {
+      "icon": "🏠",
+      "title": "Comunidade Santo Antônio",
+      "description": "Comunidade acolhedora com diversas atividades para famílias.",
+      "location": "Capela Santo Antônio - Bairro Leste"
+    }
+  ],
+  "cta": {
+    "title": "Participe de uma Comunidade!",
+    "text": "Entre em contato para saber qual comunidade está mais próxima de você.",
+    "buttons": [
+      { "label": "Entre em Contato", "href": "/contato", "variant": "primary" },
+      { "label": "Ver Horários", "href": "/horarios", "variant": "secondary" }
+    ]
+  }
+}

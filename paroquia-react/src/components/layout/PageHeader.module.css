@@ -1,0 +1,51 @@
+.pageHeader {
+    background: var(--bg-gradient-hero);
+    padding: calc(var(--spacing-xl) + 70px) 0 var(--spacing-xl);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.pageHeader::before {
+    content: '\2720';
+    position: absolute;
+    font-size: 18rem;
+    color: rgba(201, 162, 39, 0.04);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    animation: floatCross 6s ease-in-out infinite;
+}
+
+@keyframes floatCross {
+    0%, 100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+        opacity: 0.4;
+    }
+    50% {
+        transform: translate(-50%, -52%) rotate(3deg);
+        opacity: 0.7;
+    }
+}
+
+.pageTitle {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+    position: relative;
+    z-index: 1;
+    letter-spacing: 0.03em;
+}
+
+.pageSubtitle {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    position: relative;
+    z-index: 1;
+    letter-spacing: 0.01em;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}

@@ -1,0 +1,12 @@
+{
+  "parishName": "Sagrado Coração",
+  "parishFullName": "Paróquia Sagrado Coração de Jesus",
+  "crossIcon": "✟",
+  "tagline": "Uma comunidade de fé, esperança e amor em Uberaba, Brasil.",
+  "copyright": "Paróquia Sagrado Coração Uberaba. Todos os direitos reservados.",
+  "socialLinks": [
+    { "label": "Facebook", "icon": "📘", "url": "#" },
+    { "label": "Instagram", "icon": "📷", "url": "#" },
+    { "label": "YouTube", "icon": "📹", "url": "#" }
+  ]
+}

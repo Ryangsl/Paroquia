@@ -1,0 +1,67 @@
+{
+  "pageHeader": {
+    "title": "Sobre Nossa Paróquia",
+    "subtitle": "Conheça a história e missão da Paróquia Sagrado Coração de Jesus"
+  },
+  "history": {
+    "title": "Nossa História",
+    "paragraphs": [
+      "A Paróquia Sagrado Coração de Jesus é uma comunidade católica vibrante localizada em Uberaba, Minas Gerais, Brasil. Fundada com o propósito de servir a Deus e à nossa comunidade, temos sido um farol de fé, esperança e amor para todos que buscam uma conexão mais profunda com Cristo.",
+      "Nossa paróquia tem suas raízes firmemente plantadas nos ensinamentos da Igreja Católica Apostólica Romana, e ao longo dos anos, temos crescido não apenas em número, mas também em espírito e compromisso com os valores cristãos."
+    ]
+  },
+  "mission": {
+    "title": "Nossa Missão",
+    "intro": "Nossa missão é servir a Deus e à nossa comunidade através da fé, amor e serviço. Buscamos:",
+    "items": [
+      "✟ Proclamar o Evangelho de Jesus Cristo",
+      "✟ Celebrar os sacramentos com reverência e devoção",
+      "✟ Formar discípulos comprometidos com a fé católica",
+      "✟ Servir aos necessitados com caridade e compaixão",
+      "✟ Construir uma comunidade acolhedora e inclusiva",
+      "✟ Promover a justiça social e a dignidade humana"
+    ]
+  },
+  "community": {
+    "title": "Nossa Comunidade",
+    "paragraphs": [
+      "Somos uma família de fé dedicada a viver os ensinamentos de Cristo e a compartilhar Seu amor com todos. Nossa paróquia oferece diversos ministérios, grupos de oração e atividades para todas as idades, desde crianças até idosos.",
+      "Convidamos você a se juntar a nós em nossa jornada de fé. Seja você um católico praticante ou alguém buscando conhecer mais sobre a fé católica, você é sempre bem-vindo em nossa comunidade. Aqui, você encontrará um lugar de paz, oração e comunhão fraterna."
+    ]
+  },
+  "imagePlaceholder": {
+    "icon": "✟",
+    "text": "Sagrado Coração de Jesus"
+  },
+  "values": {
+    "sectionTitle": "Nossos Valores",
+    "items": [
+      { "icon": "❤️", "title": "Amor", "description": "Amamos a Deus acima de tudo e ao próximo como a nós mesmos, seguindo o maior mandamento de Cristo." },
+      { "icon": "🙏", "title": "Fé", "description": "Cultivamos uma fé viva e ativa, fundamentada na Palavra de Deus e na tradição da Igreja." },
+      { "icon": "🤝", "title": "Comunhão", "description": "Promovemos a unidade e a fraternidade entre todos os membros da nossa comunidade paroquial." },
+      { "icon": "🕊️", "title": "Paz", "description": "Buscamos ser instrumentos de paz em nossa comunidade, promovendo a reconciliação e o perdão." },
+      { "icon": "💪", "title": "Serviço", "description": "Servimos aos necessitados com dedicação, seguindo o exemplo de Cristo que veio para servir." },
+      { "icon": "📖", "title": "Formação", "description": "Investimos na formação contínua de nossos fiéis através da catequese e estudos bíblicos." }
+    ]
+  },
+  "ministries": {
+    "sectionTitle": "Ministérios e Pastorais",
+    "description": "Nossa paróquia conta com diversos ministérios e pastorais que servem à comunidade",
+    "items": [
+      { "title": "🎵 Ministério de Música", "description": "Louvor e adoração através da música nas celebrações litúrgicas." },
+      { "title": "👶 Pastoral da Criança", "description": "Cuidado e acompanhamento das crianças e suas famílias." },
+      { "title": "👴 Pastoral dos Idosos", "description": "Atenção especial e atividades para a terceira idade." },
+      { "title": "👨‍👩‍👧‍👦 Pastoral Familiar", "description": "Fortalecimento dos laços familiares à luz do Evangelho." },
+      { "title": "📚 Catequese", "description": "Formação religiosa para crianças, jovens e adultos." },
+      { "title": "🍞 Pastoral da Caridade", "description": "Assistência aos necessitados e promoção da solidariedade." }
+    ]
+  },
+  "cta": {
+    "title": "Faça Parte da Nossa Comunidade",
+    "text": "Venha nos visitar e conhecer mais sobre nossa paróquia. Todos são bem-vindos!",
+    "buttons": [
+      { "label": "Ver Horários das Missas", "href": "/horarios", "variant": "primary" },
+      { "label": "Entre em Contato", "href": "/contato", "variant": "secondary" }
+    ]
+  }
+}

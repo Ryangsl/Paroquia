@@ -1,0 +1,141 @@
+{
+  "pageHeader": {
+    "title": "Horários das Celebrações",
+    "subtitle": "Confira os horários das missas, confissões e outras celebrações"
+  },
+  "massSchedule": {
+    "sectionTitle": "Horários das Missas",
+    "cards": [
+      {
+        "icon": "🌅",
+        "title": "Missas Matinais",
+        "times": [
+          { "day": "Segunda-feira", "time": "7:00h" },
+          { "day": "Terça-feira", "time": "7:00h" },
+          { "day": "Quarta-feira", "time": "7:00h" },
+          { "day": "Quinta-feira", "time": "7:00h" },
+          { "day": "Sexta-feira", "time": "7:00h" },
+          { "day": "Sábado", "time": "7:00h" },
+          { "day": "Domingo", "time": "8:00h" }
+        ]
+      },
+      {
+        "icon": "🌙",
+        "title": "Missas Noturnas",
+        "times": [
+          { "day": "Segunda-feira", "time": "19:00h" },
+          { "day": "Terça-feira", "time": "19:00h" },
+          { "day": "Quarta-feira", "time": "19:00h" },
+          { "day": "Quinta-feira", "time": "19:00h" },
+          { "day": "Sexta-feira", "time": "19:00h" },
+          { "day": "Sábado", "time": "19:00h" },
+          { "day": "Domingo", "time": "19:00h" }
+        ]
+      },
+      {
+        "icon": "🙏",
+        "title": "Sacramento da Confissão",
+        "times": [
+          { "day": "Sábado", "time": "17:00h - 18:30h" },
+          { "day": "Domingo", "time": "30 minutos antes das missas" },
+          { "day": "Durante a semana", "time": "Mediante agendamento" }
+        ],
+        "note": "Para agendar, entre em contato com a secretaria paroquial"
+      }
+    ]
+  },
+  "specialCelebrations": {
+    "sectionTitle": "Celebrações Especiais",
+    "cards": [
+      {
+        "icon": "✝️",
+        "title": "Primeira Sexta-feira",
+        "description": "Adoração ao Sagrado Coração de Jesus",
+        "time": "Após a missa das 19:00h"
+      },
+      {
+        "icon": "🌹",
+        "title": "Primeiro Sábado",
+        "description": "Devoção ao Imaculado Coração de Maria",
+        "time": "Após a missa das 7:00h"
+      },
+      {
+        "icon": "🕯️",
+        "title": "Adoração ao Santíssimo",
+        "description": "Todas as quintas-feiras",
+        "time": "18:00h - 19:00h"
+      },
+      {
+        "icon": "📿",
+        "title": "Terço Mariano",
+        "description": "Todas as quartas-feiras",
+        "time": "18:30h"
+      }
+    ]
+  },
+  "sacraments": {
+    "sectionTitle": "Outros Sacramentos",
+    "description": "Para os sacramentos abaixo, é necessário agendamento prévio",
+    "cards": [
+      {
+        "title": "💒 Batismo",
+        "details": [
+          { "label": "Quando", "value": "Domingos após a missa das 8:00h" },
+          { "label": "Preparação", "value": "Curso de preparação obrigatório para pais e padrinhos" },
+          { "label": "Agendamento", "value": "Na secretaria paroquial com antecedência mínima de 30 dias" }
+        ]
+      },
+      {
+        "title": "💍 Matrimônio",
+        "details": [
+          { "label": "Quando", "value": "Sábados às 16:00h ou 18:00h" },
+          { "label": "Preparação", "value": "Curso de noivos obrigatório" },
+          { "label": "Agendamento", "value": "Com antecedência mínima de 6 meses" }
+        ]
+      },
+      {
+        "title": "✝️ Unção dos Enfermos",
+        "details": [
+          { "label": "Quando", "value": "Conforme necessidade" },
+          { "label": "Como solicitar", "value": "Entre em contato com a secretaria paroquial" },
+          { "label": "Observação", "value": "Para casos de urgência, ligue a qualquer hora" }
+        ]
+      },
+      {
+        "title": "🕊️ Primeira Comunhão",
+        "details": [
+          { "label": "Quando", "value": "Conforme calendário da catequese" },
+          { "label": "Preparação", "value": "Catequese obrigatória (2 anos)" },
+          { "label": "Inscrições", "value": "Início do ano letivo na secretaria" }
+        ]
+      },
+      {
+        "title": "🔥 Crisma",
+        "details": [
+          { "label": "Quando", "value": "Conforme calendário diocesano" },
+          { "label": "Preparação", "value": "Catequese obrigatória (2 anos)" },
+          { "label": "Inscrições", "value": "Início do ano letivo na secretaria" }
+        ]
+      }
+    ]
+  },
+  "importantNotes": {
+    "title": "📋 Informações Importantes",
+    "items": [
+      "✓ Chegue com antecedência para participar da missa com tranquilidade",
+      "✓ Em caso de feriados, os horários podem sofrer alterações - consulte os avisos paroquiais",
+      "✓ Durante a Semana Santa e períodos especiais, há horários diferenciados",
+      "✓ Para missas de 7º dia, 30º dia e aniversário de falecimento, agende na secretaria",
+      "✓ A secretaria paroquial funciona de segunda a sexta, das 8h às 17h, e sábados das 8h às 12h",
+      "✓ Para emergências e urgências, entre em contato pelo telefone da paróquia"
+    ]
+  },
+  "cta": {
+    "title": "Tem Alguma Dúvida?",
+    "text": "Entre em contato conosco para mais informações sobre horários e celebrações",
+    "buttons": [
+      { "label": "Entre em Contato", "href": "/contato", "variant": "primary" },
+      { "label": "Ver Eventos", "href": "/eventos", "variant": "secondary" }
+    ]
+  }
+}

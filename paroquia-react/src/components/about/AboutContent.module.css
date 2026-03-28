@@ -1,0 +1,103 @@
+.about {
+    background-color: var(--primary-color);
+}
+
+.aboutContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: center;
+}
+
+.aboutText h2 {
+    font-family: var(--font-heading);
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+    margin-top: var(--spacing-lg);
+    font-size: 1.8rem;
+    letter-spacing: -0.01em;
+}
+
+.aboutText h2:first-child {
+    margin-top: 0;
+}
+
+.aboutText p {
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    line-height: 1.9;
+    letter-spacing: 0.01em;
+}
+
+.missionList {
+    list-style: none;
+    margin: var(--spacing-sm) 0;
+}
+
+.missionList li {
+    padding: var(--spacing-xs) 0 var(--spacing-xs) var(--spacing-sm);
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    border-left: 3px solid transparent;
+    transition: border-color var(--transition-speed) var(--ease-out),
+                padding-left var(--transition-speed) var(--ease-out),
+                background-color var(--transition-speed) var(--ease-out);
+}
+
+.missionList li:hover {
+    border-left-color: var(--accent-color);
+    padding-left: calc(var(--spacing-sm) + 4px);
+    background-color: var(--bg-accent-subtle);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.aboutImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagePlaceholder {
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1;
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+    border-radius: var(--radius-xl);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid var(--accent-color);
+    box-shadow: var(--shadow-lg);
+    animation: pulseGlow 3s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+    0%, 100% {
+        box-shadow: var(--shadow-lg), 0 0 20px rgba(201, 162, 39, 0.1);
+    }
+    50% {
+        box-shadow: var(--shadow-lg), 0 0 40px rgba(201, 162, 39, 0.25);
+    }
+}
+
+.crossIconLarge {
+    font-size: 8rem;
+    color: var(--accent-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.imagePlaceholder p {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .aboutContent {
+        grid-template-columns: 1fr;
+    }
+}

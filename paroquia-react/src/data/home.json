@@ -1,0 +1,42 @@
+{
+  "hero": {
+    "title": "Paróquia Nossa Senhora Aparecida",
+    "subtitle": "Paraná - Brasil",
+    "text": "Venha celebrar sua fé conosco. Todos são bem-vindos!",
+    "buttons": [
+      { "label": "Ver Horários das Missas", "href": "/horarios", "variant": "primary" },
+      { "label": "Entre em Contato", "href": "/contato", "variant": "secondary" }
+    ]
+  },
+  "highlights": {
+    "sectionTitle": "Bem-vindo à Nossa Comunidade",
+    "items": [
+      {
+        "icon": "⛪",
+        "title": "Nossa Paróquia",
+        "description": "Conheça a história, missão e valores da Paróquia Sagrado Coração de Jesus.",
+        "linkText": "Saiba Mais →",
+        "linkHref": "/sobre"
+      },
+      {
+        "icon": "📅",
+        "title": "Horários das Missas",
+        "description": "Confira os horários das missas matinais, noturnas e confissões.",
+        "linkText": "Ver Horários →",
+        "linkHref": "/horarios"
+      },
+      {
+        "icon": "🎉",
+        "title": "Eventos",
+        "description": "Participe dos eventos, grupos de oração e atividades da nossa comunidade.",
+        "linkText": "Ver Eventos →",
+        "linkHref": "/eventos"
+      }
+    ]
+  },
+  "quickInfo": [
+    { "icon": "📍", "title": "Localização", "text": "Curitiba - Paraná, Brasil" },
+    { "icon": "⏰", "title": "Próxima Missa", "text": "Domingo às 8:00h e 19:00h" },
+    { "icon": "📞", "title": "Contato", "text": "(41) XXXX-XXXX" }
+  ]
+}
