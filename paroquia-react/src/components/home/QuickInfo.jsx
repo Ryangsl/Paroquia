@@ -1,8 +1,28 @@
+import { Link } from 'react-router-dom';
 import homeData from '../../data/home.json';
+import eventsData from '../../data/events.json';
 import styles from './QuickInfo.module.css';
+
+const MONTHS = ['JAN', 'FEV', 'MAR', 'ABR', 'MAI', 'JUN', 'JUL', 'AGO', 'SET', 'OUT', 'NOV', 'DEZ'];
+
+function getNextEvent() {
+  const today = new Date().toISOString().split('T')[0];
+  const futureEvents = eventsData.upcomingEvents.events
+    .filter(e => e.date >= today)
+    .sort((a, b) => a.date.localeCompare(b.date));
+
+  if (futureEvents.length === 0) return null;
+
+  const next = futureEvents[0];
+  const [year, month, day] = next.date.split('-').map(Number);
+  const formattedDate = `${day} de ${MONTHS[month - 1]}`;
+
+  return { title: next.title, date: formattedDate, time: next.time.replace('⏰ ', '') };
+}
 
 export default function QuickInfo() {
   const { quickInfo } = homeData;
+  const nextEvent = getNextEvent();
 
   return (
     <section className={styles.quickInfo}>
@@ -14,6 +34,13 @@ export default function QuickInfo() {
               <p>{item.text}</p>
             </div>
           ))}
+          {nextEvent && (
+            <Link to="/eventos" className={styles.quickInfoItem} style={{ textDecoration: 'none' }}>
+              <h3>📌 Próximo Evento</h3>
+              <p className={styles.eventTitle}>{nextEvent.title}</p>
+              <p className={styles.eventMeta}>{nextEvent.date} — {nextEvent.time}</p>
+            </Link>
+          )}
         </div>
       </div>
     </section>

@@ -34,3 +34,15 @@
     color: var(--text-secondary);
     line-height: 1.6;
 }
+
+.eventTitle {
+    color: var(--text-primary);
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.eventMeta {
+    color: var(--accent-dark);
+    font-size: 0.9rem;
+    font-weight: 500;
+}

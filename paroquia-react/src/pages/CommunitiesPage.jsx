@@ -1,32 +1,51 @@
 import PageHeader from '../components/layout/PageHeader';
 import SectionHeader from '../components/ui/SectionHeader';
 import CTASection from '../components/ui/CTASection';
+import useScrollReveal from '../hooks/useScrollReveal';
 import communitiesData from '../data/communities.json';
 import styles from './CommunitiesPage.module.css';
+
+function CommunityCard({ community }) {
+  const { ref, isVisible } = useScrollReveal();
+
+  return (
+    <div ref={ref} className={`${styles.communityCard} ${isVisible ? styles.visible : styles.hidden}`}>
+      <div className={styles.imageWrapper}>
+        {community.image ? (
+          <img src={community.image} alt={community.name} className={styles.communityImage} />
+        ) : (
+          <div className={styles.imagePlaceholder}>
+            <span className={styles.placeholderIcon}>⛪</span>
+          </div>
+        )}
+      </div>
+      <h3 className={styles.communityName}>{community.name}</h3>
+      <div className={styles.detailsList}>
+        {community.details.map((detail, j) => (
+          <p key={j} className={styles.detailItem}>
+            <span className={styles.detailLabel}>{detail.label}:</span>{' '}
+            <span className={styles.detailValue}>{detail.value}</span>
+          </p>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export default function CommunitiesPage() {
   return (
     <>
-      <PageHeader title={communitiesData.pageHeader.title} subtitle={communitiesData.pageHeader.subtitle} />
-
-      <section className={styles.intro}>
-        <div className="container">
-          <h2>{communitiesData.intro.title}</h2>
-          {communitiesData.intro.paragraphs.map((p, i) => <p key={i}>{p}</p>)}
-        </div>
-      </section>
+      <PageHeader
+        title={communitiesData.pageHeader.title}
+        subtitle={communitiesData.pageHeader.subtitle}
+      />
 
       <section className={styles.communitiesSection}>
         <div className="container">
-          <SectionHeader title="Nossas Comunidades" />
+          <SectionHeader title="Padroeiros(as) e Horários das Celebrações na Comunidade" />
           <div className={styles.communitiesGrid}>
-            {communitiesData.communities.map((c, i) => (
-              <div key={i} className={styles.communityCard}>
-                <div className={styles.communityIcon}>{c.icon}</div>
-                <h3>{c.title}</h3>
-                <p>{c.description}</p>
-                <p className={styles.location}>📍 {c.location}</p>
-              </div>
+            {communitiesData.communities.map((community, i) => (
+              <CommunityCard key={i} community={community} />
             ))}
           </div>
         </div>

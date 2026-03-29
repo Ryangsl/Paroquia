@@ -7,52 +7,46 @@
     "sectionTitle": "Próximos Eventos",
     "events": [
       {
-        "day": "15",
-        "month": "JAN",
+        "date": "2026-04-03",
+        "title": "Adoração ao Santíssimo Sacramento",
+        "time": "⏰ 6h às 18h50",
+        "location": "📍 Igreja Matriz",
+        "description": "Primeira sexta-feira do mês. Momento de adoração e contemplação diante do Santíssimo Sacramento."
+      },
+      {
+        "date": "2026-04-12",
         "title": "Missa Especial de Domingo",
-        "time": "⏰ 10:00h",
+        "time": "⏰ 08h30, 10h30 e 19h",
         "location": "📍 Igreja Matriz",
         "description": "Celebração especial com coro e adoração ao Santíssimo Sacramento. Após a missa, teremos confraternização no salão paroquial."
       },
       {
-        "day": "20",
-        "month": "JAN",
+        "date": "2026-04-20",
         "title": "Grupo de Oração",
         "time": "⏰ 19:30h",
         "location": "📍 Salão Paroquial",
         "description": "Encontro semanal do grupo de oração com louvor, partilha da Palavra e intercessão. Todos são bem-vindos!"
       },
       {
-        "day": "25",
-        "month": "JAN",
+        "date": "2026-04-25",
         "title": "Catequese Infantil",
         "time": "⏰ 15:00h",
         "location": "📍 Salas de Catequese",
         "description": "Aulas de catequese para crianças e preparação para primeira comunhão. Inscrições abertas na secretaria."
       },
       {
-        "day": "28",
-        "month": "JAN",
-        "title": "Encontro de Jovens",
-        "time": "⏰ 18:00h",
-        "location": "📍 Salão Paroquial",
-        "description": "Encontro mensal da Pastoral da Juventude com dinâmicas, reflexões e momento de oração."
+        "date": "2026-05-01",
+        "title": "Adoração ao Santíssimo Sacramento",
+        "time": "⏰ 6h às 18h50",
+        "location": "📍 Igreja Matriz",
+        "description": "Primeira sexta-feira do mês. Adoração e contemplação."
       },
       {
-        "day": "02",
-        "month": "FEV",
-        "title": "Festa de Nossa Senhora",
+        "date": "2026-05-10",
+        "title": "Festa de Nossa Senhora Aparecida",
         "time": "⏰ 16:00h",
         "location": "📍 Igreja Matriz",
         "description": "Celebração especial em honra a Nossa Senhora com procissão, missa solene e bênção."
-      },
-      {
-        "day": "10",
-        "month": "FEV",
-        "title": "Bazar Beneficente",
-        "time": "⏰ 9:00h - 17:00h",
-        "location": "📍 Pátio da Igreja",
-        "description": "Bazar com roupas, calçados, utensílios e artesanato. Renda revertida para obras sociais da paróquia."
       }
     ]
   },

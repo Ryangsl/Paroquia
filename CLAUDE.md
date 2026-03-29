@@ -1,8 +1,8 @@
-# CLAUDE.md - Paroquia Sagrado Coracao de Jesus
+# CLAUDE.md - Paroquia Nossa Senhora Aparecida do Uberaba
 
 ## Projeto
 
-Site institucional da Paroquia Sagrado Coracao de Jesus (Uberaba, Brasil), construido em React.
+Site institucional da Paroquia Nossa Senhora Aparecida do Uberaba (Curitiba, Parana, Brasil), construido em React.
 
 O codigo do site fica em `paroquia-react/`.
 
@@ -23,6 +23,7 @@ npm run lint       # linting com ESLint
 - **JSON como fonte de dados**: todo conteudo editavel esta em `src/data/*.json` — separado do codigo React
 - **Design tokens**: variaveis CSS centralizadas em `src/assets/styles/variables.css`
 - **Hooks customizados**: `useScrollShadow` (sombra no header ao rolar), `useScrollReveal` (animacao de entrada com IntersectionObserver), `ScrollToTop` (volta ao topo na troca de rota)
+- **Eventos dinamicos**: o card "Proximo Evento" na home e a lista de eventos filtram automaticamente por data (`events.json` usa campo `date` no formato ISO `YYYY-MM-DD`)
 
 ## Estrutura de Pastas
 
@@ -32,7 +33,7 @@ paroquia-react/src/
 ├── components/
 │   ├── layout/      → Header, Footer, Layout (Outlet), PageHeader
 │   ├── ui/          → Button, SectionHeader, CTASection (reutilizaveis)
-│   ├── home/        → Hero, Highlights, QuickInfo
+│   ├── home/        → Hero, Highlights, QuickInfo (com proximo evento dinamico)
 │   ├── about/       → AboutContent, ValuesGrid, MinistriesGrid
 │   ├── schedule/    → ScheduleGrid, CelebrationsGrid, SacramentsGrid, ImportantNotes
 │   ├── events/      → EventsList, ActivitiesGrid, GroupsGrid
@@ -47,16 +48,16 @@ paroquia-react/src/
 - `/` → HomePage
 - `/sobre` → AboutPage
 - `/horarios` → SchedulePage
-- `/eventos` → EventsPage
+- `/eventos` → EventsPage (oculta da navegacao, mas acessivel via URL)
 - `/contato` → ContactPage
-- `/comunidades` → CommunitiesPage
+- `/comunidades` → CommunitiesPage (padroeiros, capelas e horarios das celebracoes)
 
 ## Convencoes
 
 - Componentes em PascalCase com `.jsx`
 - Estilos em CSS Modules (`.module.css`) ao lado do componente
 - Dados em JSON puro em `src/data/`
-- Cor de destaque: dourado `#c9a27` (variavel `--accent-color`)
+- Cor de destaque: dourado `#c9a227` (variavel `--accent-color`)
 - Fontes: Playfair Display (titulos) + Inter (corpo) via Google Fonts
 - Idioma do site: portugues brasileiro (pt-BR)
 
@@ -64,10 +65,26 @@ paroquia-react/src/
 
 Para atualizar textos, horarios, eventos ou qualquer conteudo do site, edite apenas os arquivos JSON em `src/data/`. Os componentes React leem esses arquivos diretamente — nao e necessario mexer em codigo.
 
+### Comunidades
+
+Para adicionar imagens dos padroeiros nas comunidades, edite `communities.json` e preencha o campo `"image"` com o caminho da imagem (ex: `"/imagens/sao-jose.jpg"`). Coloque as imagens na pasta `public/imagens/`.
+
+### Eventos
+
+Para adicionar eventos, edite `events.json`. Cada evento deve ter o campo `"date"` no formato ISO `"YYYY-MM-DD"`. Eventos passados sao filtrados automaticamente.
+
+## Informacoes da Paroquia
+
+- **Endereco**: Rua Augusto Steembock, 100 — Uberaba, Curitiba, PR
+- **Estacionamento**: Rua Capitao Leonidas Marques, 1845
+- **Telefones**: (41) 98508-7251 (WhatsApp) | (41) 3369-2143
+- **Redes Sociais**: https://linktr.ee/aparecidacuritiba
+- **Transporte publico**: Interbairros 3 ou Jardim Petropolis — descer proximo ao Posto de Saude Uberaba de Cima
+
 ## Proximas Melhorias Possiveis
 
 - Substituir emojis por icones SVG ou biblioteca de icones (Lucide, Phosphor)
-- Adicionar imagens reais (fotos da paroquia, eventos, comunidades)
+- Adicionar imagens reais dos padroeiros nas comunidades (campo `image` ja existe no JSON)
 - Implementar formulario de contato funcional (backend ou servico como Formspree)
 - Adicionar pagina 404 customizada
 - SEO: adicionar meta tags por pagina com react-helmet

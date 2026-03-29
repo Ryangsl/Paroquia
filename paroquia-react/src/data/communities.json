@@ -1,39 +1,89 @@
 {
   "pageHeader": {
-    "title": "Nossas Comunidades",
-    "subtitle": "Conheça as comunidades que fazem parte da nossa paróquia"
-  },
-  "intro": {
-    "title": "Comunidades Paroquiais",
-    "paragraphs": [
-      "A Paróquia Nossa Senhora Aparecida é composta por diversas comunidades que se reúnem para celebrar a fé, compartilhar experiências e servir ao próximo. Cada comunidade tem suas características próprias, mas todas compartilham os mesmos valores cristãos.",
-      "Nossas comunidades são espaços de acolhimento e fraternidade, onde os fiéis podem viver sua fé de forma mais próxima e participativa. Convidamos você a conhecer e participar de uma de nossas comunidades."
-    ]
+    "title": "Comunidades",
+    "subtitle": "Padroeiros(as) e Horários das Celebrações na Comunidade"
   },
   "communities": [
     {
-      "icon": "⛪",
-      "title": "Comunidade Matriz",
-      "description": "Comunidade central da paróquia, localizada na Igreja Matriz.",
-      "location": "Igreja Matriz - Centro"
+      "name": "Rogacionistas do Coração de Jesus",
+      "image": "",
+      "details": [
+        { "label": "Fundador", "value": "Santo Aníbal Maria Di Francia" },
+        { "label": "Missa e Adoração Vocacional", "value": "Quinta-feira às 19h" }
+      ]
     },
     {
-      "icon": "🏠",
-      "title": "Comunidade São José",
-      "description": "Comunidade dedicada a São José, com encontros semanais e celebrações.",
-      "location": "Capela São José - Bairro Norte"
+      "name": "Capela São José Operário",
+      "image": "",
+      "details": [
+        { "label": "Festa do Padroeiro", "value": "01 de maio" },
+        { "label": "Missa", "value": "Sábados às 19h" }
+      ]
     },
     {
-      "icon": "🏠",
-      "title": "Comunidade Nossa Senhora",
-      "description": "Comunidade mariana com forte devoção e atividades pastorais.",
-      "location": "Capela Nossa Senhora - Bairro Sul"
+      "name": "Capela Sagrado Coração de Jesus",
+      "image": "",
+      "details": [
+        { "label": "Festa do Padroeiro", "value": "Móvel, sexta-feira da semana seguinte a Corpus Christi" },
+        { "label": "Missas", "value": "1ª Sexta-feira do mês às 19h30 e Domingos às 9h" }
+      ]
     },
     {
-      "icon": "🏠",
-      "title": "Comunidade Santo Antônio",
-      "description": "Comunidade acolhedora com diversas atividades para famílias.",
-      "location": "Capela Santo Antônio - Bairro Leste"
+      "name": "Irmãs Felicianas Franciscanas",
+      "image": "",
+      "details": [
+        { "label": "Fundadora", "value": "Bem-aventurada Maria Ângela" }
+      ]
+    },
+    {
+      "name": "Capela Divino Espírito Santo",
+      "image": "",
+      "details": [
+        { "label": "Festa do Padroeiro", "value": "Pentecostes (50 dias depois da Páscoa)" },
+        { "label": "Missa", "value": "Domingo às 10h" }
+      ]
+    },
+    {
+      "name": "Capela Nossa Senhora Rainha",
+      "image": "",
+      "details": [
+        { "label": "Festa da Padroeira", "value": "22 de agosto" },
+        { "label": "Missas", "value": "Domingos às 9h" },
+        { "label": "Novena de N. Senhora", "value": "4ª feira às 19h30" },
+        { "label": "AA Rainha da Alvorada", "value": "2ª feira às 19h30" }
+      ]
+    },
+    {
+      "name": "Ursulinas do Coração de Jesus Agonizante",
+      "image": "",
+      "details": [
+        { "label": "Fundadora", "value": "Santa Úrsula Ledóchowska" }
+      ]
+    },
+    {
+      "name": "Capela Santo Aníbal Maria Di Francia",
+      "image": "",
+      "details": [
+        { "label": "Festa do Padroeiro", "value": "01 de junho" },
+        { "label": "Festa da Copadroeira", "value": "29 de maio" },
+        { "label": "Missa", "value": "Domingo às 10h30" }
+      ]
+    },
+    {
+      "name": "Capela Bem-aventurada Maria Ângela",
+      "image": "",
+      "details": [
+        { "label": "Festa da Padroeira", "value": "10 de outubro" },
+        { "label": "Missa", "value": "Sábado às 19h" }
+      ]
+    },
+    {
+      "name": "Capela Santa Bernadete",
+      "image": "",
+      "details": [
+        { "label": "Festa da Padroeira", "value": "16 de abril" },
+        { "label": "Missa", "value": "Sábado às 19h" }
+      ]
     }
   ],
   "cta": {

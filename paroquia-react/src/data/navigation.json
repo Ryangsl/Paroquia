@@ -2,7 +2,6 @@
   { "label": "Início", "path": "/" },
   { "label": "Sobre Nós", "path": "/sobre" },
   { "label": "Horários", "path": "/horarios" },
-  { "label": "Eventos", "path": "/eventos" },
-  { "label": "Contato", "path": "/contato" },
-  { "label": "Comunidades", "path": "/comunidades" }
+  { "label": "Comunidades", "path": "/comunidades" },
+  { "label": "Contato", "path": "/contato" }
 ]

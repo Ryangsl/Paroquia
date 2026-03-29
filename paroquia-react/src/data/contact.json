@@ -13,17 +13,16 @@
         "lines": [
           "Paróquia Nossa Senhora Aparecida",
           "Curitiba - Paraná",
-          "R. Alberto Pasqualini, 654",
-          "CEP: 81550-310"
+          "Rua Augusto Steembock, 100",
+          "Estacionamento: Rua Capitão Leônidas Marques, 1845"
         ]
       },
       {
         "icon": "📞",
         "title": "Telefones",
         "entries": [
-          { "label": "Secretaria", "value": "(41) XXXX-XXXX" },
-          { "label": "WhatsApp", "value": "(41) 9XXXX-XXXX" },
-          { "label": "Emergências", "value": "(41) 9XXXX-XXXX" }
+          { "label": "Secretaria", "value": "(41) 3369-2143" },
+          { "label": "WhatsApp", "value": "(41) 98508-7251" }
         ]
       },
       {
@@ -48,9 +47,7 @@
         "icon": "🌐",
         "title": "Redes Sociais",
         "socialButtons": [
-          { "label": "📘 Facebook", "url": "#" },
-          { "label": "📷 Instagram", "url": "#" },
-          { "label": "📹 YouTube", "url": "#" }
+          { "label": "Linktr.ee", "url": "https://linktr.ee/aparecidacuritiba" }
         ]
       }
     ]

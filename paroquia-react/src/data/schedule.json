@@ -1,133 +1,116 @@
 {
   "pageHeader": {
-    "title": "Horários das Celebrações",
-    "subtitle": "Confira os horários das missas, confissões e outras celebrações"
+    "title": "Horários e Programação",
+    "subtitle": "Confira os horários das missas, celebrações e informações da paróquia"
   },
   "massSchedule": {
-    "sectionTitle": "Horários das Missas",
+    "sectionTitle": "Horário das Missas",
     "cards": [
       {
-        "icon": "🌅",
-        "title": "Missas Matinais",
+        "icon": "☀️",
+        "title": "Missas Dominicais",
         "times": [
-          { "day": "Segunda-feira", "time": "08h30, 10h30 e 19h" },
-          { "day": "Terça-feira", "time": "7:00h" },
-          { "day": "Quarta-feira", "time": "7:00h" },
-          { "day": "Quinta-feira", "time": "7:00h" },
-          { "day": "Sexta-feira", "time": "7:00h" },
-          { "day": "Sábado", "time": "7:00h" },
           { "day": "Domingo", "time": "08h30, 10h30 e 19h" }
         ]
       },
       {
-        "icon": "🌙",
-        "title": "Missas Noturnas",
+        "icon": "📅",
+        "title": "Missas na Semana",
         "times": [
-          { "day": "Segunda-feira", "time": "19:00h" },
-          { "day": "Terça-feira", "time": "19:00h" },
-          { "day": "Quarta-feira", "time": "19:00h" },
-          { "day": "Quinta-feira", "time": "19:00h" },
-          { "day": "Sexta-feira", "time": "19:00h" },
-          { "day": "Sábado", "time": "19:00h" },
-          { "day": "Domingo", "time": "19:00h" }
+          { "day": "Quarta-feira", "time": "16h e 19h (com novena perpétua de N. Sra. Aparecida)" },
+          { "day": "Quinta-feira", "time": "19h (Seminário)" },
+          { "day": "Sexta-feira", "time": "19h" },
+          { "day": "Sábado", "time": "17h" }
         ]
       },
       {
-        "icon": "🙏",
-        "title": "Sacramento da Confissão",
+        "icon": "❤️",
+        "title": "Missas para Doentes e Idosos",
         "times": [
-          { "day": "Sábado", "time": "17:00h - 18:30h" },
-          { "day": "Domingo", "time": "30 minutos antes das missas" },
-          { "day": "Durante a semana", "time": "Mediante agendamento" }
+          { "day": "Terças-feiras", "time": "19h30" }
         ],
-        "note": "Para agendar, entre em contato com a secretaria paroquial"
+        "note": "Para fiéis que não podem ir à igreja. Agendar com a coordenação da Comunidade."
       }
     ]
   },
   "specialCelebrations": {
-    "sectionTitle": "Celebrações Especiais",
+    "sectionTitle": "Celebrações e Devoções",
     "cards": [
       {
-        "icon": "✝️",
-        "title": "Primeira Sexta-feira",
-        "description": "Adoração ao Nossa Senhora Aparecida",
-        "time": "Após a missa das 19:00h"
+        "icon": "✨",
+        "title": "Adoração ao Santíssimo Sacramento",
+        "description": "Primeira sexta-feira do mês",
+        "time": "Das 6h às 18h50"
       },
       {
-        "icon": "🌹",
-        "title": "Primeiro Sábado",
-        "description": "Devoção ao Imaculado Coração de Maria",
-        "time": "Após a missa das 7:00h"
+        "icon": "✚",
+        "title": "Confissões",
+        "description": "Segunda a sexta-feira",
+        "time": "Horário comercial"
       },
       {
-        "icon": "🕯️",
-        "title": "Adoração ao Santíssimo",
-        "description": "Todas as quintas-feiras",
-        "time": "18:00h - 19:00h"
-      },
-      {
-        "icon": "📿",
-        "title": "Terço Mariano",
+        "icon": "💐",
+        "title": "Terço das Mulheres",
         "description": "Todas as quartas-feiras",
-        "time": "18:30h"
+        "time": "15h"
+      },
+      {
+        "icon": "🗣️",
+        "title": "Terço dos Homens",
+        "description": "Todas as quartas-feiras",
+        "time": "Após a missa das 19h"
       }
     ]
   },
   "sacraments": {
-    "sectionTitle": "Outros Sacramentos",
-    "description": "Para os sacramentos abaixo, é necessário agendamento prévio",
+    "sectionTitle": "Sacramentos e Agendamentos",
+    "description": "Para os sacramentos abaixo, entre em contato para agendamento",
     "cards": [
       {
-        "title": "💒 Batismo",
+        "title": "Casamento, Bênçãos de Casas, Exéquias e Unção dos Enfermos",
         "details": [
-          { "label": "Quando", "value": "Domingos após a missa das 8:00h" },
-          { "label": "Preparação", "value": "Curso de preparação obrigatório para pais e padrinhos" },
-          { "label": "Agendamento", "value": "Na secretaria paroquial com antecedência mínima de 30 dias" }
-        ]
-      },
-      {
-        "title": "💍 Matrimônio",
-        "details": [
-          { "label": "Quando", "value": "Sábados às 16:00h ou 18:00h" },
-          { "label": "Preparação", "value": "Curso de noivos obrigatório" },
-          { "label": "Agendamento", "value": "Com antecedência mínima de 6 meses" }
-        ]
-      },
-      {
-        "title": "✝️ Unção dos Enfermos",
-        "details": [
-          { "label": "Quando", "value": "Conforme necessidade" },
-          { "label": "Como solicitar", "value": "Entre em contato com a secretaria paroquial" },
-          { "label": "Observação", "value": "Para casos de urgência, ligue a qualquer hora" }
-        ]
-      },
-      {
-        "title": "🕊️ Primeira Comunhão",
-        "details": [
-          { "label": "Quando", "value": "Conforme calendário da catequese" },
-          { "label": "Preparação", "value": "Catequese obrigatória (2 anos)" },
-          { "label": "Inscrições", "value": "Início do ano letivo na secretaria" }
-        ]
-      },
-      {
-        "title": "🔥 Crisma",
-        "details": [
-          { "label": "Quando", "value": "Conforme calendário diocesano" },
-          { "label": "Preparação", "value": "Catequese obrigatória (2 anos)" },
-          { "label": "Inscrições", "value": "Início do ano letivo na secretaria" }
+          { "label": "Agendamento", "value": "(41) 98508-7251 (WhatsApp)" },
+          { "label": "Observação", "value": "Entre em contato para combinar data e horário" }
         ]
       }
     ]
   },
   "importantNotes": {
-    "title": "📋 Informações Importantes",
+    "title": "Informações da Paróquia",
     "items": [
-      "✓ Chegue com antecedência para participar da missa com tranquilidade",
-      "✓ Em caso de feriados, os horários podem sofrer alterações - consulte os avisos paroquiais",
-      "✓ Durante a Semana Santa e períodos especiais, há horários diferenciados",
-      "✓ Para missas de 7º dia, 30º dia e aniversário de falecimento, agende na secretaria",
-      "✓ A secretaria paroquial funciona de segunda a sexta, das 8h às 17h, e sábados das 8h às 12h",
-      "✓ Para emergências e urgências, entre em contato pelo telefone da paróquia"
+      {
+        "icon": "phone",
+        "label": "Contato",
+        "value": "(41) 98508-7251 | (41) 3369-2143",
+        "link": "tel:+5541985087251"
+      },
+      {
+        "icon": "whatsapp",
+        "label": "WhatsApp",
+        "value": "(41) 98508-7251",
+        "link": "https://wa.me/5541985087251"
+      },
+      {
+        "icon": "location",
+        "label": "Endereço",
+        "value": "Rua Augusto Steembock, 100"
+      },
+      {
+        "icon": "car",
+        "label": "Estacionamento",
+        "value": "Rua Capitão Leônidas Marques, 1845"
+      },
+      {
+        "icon": "bus",
+        "label": "Transporte Público",
+        "value": "Interbairros 3 ou Jardim Petrópolis. Descer próximo ao Posto de Saúde Uberaba de Cima."
+      },
+      {
+        "icon": "link",
+        "label": "Redes Sociais",
+        "value": "linktr.ee/aparecidacuritiba",
+        "link": "https://linktr.ee/aparecidacuritiba"
+      }
     ]
   },
   "cta": {
