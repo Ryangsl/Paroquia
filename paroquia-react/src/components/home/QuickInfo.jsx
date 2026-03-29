@@ -1,12 +1,11 @@
 import { Link } from 'react-router-dom';
 import homeData from '../../data/home.json';
 import eventsData from '../../data/events.json';
+import { getTodayISO, formatDateShort, stripTimeEmoji } from '../../utils/dateUtils';
 import styles from './QuickInfo.module.css';
 
-const MONTHS = ['JAN', 'FEV', 'MAR', 'ABR', 'MAI', 'JUN', 'JUL', 'AGO', 'SET', 'OUT', 'NOV', 'DEZ'];
-
 function getNextEvent() {
-  const today = new Date().toISOString().split('T')[0];
+  const today = getTodayISO();
   const futureEvents = eventsData.upcomingEvents.events
     .filter(e => e.date >= today)
     .sort((a, b) => a.date.localeCompare(b.date));
@@ -14,10 +13,11 @@ function getNextEvent() {
   if (futureEvents.length === 0) return null;
 
   const next = futureEvents[0];
-  const [year, month, day] = next.date.split('-').map(Number);
-  const formattedDate = `${day} de ${MONTHS[month - 1]}`;
-
-  return { title: next.title, date: formattedDate, time: next.time.replace('⏰ ', '') };
+  return {
+    title: next.title,
+    date: formatDateShort(next.date),
+    time: stripTimeEmoji(next.time),
+  };
 }
 
 export default function QuickInfo() {

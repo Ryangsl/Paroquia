@@ -22,25 +22,30 @@ npm run lint       # linting com ESLint
 - **CSS Modules**: cada componente tem seu `.module.css` ao lado
 - **JSON como fonte de dados**: todo conteudo editavel esta em `src/data/*.json` — separado do codigo React
 - **Design tokens**: variaveis CSS centralizadas em `src/assets/styles/variables.css`
-- **Hooks customizados**: `useScrollShadow` (sombra no header ao rolar), `useScrollReveal` (animacao de entrada com IntersectionObserver), `ScrollToTop` (volta ao topo na troca de rota)
-- **Eventos dinamicos**: o card "Proximo Evento" na home e a lista de eventos filtram automaticamente por data (`events.json` usa campo `date` no formato ISO `YYYY-MM-DD`)
+- **Hooks customizados**: `useScrollShadow` (sombra no header ao rolar), `useScrollReveal` (animacao de entrada com IntersectionObserver)
+- **Utilitarios de data**: `src/utils/dateUtils.js` — funcoes compartilhadas para formatar e filtrar datas
+- **Eventos dinamicos**: avisos e eventos em destaque na home, filtro por mes na pagina de eventos (`events.json` usa campo `date` ISO `YYYY-MM-DD`)
+- **Painel Admin**: rota `/admin` (oculta da navegacao) para gerenciar avisos e eventos via interface grafica (somente em dev)
 
 ## Estrutura de Pastas
 
 ```
 paroquia-react/src/
-├── assets/styles/   → variables.css, global.css, animations.css
+├── assets/styles/       → variables.css, global.css, animations.css
 ├── components/
-│   ├── layout/      → Header, Footer, Layout (Outlet), PageHeader
-│   ├── ui/          → Button, SectionHeader, CTASection (reutilizaveis)
-│   ├── home/        → Hero, Highlights, QuickInfo (com proximo evento dinamico)
-│   ├── about/       → AboutContent, ValuesGrid, MinistriesGrid
-│   ├── schedule/    → ScheduleGrid, CelebrationsGrid, SacramentsGrid, ImportantNotes
-│   ├── events/      → EventsList, ActivitiesGrid, GroupsGrid
-│   └── contact/     → ContactInfo, ContactForm, MapSection, FAQGrid
-├── data/            → 8 arquivos JSON com todo conteudo do site
-├── hooks/           → useScrollShadow, useScrollReveal, ScrollToTop
-└── pages/           → HomePage, AboutPage, SchedulePage, EventsPage, ContactPage, CommunitiesPage
+│   ├── layout/          → Header, Footer, Layout (Outlet), PageHeader, ScrollToTop
+│   ├── ui/              → Button, SectionHeader, CTASection (reutilizaveis)
+│   ├── home/            → Hero, NoticesSection, Highlights, FeaturedEvents, QuickInfo
+│   ├── about/           → AboutContent, ValuesGrid, MinistriesGrid
+│   ├── schedule/        → ScheduleGrid, CelebrationsGrid, SacramentsGrid, ImportantNotes
+│   ├── events/          → EventsList (com filtro por mes e badge de destaque), ActivitiesGrid, GroupsGrid
+│   ├── communities/     → CommunityCard
+│   └── contact/         → ContactInfo, ContactForm, MapSection, FAQGrid
+├── data/                → JSON com todo conteudo do site
+├── hooks/               → useScrollShadow, useScrollReveal
+├── utils/               → dateUtils.js (MONTHS, parseEventDate, getTodayISO, etc.)
+└── pages/               → HomePage, AboutPage, SchedulePage, EventsPage, ContactPage,
+                           CommunitiesPage, AdminPage
 ```
 
 ## Rotas
@@ -48,15 +53,17 @@ paroquia-react/src/
 - `/` → HomePage
 - `/sobre` → AboutPage
 - `/horarios` → SchedulePage
-- `/eventos` → EventsPage (oculta da navegacao, mas acessivel via URL)
+- `/eventos` → EventsPage
 - `/contato` → ContactPage
 - `/comunidades` → CommunitiesPage (padroeiros, capelas e horarios das celebracoes)
+- `/admin` → AdminPage (oculta da navegacao — somente acesso direto via URL em dev)
 
 ## Convencoes
 
 - Componentes em PascalCase com `.jsx`
 - Estilos em CSS Modules (`.module.css`) ao lado do componente
 - Dados em JSON puro em `src/data/`
+- Utilitarios puros (sem JSX) em `src/utils/`
 - Cor de destaque: dourado `#c9a227` (variavel `--accent-color`)
 - Fontes: Playfair Display (titulos) + Inter (corpo) via Google Fonts
 - Idioma do site: portugues brasileiro (pt-BR)
@@ -64,6 +71,22 @@ paroquia-react/src/
 ## Manutencao de Conteudo
 
 Para atualizar textos, horarios, eventos ou qualquer conteudo do site, edite apenas os arquivos JSON em `src/data/`. Os componentes React leem esses arquivos diretamente — nao e necessario mexer em codigo.
+
+### Alternativa: Painel Admin (recomendado para dev)
+
+Com o servidor de desenvolvimento rodando (`npm run dev`), acesse `http://localhost:5173/admin`.
+Requer a variavel de ambiente `VITE_ADMIN_KEY` definida em `.env` (ver `.env.example`).
+O painel permite criar, editar e excluir avisos e eventos sem editar JSON manualmente.
+
+### Avisos Importantes
+
+Edite o bloco `notices` em `home.json`. Cada aviso tem o campo `"active": true/false` para
+ativar ou desativar sem remover o item. Avisos inativos nao aparecem na home.
+
+### Eventos em Destaque
+
+Marque `"featured": true` no evento em `events.json`. Eventos em destaque aparecem
+na secao especial da home E com badge na pagina de eventos.
 
 ### Comunidades
 

@@ -1,14 +1,9 @@
+import { useState } from 'react';
 import SectionHeader from '../ui/SectionHeader';
 import useScrollReveal from '../../hooks/useScrollReveal';
 import eventsData from '../../data/events.json';
+import { getTodayISO, parseEventDate, getMonthYear } from '../../utils/dateUtils';
 import styles from './EventsList.module.css';
-
-const MONTHS = ['JAN', 'FEV', 'MAR', 'ABR', 'MAI', 'JUN', 'JUL', 'AGO', 'SET', 'OUT', 'NOV', 'DEZ'];
-
-function parseEventDate(dateStr) {
-  const [year, month, day] = dateStr.split('-').map(Number);
-  return { day: String(day).padStart(2, '0'), month: MONTHS[month - 1] };
-}
 
 function EventCard({ event }) {
   const { ref, isVisible } = useScrollReveal();
@@ -21,7 +16,10 @@ function EventCard({ event }) {
         <span className={styles.month}>{month}</span>
       </div>
       <div className={styles.eventInfo}>
-        <h3>{event.title}</h3>
+        <div className={styles.eventTitleRow}>
+          <h3>{event.title}</h3>
+          {event.featured && <span className={styles.featuredBadge}>⭐ Destaque</span>}
+        </div>
         <p className={styles.eventTime}>{event.time}</p>
         <p className={styles.eventLocation}>{event.location}</p>
         <p className={styles.eventDescription}>{event.description}</p>
@@ -32,16 +30,53 @@ function EventCard({ event }) {
 
 export default function EventsList() {
   const { upcomingEvents } = eventsData;
-  const today = new Date().toISOString().split('T')[0];
+  const today = getTodayISO();
   const futureEvents = upcomingEvents.events.filter(e => e.date >= today);
+
+  const months = [...new Map(
+    futureEvents.map(e => {
+      const { month, year, label } = getMonthYear(e.date);
+      return [`${year}-${month}`, { key: `${year}-${month}`, label }];
+    })
+  ).values()];
+
+  const [activeMonth, setActiveMonth] = useState(null);
+
+  const filtered = activeMonth
+    ? futureEvents.filter(e => {
+        const { month, year } = getMonthYear(e.date);
+        return `${year}-${month}` === activeMonth;
+      })
+    : futureEvents;
 
   return (
     <section className={styles.events}>
       <div className="container">
         <SectionHeader title={upcomingEvents.sectionTitle} />
+
+        {months.length > 1 && (
+          <div className={styles.monthFilter}>
+            <button
+              className={`${styles.filterBtn} ${activeMonth === null ? styles.filterBtnActive : ''}`}
+              onClick={() => setActiveMonth(null)}
+            >
+              Todos
+            </button>
+            {months.map(m => (
+              <button
+                key={m.key}
+                className={`${styles.filterBtn} ${activeMonth === m.key ? styles.filterBtnActive : ''}`}
+                onClick={() => setActiveMonth(m.key)}
+              >
+                {m.label}
+              </button>
+            ))}
+          </div>
+        )}
+
         <div className={styles.eventsGrid}>
-          {futureEvents.length > 0 ? (
-            futureEvents.map((event, i) => (
+          {filtered.length > 0 ? (
+            filtered.map((event, i) => (
               <EventCard key={i} event={event} />
             ))
           ) : (

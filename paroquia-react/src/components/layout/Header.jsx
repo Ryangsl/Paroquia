@@ -11,7 +11,8 @@ export default function Header() {
   const location = useLocation();
 
   useEffect(() => {
-    setIsMenuOpen(false);
+    if (isMenuOpen) setIsMenuOpen(false);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location.pathname]);
 
   return (

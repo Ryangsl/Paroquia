@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import ScrollToTop from './hooks/ScrollToTop';
+import ScrollToTop from './components/layout/ScrollToTop';
 import Layout from './components/layout/Layout';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
@@ -7,6 +7,7 @@ import SchedulePage from './pages/SchedulePage';
 import EventsPage from './pages/EventsPage';
 import ContactPage from './pages/ContactPage';
 import CommunitiesPage from './pages/CommunitiesPage';
+import AdminPage from './pages/AdminPage';
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="contato" element={<ContactPage />} />
           <Route path="comunidades" element={<CommunitiesPage />} />
         </Route>
+        <Route path="/admin" element={<AdminPage />} />
       </Routes>
     </BrowserRouter>
   );
