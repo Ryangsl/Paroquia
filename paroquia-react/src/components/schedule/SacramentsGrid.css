@@ -3,7 +3,7 @@
     background-color: var(--secondary-color);
 }
 
-.sacramentsGrid {
+.sacraments-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--spacing-md);
@@ -12,7 +12,7 @@
     margin: 0 auto;
 }
 
-.sacramentCard {
+.sacraments-card {
     background-color: var(--primary-color);
     padding: var(--spacing-lg);
     border-radius: var(--radius-lg);
@@ -25,25 +25,25 @@
                 box-shadow var(--transition-speed) var(--ease-out);
 }
 
-.sacramentCard:hover {
+.sacraments-card:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-md);
 }
 
-.sacramentCard h3 {
+.sacraments-card h3 {
     font-family: var(--font-heading);
     color: var(--text-primary);
     margin-bottom: var(--spacing-sm);
     font-size: 1.3rem;
 }
 
-.sacramentCard p {
+.sacraments-card p {
     color: var(--text-secondary);
     margin-bottom: var(--spacing-xs);
     line-height: 1.7;
 }
 
-.sacramentCard strong {
+.sacraments-card strong {
     color: var(--text-primary);
     font-size: 1.05rem;
 }

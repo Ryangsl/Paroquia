@@ -1,4 +1,4 @@
-@keyframes float {
+@keyframes hero-float {
     0%, 100% {
         transform: translate(-50%, -50%) translateY(0);
     }
@@ -7,7 +7,7 @@
     }
 }
 
-@keyframes sparkle {
+@keyframes hero-sparkle {
     0%, 100% {
         opacity: 0;
         transform: scale(0.5);
@@ -18,7 +18,7 @@
     }
 }
 
-@keyframes fadeInUp {
+@keyframes hero-fadeInUp {
     from {
         opacity: 0;
         transform: translateY(30px);
@@ -50,7 +50,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 0;
-    animation: float 6s ease-in-out infinite;
+    animation: hero-float 6s ease-in-out infinite;
     pointer-events: none;
 }
 
@@ -71,19 +71,19 @@
         radial-gradient(2px 2px at 60% 40%, rgba(201, 162, 39, 0.2) 50%, transparent 100%);
     z-index: 0;
     pointer-events: none;
-    animation: sparkle 8s ease-in-out infinite;
+    animation: hero-sparkle 8s ease-in-out infinite;
 }
 
-.heroContent {
+.hero-content {
     text-align: center;
     position: relative;
     z-index: 1;
     padding: var(--spacing-xl) var(--spacing-md);
     max-width: 800px;
-    animation: fadeInUp 0.8s var(--ease-out) both;
+    animation: hero-fadeInUp 0.8s var(--ease-out) both;
 }
 
-.heroTitle {
+.hero-title {
     font-family: var(--font-heading);
     font-size: 4rem;
     margin-bottom: var(--spacing-md);
@@ -96,16 +96,16 @@
     text-shadow: none;
 }
 
-.heroSubtitle {
+.hero-subtitle {
     font-size: 1.5rem;
     color: var(--accent-color);
     margin-bottom: var(--spacing-md);
     font-weight: 600;
     letter-spacing: 0.03em;
-    animation: fadeInUp 0.8s var(--ease-out) 0.15s both;
+    animation: hero-fadeInUp 0.8s var(--ease-out) 0.15s both;
 }
 
-.heroText {
+.hero-text {
     font-size: 1.2rem;
     color: var(--text-secondary);
     margin-bottom: var(--spacing-xl);
@@ -113,29 +113,29 @@
     margin-left: auto;
     margin-right: auto;
     line-height: 1.7;
-    animation: fadeInUp 0.8s var(--ease-out) 0.3s both;
+    animation: hero-fadeInUp 0.8s var(--ease-out) 0.3s both;
 }
 
-.heroButtons {
+.hero-buttons {
     display: flex;
     gap: var(--spacing-md);
     justify-content: center;
     flex-wrap: wrap;
-    animation: fadeInUp 0.8s var(--ease-out) 0.45s both;
+    animation: hero-fadeInUp 0.8s var(--ease-out) 0.45s both;
 }
 
-.heroButtons a,
-.heroButtons button {
+.hero-buttons a,
+.hero-buttons button {
     min-width: 180px;
 }
 
 /* Tablet */
 @media (max-width: 992px) {
-    .heroTitle {
+    .hero-title {
         font-size: 3.2rem;
     }
 
-    .heroText {
+    .hero-text {
         font-size: 1.1rem;
     }
 }
@@ -150,24 +150,24 @@
         font-size: 16rem;
     }
 
-    .heroContent {
+    .hero-content {
         padding: var(--spacing-lg) var(--spacing-sm);
     }
 
-    .heroTitle {
+    .hero-title {
         font-size: 2.6rem;
     }
 
-    .heroSubtitle {
+    .hero-subtitle {
         font-size: 1.2rem;
     }
 
-    .heroText {
+    .hero-text {
         font-size: 1.05rem;
         margin-bottom: var(--spacing-lg);
     }
 
-    .heroButtons {
+    .hero-buttons {
         flex-direction: column;
         align-items: center;
         gap: var(--spacing-sm);
@@ -176,11 +176,11 @@
 
 /* Small phones */
 @media (max-width: 480px) {
-    .heroTitle {
+    .hero-title {
         font-size: 2rem;
     }
 
-    .heroSubtitle {
+    .hero-subtitle {
         font-size: 1.05rem;
     }
 

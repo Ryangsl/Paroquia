@@ -1,20 +1,20 @@
 import SectionHeader from '../ui/SectionHeader';
 import contactData from '../../data/contact.json';
-import styles from './MapSection.module.css';
+import './MapSection.css';
 
 export default function MapSection() {
   const { map } = contactData;
 
   return (
-    <section className={styles.mapSection}>
+    <section className="map-section">
       <div className="container">
         <SectionHeader title={map.sectionTitle} />
-        <div className={styles.mapPlaceholder}>
-          <div className={styles.mapContent}>
-            <span className={styles.mapIcon}>🗺️</span>
+        <div className="map-placeholder">
+          <div className="map-content">
+            <span className="map-icon">🗺️</span>
             <h3>{map.title}</h3>
             <p>{map.subtitle}</p>
-            <div className={styles.mapEmbed}>
+            <div className="map-embed">
               <iframe
                 src={map.iframeSrc}
                 width="600"

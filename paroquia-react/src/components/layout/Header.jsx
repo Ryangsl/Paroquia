@@ -3,7 +3,7 @@ import { NavLink, Link, useLocation } from 'react-router-dom';
 import useScrollShadow from '../../hooks/useScrollShadow';
 import navigation from '../../data/navigation.json';
 import siteConfig from '../../data/siteConfig.json';
-import styles from './Header.module.css';
+import './Header.css';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,16 +16,16 @@ export default function Header() {
   }, [location.pathname]);
 
   return (
-    <header className={`${styles.header} ${isScrolled ? styles.headerScrolled : ''}`}>
-      <nav className={styles.navbar}>
+    <header className={`header ${isScrolled ? 'header-scrolled' : ''}`}>
+      <nav className="navbar">
         <div className="container">
-          <div className={styles.navWrapper}>
-            <Link to="/" className={styles.logo}>
-              <span className={styles.crossIcon}>{siteConfig.crossIcon}</span>
-              <span className={styles.churchName}>{siteConfig.parishName}</span>
+          <div className="nav-wrapper">
+            <Link to="/" className="header-logo">
+              <span className="header-cross-icon">{siteConfig.crossIcon}</span>
+              <span className="header-church-name">{siteConfig.parishName}</span>
             </Link>
             <button
-              className={`${styles.mobileMenuToggle} ${isMenuOpen ? styles.menuOpen : ''}`}
+              className={`mobile-menu-toggle ${isMenuOpen ? 'menu-open' : ''}`}
               aria-label="Toggle menu"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
@@ -33,12 +33,12 @@ export default function Header() {
               <span></span>
               <span></span>
             </button>
-            <ul className={`${styles.navMenu} ${isMenuOpen ? styles.navMenuActive : ''}`}>
+            <ul className={`nav-menu ${isMenuOpen ? 'nav-menu-active' : ''}`}>
               {navigation.map((item) => (
                 <li key={item.path}>
                   <NavLink
                     to={item.path}
-                    className={({ isActive }) => `${styles.navLink} ${isActive ? styles.active : ''}`}
+                    className={({ isActive }) => `nav-link ${isActive ? 'nav-link-active' : ''}`}
                     end={item.path === '/'}
                   >
                     {item.label}

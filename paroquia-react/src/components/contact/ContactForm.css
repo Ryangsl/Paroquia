@@ -1,44 +1,44 @@
-.contactFormWrapper {
+.contact-form-wrapper {
     background-color: var(--primary-color);
     padding: var(--spacing-lg);
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-md);
 }
 
-.contactFormWrapper h2 {
+.contact-form-wrapper h2 {
     font-family: var(--font-heading);
     color: var(--text-primary);
     margin-bottom: var(--spacing-xs);
     font-size: 1.6rem;
 }
 
-.formIntro {
+.contact-form-intro {
     color: var(--text-secondary);
     margin-bottom: var(--spacing-md);
     line-height: 1.6;
 }
 
-.contactForm {
+.contact-form {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-sm);
 }
 
-.formGroup {
+.contact-form-group {
     display: flex;
     flex-direction: column;
 }
 
-.formGroup label {
+.contact-form-group label {
     margin-bottom: var(--spacing-xs);
     color: var(--text-primary);
     font-weight: 600;
     font-size: 0.95rem;
 }
 
-.formGroup input,
-.formGroup textarea,
-.formGroup select {
+.contact-form-group input,
+.contact-form-group textarea,
+.contact-form-group select {
     padding: 14px var(--spacing-sm);
     border: 2px solid var(--border-color);
     border-radius: var(--radius-md);
@@ -50,19 +50,19 @@
     background-color: var(--primary-color);
 }
 
-.formGroup input:focus,
-.formGroup textarea:focus,
-.formGroup select:focus {
+.contact-form-group input:focus,
+.contact-form-group textarea:focus,
+.contact-form-group select:focus {
     outline: none;
     border-color: var(--accent-color);
     box-shadow: var(--shadow-gold);
 }
 
-.formGroup textarea {
+.contact-form-group textarea {
     resize: vertical;
 }
 
-.submitBtn {
+.contact-form-submit-btn {
     display: inline-block;
     padding: 14px var(--spacing-lg);
     text-decoration: none;
@@ -77,17 +77,17 @@
     letter-spacing: 0.02em;
 }
 
-.submitBtn:hover {
+.contact-form-submit-btn:hover {
     transform: translateY(-3px);
     box-shadow: var(--shadow-gold-lg);
     filter: brightness(1.05);
 }
 
-.submitBtn:active {
+.contact-form-submit-btn:active {
     transform: translateY(-1px);
 }
 
-.formNote {
+.contact-form-note {
     font-size: 0.9rem;
     color: var(--text-secondary);
     margin-top: var(--spacing-sm);

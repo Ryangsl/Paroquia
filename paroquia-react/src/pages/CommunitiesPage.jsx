@@ -3,7 +3,7 @@ import SectionHeader from '../components/ui/SectionHeader';
 import CTASection from '../components/ui/CTASection';
 import CommunityCard from '../components/communities/CommunityCard';
 import communitiesData from '../data/communities.json';
-import styles from './CommunitiesPage.module.css';
+import './CommunitiesPage.css';
 
 export default function CommunitiesPage() {
   return (
@@ -13,10 +13,10 @@ export default function CommunitiesPage() {
         subtitle={communitiesData.pageHeader.subtitle}
       />
 
-      <section className={styles.communitiesSection}>
+      <section className="communities-section">
         <div className="container">
           <SectionHeader title="Padroeiros(as) e Horários das Celebrações na Comunidade" />
-          <div className={styles.communitiesGrid}>
+          <div className="communities-grid">
             {communitiesData.communities.map((community, i) => (
               <CommunityCard key={i} community={community} />
             ))}

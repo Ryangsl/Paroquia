@@ -1,15 +1,15 @@
-.faqSection {
+.faq-section {
     padding: var(--spacing-xl) 0;
     background-color: var(--primary-color);
 }
 
-.faqGrid {
+.faq-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--spacing-md);
 }
 
-.faqItem {
+.faq-item {
     background-color: var(--secondary-color);
     padding: var(--spacing-md) var(--spacing-md) var(--spacing-md) calc(var(--spacing-md) + 4px);
     border-radius: var(--radius-md);
@@ -19,14 +19,14 @@
                 box-shadow var(--transition-speed) var(--ease-out);
 }
 
-.faqItem:hover {
+.faq-item:hover {
     border-left-width: 6px;
     padding-left: var(--spacing-md);
     background-color: var(--bg-warm);
     box-shadow: var(--shadow-sm);
 }
 
-.faqItem h3 {
+.faq-item h3 {
     color: var(--text-primary);
     margin-bottom: var(--spacing-xs);
     font-size: 1.2rem;
@@ -34,7 +34,7 @@
     line-height: 1.4;
 }
 
-.faqItem p {
+.faq-item p {
     color: var(--text-secondary);
     line-height: 1.7;
 }

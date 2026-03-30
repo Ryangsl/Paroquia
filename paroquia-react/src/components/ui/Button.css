@@ -27,70 +27,70 @@
 }
 
 /* Primary Button */
-.primary {
+.btn-primary {
     background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-dark) 100%);
     color: #fff;
     border-color: var(--accent-color);
     box-shadow: var(--shadow-sm);
 }
 
-.primary:hover {
+.btn-primary:hover {
     background: linear-gradient(135deg, var(--accent-light) 0%, var(--accent-color) 100%);
     color: #fff;
     transform: translateY(-2px);
     box-shadow: var(--shadow-gold-lg);
 }
 
-.primary:active {
+.btn-primary:active {
     transform: translateY(0) scale(0.97);
     box-shadow: var(--shadow-gold);
 }
 
 /* Secondary Button */
-.secondary {
+.btn-secondary {
     background-color: transparent;
     color: var(--text-primary);
     border-color: var(--text-primary);
     box-shadow: none;
 }
 
-.secondary:hover {
+.btn-secondary:hover {
     background-color: var(--text-primary);
     color: var(--primary-color);
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
 }
 
-.secondary:active {
+.btn-secondary:active {
     transform: translateY(0) scale(0.97);
 }
 
 /* Pill shape modifier */
-.pill {
+.btn-pill {
     border-radius: var(--radius-full);
 }
 
 /* Dark background variants */
-.primaryOnDark {
+.btn-primaryOnDark {
     background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-dark) 100%);
     color: #fff;
     border-color: var(--accent-color);
     box-shadow: var(--shadow-sm);
 }
 
-.primaryOnDark:hover {
+.btn-primaryOnDark:hover {
     background: linear-gradient(135deg, var(--accent-light) 0%, var(--accent-color) 100%);
     box-shadow: var(--shadow-gold-lg);
     transform: translateY(-2px);
 }
 
-.secondaryOnDark {
+.btn-secondaryOnDark {
     background-color: transparent;
     color: #fff;
     border-color: rgba(255, 255, 255, 0.6);
 }
 
-.secondaryOnDark:hover {
+.btn-secondaryOnDark:hover {
     background-color: rgba(255, 255, 255, 0.12);
     border-color: #fff;
     color: #fff;

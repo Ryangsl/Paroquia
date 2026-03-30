@@ -1,11 +1,11 @@
-import styles from './SectionHeader.module.css';
+import './SectionHeader.css';
 
 export default function SectionHeader({ title, description }) {
   return (
-    <div className={styles.sectionHeader}>
-      <h2 className={styles.sectionTitle}>{title}</h2>
-      <div className={styles.titleUnderline}></div>
-      {description && <p className={styles.sectionDescription}>{description}</p>}
+    <div className="section-header">
+      <h2 className="section-title">{title}</h2>
+      <div className="title-underline"></div>
+      {description && <p className="section-description">{description}</p>}
     </div>
   );
 }

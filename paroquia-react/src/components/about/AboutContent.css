@@ -2,14 +2,14 @@
     background-color: var(--primary-color);
 }
 
-.aboutContent {
+.about-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-xl);
     align-items: center;
 }
 
-.aboutText h2 {
+.about-text h2 {
     font-family: var(--font-heading);
     color: var(--text-primary);
     margin-bottom: var(--spacing-sm);
@@ -18,11 +18,11 @@
     letter-spacing: -0.01em;
 }
 
-.aboutText h2:first-child {
+.about-text h2:first-child {
     margin-top: 0;
 }
 
-.aboutText p {
+.about-text p {
     margin-bottom: var(--spacing-sm);
     color: var(--text-secondary);
     font-size: 1.1rem;
@@ -30,12 +30,12 @@
     letter-spacing: 0.01em;
 }
 
-.missionList {
+.about-mission-list {
     list-style: none;
     margin: var(--spacing-sm) 0;
 }
 
-.missionList li {
+.about-mission-list li {
     padding: var(--spacing-xs) 0 var(--spacing-xs) var(--spacing-sm);
     color: var(--text-secondary);
     font-size: 1.05rem;
@@ -46,20 +46,20 @@
                 background-color var(--transition-speed) var(--ease-out);
 }
 
-.missionList li:hover {
+.about-mission-list li:hover {
     border-left-color: var(--accent-color);
     padding-left: calc(var(--spacing-sm) + 4px);
     background-color: var(--bg-accent-subtle);
     border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 }
 
-.aboutImage {
+.about-image {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.imagePlaceholder {
+.about-image-placeholder {
     width: 100%;
     max-width: 400px;
     aspect-ratio: 1;
@@ -71,10 +71,10 @@
     align-items: center;
     border: 3px solid var(--accent-color);
     box-shadow: var(--shadow-lg);
-    animation: pulseGlow 3s ease-in-out infinite;
+    animation: about-pulseGlow 3s ease-in-out infinite;
 }
 
-@keyframes pulseGlow {
+@keyframes about-pulseGlow {
     0%, 100% {
         box-shadow: var(--shadow-lg), 0 0 20px rgba(201, 162, 39, 0.1);
     }
@@ -83,13 +83,13 @@
     }
 }
 
-.crossIconLarge {
+.about-cross-icon {
     font-size: 8rem;
     color: var(--accent-color);
     margin-bottom: var(--spacing-sm);
 }
 
-.imagePlaceholder p {
+.about-image-placeholder p {
     font-family: var(--font-heading);
     font-size: 1.2rem;
     color: var(--text-primary);
@@ -97,7 +97,7 @@
 }
 
 @media (max-width: 768px) {
-    .aboutContent {
+    .about-content {
         grid-template-columns: 1fr;
     }
 }

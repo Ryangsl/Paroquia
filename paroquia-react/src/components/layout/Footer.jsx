@@ -1,20 +1,20 @@
 import { Link } from 'react-router-dom';
 import navigation from '../../data/navigation.json';
 import siteConfig from '../../data/siteConfig.json';
-import styles from './Footer.module.css';
+import './Footer.css';
 
 export default function Footer() {
   return (
-    <footer className={styles.footer}>
+    <footer className="footer">
       <div className="container">
-        <div className={styles.footerContent}>
-          <div className={styles.footerSection}>
+        <div className="footer-content">
+          <div className="footer-section">
             <h3>{siteConfig.parishFullName.replace('Paróquia ', 'Paróquia ').split(' de ')[0]}</h3>
             <p>{siteConfig.tagline}</p>
           </div>
-          <div className={styles.footerSection}>
+          <div className="footer-section">
             <h3>Links Rápidos</h3>
-            <ul className={styles.footerLinks}>
+            <ul className="footer-links">
               {navigation.map((item) => (
                 <li key={item.path}>
                   <Link to={item.path}>{item.label}</Link>
@@ -22,18 +22,18 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-          <div className={styles.footerSection}>
+          <div className="footer-section">
             <h3>Siga-nos</h3>
-            <div className={styles.socialLinks}>
+            <div className="footer-social-links">
               {siteConfig.socialLinks.map((social) => (
-                <a key={social.label} href={social.url} className={styles.socialLink} aria-label={social.label}>
+                <a key={social.label} href={social.url} className="footer-social-link" aria-label={social.label}>
                   {social.icon}
                 </a>
               ))}
             </div>
           </div>
         </div>
-        <div className={styles.footerBottom}>
+        <div className="footer-bottom">
           <p>&copy; {new Date().getFullYear()} {siteConfig.copyright}</p>
         </div>
       </div>

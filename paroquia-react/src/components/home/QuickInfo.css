@@ -1,15 +1,15 @@
-.quickInfo {
+.quick-info {
     padding: var(--spacing-xl) 0;
     background-color: var(--primary-color);
 }
 
-.quickInfoGrid {
+.quick-info-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: var(--spacing-md);
 }
 
-.quickInfoItem {
+.quick-info-item {
     text-align: center;
     padding: var(--spacing-md) var(--spacing-md) var(--spacing-md) calc(var(--spacing-md) + 4px);
     background: linear-gradient(135deg, var(--secondary-color) 0%, var(--bg-warm) 100%);
@@ -19,29 +19,29 @@
                 transform var(--transition-speed) var(--ease-out);
 }
 
-.quickInfoItem:hover {
+.quick-info-item:hover {
     box-shadow: var(--shadow-sm);
     transform: translateY(-2px);
 }
 
-.quickInfoItem h3 {
+.quick-info-item h3 {
     font-size: 1.2rem;
     color: var(--text-primary);
     margin-bottom: var(--spacing-xs);
 }
 
-.quickInfoItem p {
+.quick-info-item p {
     color: var(--text-secondary);
     line-height: 1.6;
 }
 
-.eventTitle {
+.quick-info-event-title {
     color: var(--text-primary);
     font-weight: 600;
     line-height: 1.4;
 }
 
-.eventMeta {
+.quick-info-event-meta {
     color: var(--accent-dark);
     font-size: 0.9rem;
     font-weight: 500;

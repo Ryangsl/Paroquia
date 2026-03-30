@@ -19,7 +19,7 @@ npm run lint       # linting com ESLint
 ## Arquitetura
 
 - **React 19 + Vite 8 + React Router DOM 7**
-- **CSS Modules**: cada componente tem seu `.module.css` ao lado
+- **CSS regular com prefixo por componente**: cada componente tem seu `.css` ao lado, com classes prefixadas em kebab-case para evitar colisoes (ex: `.hero-title`, `.btn-primary`, `.admin-tab`)
 - **JSON como fonte de dados**: todo conteudo editavel esta em `src/data/*.json` — separado do codigo React
 - **Design tokens**: variaveis CSS centralizadas em `src/assets/styles/variables.css`
 - **Hooks customizados**: `useScrollShadow` (sombra no header ao rolar), `useScrollReveal` (animacao de entrada com IntersectionObserver)
@@ -61,7 +61,7 @@ paroquia-react/src/
 ## Convencoes
 
 - Componentes em PascalCase com `.jsx`
-- Estilos em CSS Modules (`.module.css`) ao lado do componente
+- Estilos em CSS regular (`.css`) ao lado do componente, com classes prefixadas em kebab-case
 - Dados em JSON puro em `src/data/`
 - Utilitarios puros (sem JSX) em `src/utils/`
 - Cor de destaque: dourado `#c9a227` (variavel `--accent-color`)

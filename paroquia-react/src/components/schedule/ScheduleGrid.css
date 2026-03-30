@@ -2,13 +2,13 @@
     background-color: var(--secondary-color);
 }
 
-.scheduleGrid {
+.schedule-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--spacing-md);
 }
 
-.scheduleCard {
+.schedule-card {
     background-color: var(--primary-color);
     padding: var(--spacing-lg);
     border-radius: var(--radius-lg);
@@ -24,22 +24,22 @@
     position: relative;
 }
 
-.scheduleCard:hover {
+.schedule-card:hover {
     transform: translateY(-6px);
     box-shadow: var(--shadow-lg);
 }
 
-.hidden {
+.schedule-card-hidden {
     opacity: 0;
     transform: translateY(20px);
 }
 
-.visible {
+.schedule-card-visible {
     opacity: 1;
     transform: translateY(0);
 }
 
-.scheduleIcon {
+.schedule-icon {
     font-size: 2.8rem;
     margin-bottom: var(--spacing-sm);
     width: 70px;
@@ -52,25 +52,25 @@
     line-height: 1;
 }
 
-.scheduleCard h3 {
+.schedule-card h3 {
     font-family: var(--font-heading);
     font-size: 1.5rem;
     color: var(--text-primary);
     margin-bottom: var(--spacing-sm);
 }
 
-.scheduleTimes p {
+.schedule-times p {
     margin-bottom: var(--spacing-xs);
     color: var(--text-secondary);
     font-size: 1rem;
     line-height: 1.7;
 }
 
-.scheduleTimes strong {
+.schedule-times strong {
     color: var(--text-primary);
 }
 
-.scheduleNote {
+.schedule-note {
     font-size: 0.9rem;
     font-style: italic;
     margin-top: var(--spacing-xs);

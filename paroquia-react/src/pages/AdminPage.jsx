@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import styles from './AdminPage.module.css';
+import './AdminPage.css';
 
 // ─── Auth ────────────────────────────────────────────────────────────────────
 
@@ -30,20 +30,20 @@ function LoginScreen({ onLogin }) {
   }
 
   return (
-    <div className={styles.loginWrapper}>
-      <form className={styles.loginForm} onSubmit={handleSubmit}>
-        <h1 className={styles.loginTitle}>🔒 Painel do Desenvolvedor</h1>
-        <p className={styles.loginSubtitle}>Acesso restrito — somente em desenvolvimento local.</p>
+    <div className="admin-login-wrapper">
+      <form className="admin-login-form" onSubmit={handleSubmit}>
+        <h1 className="admin-login-title">🔒 Painel do Desenvolvedor</h1>
+        <p className="admin-login-subtitle">Acesso restrito — somente em desenvolvimento local.</p>
         <input
           type="password"
-          className={styles.input}
+          className="admin-input"
           placeholder="Senha"
           value={password}
           onChange={e => { setPassword(e.target.value); setError(''); }}
           autoFocus
         />
-        {error && <p className={styles.errorMsg}>{error}</p>}
-        <button type="submit" className={styles.btnPrimary}>Entrar</button>
+        {error && <p className="admin-error-msg">{error}</p>}
+        <button type="submit" className="admin-btn-primary">Entrar</button>
       </form>
     </div>
   );
@@ -55,36 +55,36 @@ const EMPTY_NOTICE = { id: Date.now(), image: '', title: '', text: '', linkText:
 
 function NoticeForm({ notice, onChange, onSave, onCancel }) {
   return (
-    <div className={styles.formCard}>
-      <div className={styles.formGrid}>
-        <label className={styles.label}>
+    <div className="admin-form-card">
+      <div className="admin-form-grid">
+        <label className="admin-label">
           Título *
-          <input className={styles.input} value={notice.title} onChange={e => onChange({ ...notice, title: e.target.value })} />
+          <input className="admin-input" value={notice.title} onChange={e => onChange({ ...notice, title: e.target.value })} />
         </label>
-        <label className={styles.label}>
+        <label className="admin-label">
           URL da imagem (opcional)
-          <input className={styles.input} placeholder="Ex: /imagens/aviso.jpg" value={notice.image} onChange={e => onChange({ ...notice, image: e.target.value })} />
+          <input className="admin-input" placeholder="Ex: /imagens/aviso.jpg" value={notice.image} onChange={e => onChange({ ...notice, image: e.target.value })} />
         </label>
-        <label className={`${styles.label} ${styles.fullWidth}`}>
+        <label className="admin-label admin-full-width">
           Texto *
-          <textarea className={styles.textarea} value={notice.text} onChange={e => onChange({ ...notice, text: e.target.value })} rows={3} />
+          <textarea className="admin-textarea" value={notice.text} onChange={e => onChange({ ...notice, text: e.target.value })} rows={3} />
         </label>
-        <label className={styles.label}>
+        <label className="admin-label">
           Texto do link
-          <input className={styles.input} placeholder="Ex: Saiba mais" value={notice.linkText} onChange={e => onChange({ ...notice, linkText: e.target.value })} />
+          <input className="admin-input" placeholder="Ex: Saiba mais" value={notice.linkText} onChange={e => onChange({ ...notice, linkText: e.target.value })} />
         </label>
-        <label className={styles.label}>
+        <label className="admin-label">
           Rota do link
-          <input className={styles.input} placeholder="Ex: /eventos" value={notice.linkHref} onChange={e => onChange({ ...notice, linkHref: e.target.value })} />
+          <input className="admin-input" placeholder="Ex: /eventos" value={notice.linkHref} onChange={e => onChange({ ...notice, linkHref: e.target.value })} />
         </label>
-        <label className={`${styles.label} ${styles.checkLabel}`}>
+        <label className="admin-label admin-check-label">
           <input type="checkbox" checked={notice.active} onChange={e => onChange({ ...notice, active: e.target.checked })} />
           Aviso ativo (visível na home)
         </label>
       </div>
-      <div className={styles.formActions}>
-        <button className={styles.btnPrimary} onClick={onSave}>Salvar</button>
-        <button className={styles.btnSecondary} onClick={onCancel}>Cancelar</button>
+      <div className="admin-form-actions">
+        <button className="admin-btn-primary" onClick={onSave}>Salvar</button>
+        <button className="admin-btn-secondary" onClick={onCancel}>Cancelar</button>
       </div>
     </div>
   );
@@ -96,36 +96,36 @@ const EMPTY_EVENT = { date: '', title: '', time: '', location: '', description: 
 
 function EventForm({ event, onChange, onSave, onCancel }) {
   return (
-    <div className={styles.formCard}>
-      <div className={styles.formGrid}>
-        <label className={styles.label}>
+    <div className="admin-form-card">
+      <div className="admin-form-grid">
+        <label className="admin-label">
           Data *
-          <input className={styles.input} type="date" value={event.date} onChange={e => onChange({ ...event, date: e.target.value })} />
+          <input className="admin-input" type="date" value={event.date} onChange={e => onChange({ ...event, date: e.target.value })} />
         </label>
-        <label className={styles.label}>
+        <label className="admin-label">
           Título *
-          <input className={styles.input} value={event.title} onChange={e => onChange({ ...event, title: e.target.value })} />
+          <input className="admin-input" value={event.title} onChange={e => onChange({ ...event, title: e.target.value })} />
         </label>
-        <label className={styles.label}>
+        <label className="admin-label">
           Horário
-          <input className={styles.input} placeholder="Ex: 19h30" value={event.time} onChange={e => onChange({ ...event, time: e.target.value })} />
+          <input className="admin-input" placeholder="Ex: 19h30" value={event.time} onChange={e => onChange({ ...event, time: e.target.value })} />
         </label>
-        <label className={styles.label}>
+        <label className="admin-label">
           Local
-          <input className={styles.input} placeholder="Ex: Igreja Matriz" value={event.location} onChange={e => onChange({ ...event, location: e.target.value })} />
+          <input className="admin-input" placeholder="Ex: Igreja Matriz" value={event.location} onChange={e => onChange({ ...event, location: e.target.value })} />
         </label>
-        <label className={`${styles.label} ${styles.fullWidth}`}>
+        <label className="admin-label admin-full-width">
           Descrição
-          <textarea className={styles.textarea} value={event.description} onChange={e => onChange({ ...event, description: e.target.value })} rows={3} />
+          <textarea className="admin-textarea" value={event.description} onChange={e => onChange({ ...event, description: e.target.value })} rows={3} />
         </label>
-        <label className={`${styles.label} ${styles.checkLabel}`}>
+        <label className="admin-label admin-check-label">
           <input type="checkbox" checked={event.featured} onChange={e => onChange({ ...event, featured: e.target.checked })} />
           Evento em Destaque (aparece na home)
         </label>
       </div>
-      <div className={styles.formActions}>
-        <button className={styles.btnPrimary} onClick={onSave}>Salvar</button>
-        <button className={styles.btnSecondary} onClick={onCancel}>Cancelar</button>
+      <div className="admin-form-actions">
+        <button className="admin-btn-primary" onClick={onSave}>Salvar</button>
+        <button className="admin-btn-secondary" onClick={onCancel}>Cancelar</button>
       </div>
     </div>
   );
@@ -226,33 +226,33 @@ function AdminPanel() {
   }
 
   return (
-    <div className={styles.adminWrapper}>
-      <header className={styles.adminHeader}>
+    <div className="admin-wrapper">
+      <header className="admin-header">
         <div>
-          <h1 className={styles.adminTitle}>🛠 Painel Admin</h1>
-          <p className={styles.adminSubtitle}>Paróquia Nossa Senhora Aparecida — somente dev</p>
+          <h1 className="admin-title">🛠 Painel Admin</h1>
+          <p className="admin-subtitle">Paróquia Nossa Senhora Aparecida — somente dev</p>
         </div>
-        <button className={styles.btnLogout} onClick={handleLogout}>Sair</button>
+        <button className="admin-btn-logout" onClick={handleLogout}>Sair</button>
       </header>
 
-      {feedback && <div className={styles.feedbackBar}>{feedback}</div>}
+      {feedback && <div className="admin-feedback-bar">{feedback}</div>}
 
-      <div className={styles.tabs}>
-        <button className={`${styles.tab} ${tab === 'notices' ? styles.tabActive : ''}`} onClick={() => setTab('notices')}>
+      <div className="admin-tabs">
+        <button className={`admin-tab ${tab === 'notices' ? 'admin-tab-active' : ''}`} onClick={() => setTab('notices')}>
           📢 Avisos ({notices.length})
         </button>
-        <button className={`${styles.tab} ${tab === 'events' ? styles.tabActive : ''}`} onClick={() => setTab('events')}>
+        <button className={`admin-tab ${tab === 'events' ? 'admin-tab-active' : ''}`} onClick={() => setTab('events')}>
           📅 Eventos ({events.length})
         </button>
       </div>
 
       {/* ── NOTICES TAB ── */}
       {tab === 'notices' && (
-        <div className={styles.tabContent}>
-          <div className={styles.tabToolbar}>
-            <h2 className={styles.tabTitle}>Avisos Importantes</h2>
+        <div className="admin-tab-content">
+          <div className="admin-tab-toolbar">
+            <h2 className="admin-tab-title">Avisos Importantes</h2>
             {!newNotice && (
-              <button className={styles.btnPrimary} onClick={() => setNewNotice({ ...EMPTY_NOTICE, id: Date.now() })}>
+              <button className="admin-btn-primary" onClick={() => setNewNotice({ ...EMPTY_NOTICE, id: Date.now() })}>
                 + Novo Aviso
               </button>
             )}
@@ -260,7 +260,7 @@ function AdminPanel() {
 
           {newNotice && (
             <>
-              <p className={styles.formLabel}>Novo aviso</p>
+              <p className="admin-form-label">Novo aviso</p>
               <NoticeForm
                 notice={newNotice}
                 onChange={setNewNotice}
@@ -271,14 +271,14 @@ function AdminPanel() {
           )}
 
           {notices.length === 0 && !newNotice && (
-            <p className={styles.emptyMsg}>Nenhum aviso cadastrado.</p>
+            <p className="admin-empty-msg">Nenhum aviso cadastrado.</p>
           )}
 
           {notices.map(notice => (
             <div key={notice.id}>
               {editingNotice?.id === notice.id ? (
                 <>
-                  <p className={styles.formLabel}>Editando: {notice.title}</p>
+                  <p className="admin-form-label">Editando: {notice.title}</p>
                   <NoticeForm
                     notice={editingNotice}
                     onChange={setEditingNotice}
@@ -287,21 +287,21 @@ function AdminPanel() {
                   />
                 </>
               ) : (
-                <div className={`${styles.itemRow} ${!notice.active ? styles.itemInactive : ''}`}>
-                  <div className={styles.itemInfo}>
-                    <span className={styles.itemTitle}>{notice.title}</span>
-                    <span className={styles.itemMeta}>{notice.text.slice(0, 60)}…</span>
+                <div className={`admin-item-row ${!notice.active ? 'admin-item-inactive' : ''}`}>
+                  <div className="admin-item-info">
+                    <span className="admin-item-title">{notice.title}</span>
+                    <span className="admin-item-meta">{notice.text.slice(0, 60)}…</span>
                   </div>
-                  <div className={styles.itemActions}>
+                  <div className="admin-item-actions">
                     <button
-                      className={notice.active ? styles.btnToggleOn : styles.btnToggleOff}
+                      className={notice.active ? 'admin-btn-toggle-on' : 'admin-btn-toggle-off'}
                       onClick={() => handleToggleNotice(notice.id)}
                       title={notice.active ? 'Desativar' : 'Ativar'}
                     >
                       {notice.active ? '✅ Ativo' : '⭕ Inativo'}
                     </button>
-                    <button className={styles.btnEdit} onClick={() => setEditingNotice({ ...notice })}>Editar</button>
-                    <button className={styles.btnDelete} onClick={() => handleDeleteNotice(notice.id)}>Excluir</button>
+                    <button className="admin-btn-edit" onClick={() => setEditingNotice({ ...notice })}>Editar</button>
+                    <button className="admin-btn-delete" onClick={() => handleDeleteNotice(notice.id)}>Excluir</button>
                   </div>
                 </div>
               )}
@@ -312,11 +312,11 @@ function AdminPanel() {
 
       {/* ── EVENTS TAB ── */}
       {tab === 'events' && (
-        <div className={styles.tabContent}>
-          <div className={styles.tabToolbar}>
-            <h2 className={styles.tabTitle}>Eventos</h2>
+        <div className="admin-tab-content">
+          <div className="admin-tab-toolbar">
+            <h2 className="admin-tab-title">Eventos</h2>
             {!newEvent && (
-              <button className={styles.btnPrimary} onClick={() => setNewEvent({ ...EMPTY_EVENT })}>
+              <button className="admin-btn-primary" onClick={() => setNewEvent({ ...EMPTY_EVENT })}>
                 + Novo Evento
               </button>
             )}
@@ -324,7 +324,7 @@ function AdminPanel() {
 
           {newEvent && (
             <>
-              <p className={styles.formLabel}>Novo evento</p>
+              <p className="admin-form-label">Novo evento</p>
               <EventForm
                 event={newEvent}
                 onChange={setNewEvent}
@@ -335,14 +335,14 @@ function AdminPanel() {
           )}
 
           {events.length === 0 && !newEvent && (
-            <p className={styles.emptyMsg}>Nenhum evento cadastrado.</p>
+            <p className="admin-empty-msg">Nenhum evento cadastrado.</p>
           )}
 
           {events.map((event, idx) => (
             <div key={idx}>
               {editingEvent?.idx === idx ? (
                 <>
-                  <p className={styles.formLabel}>Editando: {event.title}</p>
+                  <p className="admin-form-label">Editando: {event.title}</p>
                   <EventForm
                     event={{ ...editingEvent, time: editingEvent.time.replace('⏰ ', ''), location: editingEvent.location.replace('📍 ', '') }}
                     onChange={updated => setEditingEvent({ ...updated, idx })}
@@ -351,22 +351,22 @@ function AdminPanel() {
                   />
                 </>
               ) : (
-                <div className={styles.itemRow}>
-                  <div className={styles.itemInfo}>
-                    <span className={styles.itemDate}>{event.date}</span>
-                    <span className={styles.itemTitle}>{event.title}</span>
-                    {event.featured && <span className={styles.featuredBadge}>⭐ Destaque</span>}
+                <div className="admin-item-row">
+                  <div className="admin-item-info">
+                    <span className="admin-item-date">{event.date}</span>
+                    <span className="admin-item-title">{event.title}</span>
+                    {event.featured && <span className="admin-featured-badge">⭐ Destaque</span>}
                   </div>
-                  <div className={styles.itemActions}>
+                  <div className="admin-item-actions">
                     <button
-                      className={event.featured ? styles.btnToggleOn : styles.btnToggleOff}
+                      className={event.featured ? 'admin-btn-toggle-on' : 'admin-btn-toggle-off'}
                       onClick={() => handleToggleFeatured(idx)}
                       title="Alternar destaque"
                     >
                       {event.featured ? '⭐ Destaque' : '☆ Normal'}
                     </button>
-                    <button className={styles.btnEdit} onClick={() => setEditingEvent({ ...event, idx })}>Editar</button>
-                    <button className={styles.btnDelete} onClick={() => handleDeleteEvent(idx)}>Excluir</button>
+                    <button className="admin-btn-edit" onClick={() => setEditingEvent({ ...event, idx })}>Editar</button>
+                    <button className="admin-btn-delete" onClick={() => handleDeleteEvent(idx)}>Excluir</button>
                   </div>
                 </div>
               )}

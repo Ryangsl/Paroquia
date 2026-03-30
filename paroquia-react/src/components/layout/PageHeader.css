@@ -1,4 +1,4 @@
-.pageHeader {
+.page-header {
     background: var(--bg-gradient-hero);
     padding: calc(var(--spacing-xl) + 70px) 0 var(--spacing-xl);
     text-align: center;
@@ -6,7 +6,7 @@
     overflow: hidden;
 }
 
-.pageHeader::before {
+.page-header::before {
     content: '\2720';
     position: absolute;
     font-size: 18rem;
@@ -29,7 +29,7 @@
     }
 }
 
-.pageTitle {
+.page-title {
     font-family: var(--font-heading);
     font-size: 3rem;
     color: var(--text-primary);
@@ -39,7 +39,7 @@
     letter-spacing: 0.03em;
 }
 
-.pageSubtitle {
+.page-subtitle {
     font-size: 1.2rem;
     color: var(--text-secondary);
     position: relative;

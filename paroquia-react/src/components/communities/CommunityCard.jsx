@@ -1,26 +1,26 @@
 import useScrollReveal from '../../hooks/useScrollReveal';
-import styles from './CommunityCard.module.css';
+import './CommunityCard.css';
 
 export default function CommunityCard({ community }) {
   const { ref, isVisible } = useScrollReveal();
 
   return (
-    <div ref={ref} className={`${styles.communityCard} ${isVisible ? styles.visible : styles.hidden}`}>
-      <div className={styles.imageWrapper}>
+    <div ref={ref} className={`community-card ${isVisible ? 'community-card-visible' : 'community-card-hidden'}`}>
+      <div className="community-card-image-wrapper">
         {community.image ? (
-          <img src={community.image} alt={community.name} className={styles.communityImage} />
+          <img src={community.image} alt={community.name} className="community-card-image" />
         ) : (
-          <div className={styles.imagePlaceholder}>
-            <span className={styles.placeholderIcon}>⛪</span>
+          <div className="community-card-image-placeholder">
+            <span className="community-card-placeholder-icon">⛪</span>
           </div>
         )}
       </div>
-      <h3 className={styles.communityName}>{community.name}</h3>
-      <div className={styles.detailsList}>
+      <h3 className="community-card-name">{community.name}</h3>
+      <div className="community-card-details-list">
         {community.details.map((detail, j) => (
-          <p key={j} className={styles.detailItem}>
-            <span className={styles.detailLabel}>{detail.label}:</span>{' '}
-            <span className={styles.detailValue}>{detail.value}</span>
+          <p key={j} className="community-card-detail-item">
+            <span className="community-card-detail-label">{detail.label}:</span>{' '}
+            <span className="community-card-detail-value">{detail.value}</span>
           </p>
         ))}
       </div>

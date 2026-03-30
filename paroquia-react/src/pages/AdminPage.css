@@ -1,6 +1,6 @@
 /* ── Layout ─────────────────────────────────────────────────────────────────── */
 
-.loginWrapper {
+.admin-login-wrapper {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -9,7 +9,7 @@
     padding: var(--spacing-md);
 }
 
-.loginForm {
+.admin-login-form {
     background-color: var(--primary-color);
     padding: var(--spacing-xl);
     border-radius: var(--radius-lg);
@@ -21,20 +21,20 @@
     gap: var(--spacing-sm);
 }
 
-.loginTitle {
+.admin-login-title {
     font-family: var(--font-heading);
     font-size: 1.5rem;
     color: var(--text-primary);
     text-align: center;
 }
 
-.loginSubtitle {
+.admin-login-subtitle {
     font-size: 0.875rem;
     color: var(--text-secondary);
     text-align: center;
 }
 
-.adminWrapper {
+.admin-wrapper {
     min-height: 100vh;
     background-color: var(--secondary-color);
     padding: var(--spacing-md);
@@ -44,7 +44,7 @@
 
 /* ── Header ─────────────────────────────────────────────────────────────────── */
 
-.adminHeader {
+.admin-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -56,14 +56,14 @@
     box-shadow: var(--shadow-sm);
 }
 
-.adminTitle {
+.admin-title {
     font-family: var(--font-heading);
     color: var(--text-primary);
     font-size: 1.4rem;
     margin: 0;
 }
 
-.adminSubtitle {
+.admin-subtitle {
     color: var(--text-secondary);
     font-size: 0.875rem;
     margin: 0;
@@ -71,7 +71,7 @@
 
 /* ── Feedback ────────────────────────────────────────────────────────────────── */
 
-.feedbackBar {
+.admin-feedback-bar {
     background: linear-gradient(135deg, var(--accent-color), var(--accent-dark));
     color: var(--primary-color);
     padding: var(--spacing-sm) var(--spacing-md);
@@ -79,23 +79,23 @@
     font-weight: 600;
     text-align: center;
     margin-bottom: var(--spacing-md);
-    animation: fadeIn 0.3s ease;
+    animation: admin-fadeIn 0.3s ease;
 }
 
-@keyframes fadeIn {
+@keyframes admin-fadeIn {
     from { opacity: 0; transform: translateY(-8px); }
     to   { opacity: 1; transform: translateY(0); }
 }
 
 /* ── Tabs ────────────────────────────────────────────────────────────────────── */
 
-.tabs {
+.admin-tabs {
     display: flex;
     gap: var(--spacing-xs);
     margin-bottom: var(--spacing-md);
 }
 
-.tab {
+.admin-tab {
     background: var(--primary-color);
     border: 2px solid transparent;
     color: var(--text-secondary);
@@ -107,45 +107,45 @@
     transition: all var(--transition-speed) var(--ease-out);
 }
 
-.tab:hover {
+.admin-tab:hover {
     border-color: var(--accent-color);
     color: var(--accent-color);
 }
 
-.tabActive {
+.admin-tab-active {
     border-color: var(--accent-color);
     color: var(--accent-color);
     background: var(--primary-color);
 }
 
-.tabContent {
+.admin-tab-content {
     background-color: var(--primary-color);
     border-radius: var(--radius-lg);
     padding: var(--spacing-md);
     box-shadow: var(--shadow-sm);
 }
 
-.tabToolbar {
+.admin-tab-toolbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: var(--spacing-md);
 }
 
-.tabTitle {
+.admin-tab-title {
     font-family: var(--font-heading);
     color: var(--text-primary);
     font-size: 1.2rem;
     margin: 0;
 }
 
-.formLabel {
+.admin-form-label {
     color: var(--text-secondary);
     font-size: 0.875rem;
     margin-bottom: var(--spacing-xs);
 }
 
-.emptyMsg {
+.admin-empty-msg {
     color: var(--text-secondary);
     text-align: center;
     padding: var(--spacing-lg) 0;
@@ -153,7 +153,7 @@
 
 /* ── Form ────────────────────────────────────────────────────────────────────── */
 
-.formCard {
+.admin-form-card {
     background-color: var(--secondary-color);
     border-radius: var(--radius-md);
     padding: var(--spacing-md);
@@ -161,18 +161,18 @@
     border-left: 4px solid var(--accent-color);
 }
 
-.formGrid {
+.admin-form-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-sm);
     margin-bottom: var(--spacing-md);
 }
 
-.fullWidth {
+.admin-full-width {
     grid-column: 1 / -1;
 }
 
-.label {
+.admin-label {
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -181,7 +181,7 @@
     color: var(--text-primary);
 }
 
-.checkLabel {
+.admin-check-label {
     flex-direction: row;
     align-items: center;
     gap: var(--spacing-xs);
@@ -189,7 +189,7 @@
     cursor: pointer;
 }
 
-.input {
+.admin-input {
     padding: 8px 12px;
     border: 2px solid var(--border-color, #e0e0e0);
     border-radius: var(--radius-sm);
@@ -201,12 +201,12 @@
     box-sizing: border-box;
 }
 
-.input:focus {
+.admin-input:focus {
     outline: none;
     border-color: var(--accent-color);
 }
 
-.textarea {
+.admin-textarea {
     padding: 8px 12px;
     border: 2px solid var(--border-color, #e0e0e0);
     border-radius: var(--radius-sm);
@@ -220,19 +220,19 @@
     box-sizing: border-box;
 }
 
-.textarea:focus {
+.admin-textarea:focus {
     outline: none;
     border-color: var(--accent-color);
 }
 
-.formActions {
+.admin-form-actions {
     display: flex;
     gap: var(--spacing-xs);
 }
 
 /* ── Item rows ───────────────────────────────────────────────────────────────── */
 
-.itemRow {
+.admin-item-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -244,11 +244,11 @@
     flex-wrap: wrap;
 }
 
-.itemInactive {
+.admin-item-inactive {
     opacity: 0.5;
 }
 
-.itemInfo {
+.admin-item-info {
     display: flex;
     align-items: center;
     gap: var(--spacing-sm);
@@ -256,24 +256,24 @@
     min-width: 0;
 }
 
-.itemDate {
+.admin-item-date {
     font-size: 0.8rem;
     color: var(--accent-dark);
     font-weight: 700;
     white-space: nowrap;
 }
 
-.itemTitle {
+.admin-item-title {
     font-weight: 600;
     color: var(--text-primary);
 }
 
-.itemMeta {
+.admin-item-meta {
     font-size: 0.8rem;
     color: var(--text-secondary);
 }
 
-.featuredBadge {
+.admin-featured-badge {
     background: linear-gradient(135deg, var(--accent-color), var(--accent-dark));
     color: var(--primary-color);
     font-size: 0.7rem;
@@ -283,7 +283,7 @@
     white-space: nowrap;
 }
 
-.itemActions {
+.admin-item-actions {
     display: flex;
     gap: var(--spacing-xs);
     flex-shrink: 0;
@@ -291,7 +291,7 @@
 
 /* ── Buttons ─────────────────────────────────────────────────────────────────── */
 
-.btnPrimary {
+.admin-btn-primary {
     background: linear-gradient(135deg, var(--accent-color), var(--accent-dark));
     color: var(--primary-color);
     border: none;
@@ -303,11 +303,11 @@
     transition: opacity var(--transition-speed) var(--ease-out);
 }
 
-.btnPrimary:hover {
+.admin-btn-primary:hover {
     opacity: 0.85;
 }
 
-.btnSecondary {
+.admin-btn-secondary {
     background: transparent;
     border: 2px solid var(--text-secondary);
     color: var(--text-secondary);
@@ -319,12 +319,12 @@
     transition: all var(--transition-speed) var(--ease-out);
 }
 
-.btnSecondary:hover {
+.admin-btn-secondary:hover {
     border-color: var(--text-primary);
     color: var(--text-primary);
 }
 
-.btnEdit {
+.admin-btn-edit {
     background: transparent;
     border: 2px solid var(--accent-color);
     color: var(--accent-color);
@@ -336,12 +336,12 @@
     transition: all var(--transition-speed) var(--ease-out);
 }
 
-.btnEdit:hover {
+.admin-btn-edit:hover {
     background: var(--accent-color);
     color: var(--primary-color);
 }
 
-.btnDelete {
+.admin-btn-delete {
     background: transparent;
     border: 2px solid #e53935;
     color: #e53935;
@@ -353,12 +353,12 @@
     transition: all var(--transition-speed) var(--ease-out);
 }
 
-.btnDelete:hover {
+.admin-btn-delete:hover {
     background: #e53935;
     color: #fff;
 }
 
-.btnToggleOn {
+.admin-btn-toggle-on {
     background: transparent;
     border: 2px solid #43a047;
     color: #43a047;
@@ -370,7 +370,7 @@
     transition: all var(--transition-speed) var(--ease-out);
 }
 
-.btnToggleOff {
+.admin-btn-toggle-off {
     background: transparent;
     border: 2px solid var(--text-secondary);
     color: var(--text-secondary);
@@ -382,7 +382,7 @@
     transition: all var(--transition-speed) var(--ease-out);
 }
 
-.btnLogout {
+.admin-btn-logout {
     background: transparent;
     border: 2px solid #e53935;
     color: #e53935;
@@ -394,12 +394,12 @@
     transition: all var(--transition-speed) var(--ease-out);
 }
 
-.btnLogout:hover {
+.admin-btn-logout:hover {
     background: #e53935;
     color: #fff;
 }
 
-.errorMsg {
+.admin-error-msg {
     color: #e53935;
     font-size: 0.875rem;
     text-align: center;
@@ -408,16 +408,16 @@
 /* ── Responsive ──────────────────────────────────────────────────────────────── */
 
 @media (max-width: 600px) {
-    .formGrid {
+    .admin-form-grid {
         grid-template-columns: 1fr;
     }
 
-    .itemRow {
+    .admin-item-row {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .itemActions {
+    .admin-item-actions {
         width: 100%;
         justify-content: flex-end;
     }

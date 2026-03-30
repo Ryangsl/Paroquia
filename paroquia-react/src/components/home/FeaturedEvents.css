@@ -1,9 +1,9 @@
-.featuredEvents {
+.featured-events {
     background-color: var(--secondary-color);
     padding: var(--spacing-xl) 0;
 }
 
-.sectionTitle {
+.featured-events-title {
     font-family: var(--font-heading);
     color: var(--text-primary);
     font-size: 1.5rem;
@@ -13,16 +13,16 @@
     margin-bottom: var(--spacing-md);
 }
 
-.titleIcon {
+.featured-events-title-icon {
     font-size: 1.4rem;
 }
 
-.eventsGrid {
+.featured-events-grid {
     display: grid;
     gap: var(--spacing-md);
 }
 
-.eventCard {
+.featured-event-card {
     display: flex;
     gap: var(--spacing-md);
     background-color: var(--primary-color);
@@ -34,12 +34,12 @@
                 box-shadow var(--transition-speed) var(--ease-out);
 }
 
-.eventCard:hover {
+.featured-event-card:hover {
     transform: translateX(5px) scale(1.01);
     box-shadow: var(--shadow-md);
 }
 
-.eventDate {
+.featured-event-date {
     background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-dark) 100%);
     color: var(--primary-color);
     padding: var(--spacing-sm);
@@ -53,69 +53,69 @@
     flex-shrink: 0;
 }
 
-.day {
+.featured-event-day {
     font-size: 2rem;
     font-weight: bold;
     line-height: 1;
 }
 
-.month {
+.featured-event-month {
     font-size: 1rem;
     text-transform: uppercase;
     opacity: 0.9;
 }
 
-.eventInfo {
+.featured-event-info {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-xs);
 }
 
-.eventTitle {
+.featured-event-name {
     font-family: var(--font-heading);
     color: var(--text-primary);
     margin: 0;
 }
 
-.eventTime {
+.featured-event-time {
     color: var(--accent-color);
     font-weight: 600;
     margin: 0;
 }
 
-.eventLocation {
+.featured-event-location {
     color: var(--text-secondary);
     margin: 0;
 }
 
-.eventDescription {
+.featured-event-description {
     color: var(--text-secondary);
     line-height: 1.6;
     margin: 0;
 }
 
-.footer {
+.featured-events-footer {
     margin-top: var(--spacing-md);
     text-align: right;
 }
 
-.allEventsLink {
+.featured-events-link {
     color: var(--accent-color);
     font-weight: 600;
     text-decoration: none;
     transition: color var(--transition-speed) var(--ease-out);
 }
 
-.allEventsLink:hover {
+.featured-events-link:hover {
     color: var(--accent-dark);
 }
 
 @media (max-width: 480px) {
-    .eventCard {
+    .featured-event-card {
         flex-direction: column;
     }
 
-    .eventDate {
+    .featured-event-date {
         width: 100%;
     }
 }

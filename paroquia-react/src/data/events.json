@@ -39,7 +39,7 @@
         "time": "⏰ 15:00h",
         "location": "📍 Salas de Catequese",
         "description": "Aulas de catequese para crianças e preparação para primeira comunhão. Inscrições abertas na secretaria.",
-        "featured": false
+        "featured": true
       },
       {
         "date": "2026-05-01",
@@ -55,7 +55,7 @@
         "time": "⏰ 16:00h",
         "location": "📍 Igreja Matriz",
         "description": "Celebração especial em honra a Nossa Senhora com procissão, missa solene e bênção.",
-        "featured": true
+        "featured": false
       }
     ]
   },
@@ -111,22 +111,62 @@
     "sectionTitle": "Grupos e Ministérios",
     "description": "Conheça os grupos e ministérios ativos em nossa paróquia",
     "groups": [
-      { "icon": "🎵", "title": "Coral Paroquial", "description": "Ensaios às quintas-feiras às 20h. Aberto para novos integrantes." },
-      { "icon": "👨‍👩‍👧‍👦", "title": "Pastoral Familiar", "description": "Encontros mensais para fortalecimento das famílias." },
-      { "icon": "👶", "title": "Pastoral da Criança", "description": "Acompanhamento de gestantes e crianças até 6 anos." },
-      { "icon": "🎓", "title": "Pastoral da Juventude", "description": "Atividades e formação para jovens de 15 a 29 anos." },
-      { "icon": "👴", "title": "Pastoral dos Idosos", "description": "Encontros e atividades para a terceira idade." },
-      { "icon": "🍞", "title": "Pastoral da Caridade", "description": "Assistência aos necessitados da comunidade." },
-      { "icon": "🏥", "title": "Pastoral da Saúde", "description": "Visitas a enfermos e hospitais." },
-      { "icon": "📖", "title": "Círculo Bíblico", "description": "Estudo e reflexão sobre as Sagradas Escrituras." }
+      {
+        "icon": "🎵",
+        "title": "Coral Paroquial",
+        "description": "Ensaios às quintas-feiras às 20h. Aberto para novos integrantes."
+      },
+      {
+        "icon": "👨‍👩‍👧‍👦",
+        "title": "Pastoral Familiar",
+        "description": "Encontros mensais para fortalecimento das famílias."
+      },
+      {
+        "icon": "👶",
+        "title": "Pastoral da Criança",
+        "description": "Acompanhamento de gestantes e crianças até 6 anos."
+      },
+      {
+        "icon": "🎓",
+        "title": "Pastoral da Juventude",
+        "description": "Atividades e formação para jovens de 15 a 29 anos."
+      },
+      {
+        "icon": "👴",
+        "title": "Pastoral dos Idosos",
+        "description": "Encontros e atividades para a terceira idade."
+      },
+      {
+        "icon": "🍞",
+        "title": "Pastoral da Caridade",
+        "description": "Assistência aos necessitados da comunidade."
+      },
+      {
+        "icon": "🏥",
+        "title": "Pastoral da Saúde",
+        "description": "Visitas a enfermos e hospitais."
+      },
+      {
+        "icon": "📖",
+        "title": "Círculo Bíblico",
+        "description": "Estudo e reflexão sobre as Sagradas Escrituras."
+      }
     ]
   },
   "cta": {
     "title": "Participe das Nossas Atividades!",
     "text": "Venha fazer parte da nossa comunidade. Todos são bem-vindos!",
     "buttons": [
-      { "label": "Entre em Contato", "href": "/contato", "variant": "primary" },
-      { "label": "Ver Horários", "href": "/horarios", "variant": "secondary" }
+      {
+        "label": "Entre em Contato",
+        "href": "/contato",
+        "variant": "primary"
+      },
+      {
+        "label": "Ver Horários",
+        "href": "/horarios",
+        "variant": "secondary"
+      }
     ]
   }
 }

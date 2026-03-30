@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import homeData from '../../data/home.json';
-import styles from './NoticesSection.module.css';
+import './NoticesSection.css';
 
 export default function NoticesSection() {
   const { notices } = homeData;
@@ -9,25 +9,25 @@ export default function NoticesSection() {
   if (activeItems.length === 0) return null;
 
   return (
-    <section className={styles.notices}>
+    <section className="notices">
       <div className="container">
-        <h2 className={styles.sectionTitle}>
-          <span className={styles.titleIcon}>📢</span>
+        <h2 className="notices-title">
+          <span className="notices-title-icon">📢</span>
           {notices.sectionTitle}
         </h2>
-        <div className={styles.noticesGrid}>
+        <div className="notices-grid">
           {activeItems.map(item => (
-            <div key={item.id} className={styles.noticeCard}>
+            <div key={item.id} className="notice-card">
               {item.image && (
-                <div className={styles.imageWrapper}>
-                  <img src={item.image} alt={item.title} className={styles.noticeImage} />
+                <div className="notice-image-wrapper">
+                  <img src={item.image} alt={item.title} className="notice-image" />
                 </div>
               )}
-              <div className={styles.noticeContent}>
-                <h3 className={styles.noticeTitle}>{item.title}</h3>
-                <p className={styles.noticeText}>{item.text}</p>
+              <div className="notice-content">
+                <h3 className="notice-title">{item.title}</h3>
+                <p className="notice-text">{item.text}</p>
                 {item.linkHref && item.linkText && (
-                  <Link to={item.linkHref} className={styles.noticeLink}>
+                  <Link to={item.linkHref} className="notice-link">
                     {item.linkText} →
                   </Link>
                 )}

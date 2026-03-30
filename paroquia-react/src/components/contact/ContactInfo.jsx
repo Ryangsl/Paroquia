@@ -1,17 +1,17 @@
 import contactData from '../../data/contact.json';
-import styles from './ContactInfo.module.css';
+import './ContactInfo.css';
 
 export default function ContactInfo() {
   const { contactInfo } = contactData;
 
   return (
-    <div className={styles.contactInfo}>
+    <div className="contact-info">
       <h2>{contactInfo.title}</h2>
-      <p className={styles.contactIntro}>{contactInfo.intro}</p>
+      <p className="contact-info-intro">{contactInfo.intro}</p>
 
       {contactInfo.items.map((item, i) => (
-        <div key={i} className={styles.contactItem}>
-          <div className={styles.contactIcon}>{item.icon}</div>
+        <div key={i} className="contact-info-item">
+          <div className="contact-info-icon">{item.icon}</div>
           <div>
             <h3>{item.title}</h3>
             {item.lines && item.lines.map((line, j) => (
@@ -21,9 +21,9 @@ export default function ContactInfo() {
               <p key={j}><strong>{entry.label}:</strong> {entry.value}</p>
             ))}
             {item.socialButtons && (
-              <div className={styles.socialLinksContact}>
+              <div className="contact-info-social-links">
                 {item.socialButtons.map((btn, j) => (
-                  <a key={j} href={btn.url} className={styles.socialBtn}>{btn.label}</a>
+                  <a key={j} href={btn.url} className="contact-info-social-btn">{btn.label}</a>
                 ))}
               </div>
             )}

@@ -1,8 +1,8 @@
-.contact {
+.contact-page-section {
     background-color: var(--bg-warm);
 }
 
-.contactContent {
+.contact-page-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-xl);
@@ -10,7 +10,7 @@
 }
 
 @media (max-width: 768px) {
-    .contactContent {
+    .contact-page-content {
         grid-template-columns: 1fr;
     }
 }

@@ -27,24 +27,6 @@
         "linkText": "Saiba mais",
         "linkHref": "/eventos",
         "active": true
-      },
-      {
-        "id": 1774893375894,
-        "image": "",
-        "title": "Testes segundo aviso",
-        "text": "1234",
-        "linkText": "",
-        "linkHref": "",
-        "active": true
-      },
-      {
-        "id": 1774893400100,
-        "image": "",
-        "title": "Test123213123",
-        "text": "123123123",
-        "linkText": "",
-        "linkHref": "",
-        "active": true
       }
     ]
   },

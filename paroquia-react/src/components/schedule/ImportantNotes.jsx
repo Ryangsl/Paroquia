@@ -1,5 +1,5 @@
 import scheduleData from '../../data/schedule.json';
-import styles from './ImportantNotes.module.css';
+import './ImportantNotes.css';
 
 const iconMap = {
   phone: '📞',
@@ -14,21 +14,21 @@ function NoteItem({ item }) {
   const icon = iconMap[item.icon] || '•';
 
   return (
-    <div className={styles.noteItem}>
-      <span className={styles.noteIcon} aria-hidden="true">{icon}</span>
-      <div className={styles.noteText}>
-        <span className={styles.noteLabel}>{item.label}</span>
+    <div className="important-notes-item">
+      <span className="important-notes-icon" aria-hidden="true">{icon}</span>
+      <div className="important-notes-text">
+        <span className="important-notes-label">{item.label}</span>
         {item.link ? (
           <a
             href={item.link}
-            className={styles.noteLink}
+            className="important-notes-link"
             target={item.link.startsWith('http') ? '_blank' : undefined}
             rel={item.link.startsWith('http') ? 'noopener noreferrer' : undefined}
           >
             {item.value}
           </a>
         ) : (
-          <span className={styles.noteValue}>{item.value}</span>
+          <span className="important-notes-value">{item.value}</span>
         )}
       </div>
     </div>
@@ -39,11 +39,11 @@ export default function ImportantNotes() {
   const { importantNotes } = scheduleData;
 
   return (
-    <section className={styles.importantNotes}>
+    <section className="important-notes">
       <div className="container">
-        <div className={styles.notesContent}>
+        <div className="important-notes-content">
           <h2>{importantNotes.title}</h2>
-          <div className={styles.notesGrid}>
+          <div className="important-notes-grid">
             {importantNotes.items.map((item, i) => (
               <NoteItem key={i} item={item} />
             ))}

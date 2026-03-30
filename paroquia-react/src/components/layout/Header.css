@@ -13,7 +13,7 @@
     border-bottom: 2px solid transparent;
 }
 
-.headerScrolled {
+.header-scrolled {
     box-shadow: var(--shadow-md);
     background-color: rgba(255, 255, 255, 0.95);
     border-bottom-color: var(--accent-color);
@@ -23,13 +23,13 @@
     padding: var(--spacing-sm) 0;
 }
 
-.navWrapper {
+.nav-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo {
+.header-logo {
     display: flex;
     align-items: center;
     gap: var(--spacing-xs);
@@ -40,31 +40,31 @@
     transition: opacity var(--transition-speed) var(--ease-out);
 }
 
-.logo:hover {
+.header-logo:hover {
     opacity: 0.85;
 }
 
-.crossIcon {
+.header-cross-icon {
     color: var(--accent-color);
     font-size: 2rem;
     transition: transform var(--transition-slow) var(--ease-spring);
 }
 
-.logo:hover .crossIcon {
+.header-logo:hover .header-cross-icon {
     transform: rotate(15deg) scale(1.05);
 }
 
-.churchName {
+.header-church-name {
     font-family: var(--font-heading);
 }
 
-.navMenu {
+.nav-menu {
     display: flex;
     list-style: none;
     gap: var(--spacing-xs);
 }
 
-.navLink {
+.nav-link {
     text-decoration: none;
     color: var(--text-primary);
     font-weight: 500;
@@ -75,7 +75,7 @@
     position: relative;
 }
 
-.navLink::after {
+.nav-link::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -89,20 +89,20 @@
     transform-origin: center;
 }
 
-.navLink:hover {
+.nav-link:hover {
     color: var(--accent-color);
 }
 
-.navLink:hover::after {
+.nav-link:hover::after {
     transform: translateX(-50%) scaleX(1);
 }
 
-.active {
+.nav-link-active {
     color: var(--accent-color);
     font-weight: 600;
 }
 
-.active::after {
+.nav-link-active::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -115,7 +115,7 @@
 }
 
 /* Mobile Menu Toggle */
-.mobileMenuToggle {
+.mobile-menu-toggle {
     display: none;
     flex-direction: column;
     gap: 5px;
@@ -130,7 +130,7 @@
     justify-content: center;
 }
 
-.mobileMenuToggle span {
+.mobile-menu-toggle span {
     width: 24px;
     height: 2.5px;
     background-color: var(--text-primary);
@@ -141,26 +141,26 @@
     transform-origin: center;
 }
 
-.menuOpen span:nth-child(1) {
+.menu-open span:nth-child(1) {
     transform: translateY(7.5px) rotate(45deg);
 }
 
-.menuOpen span:nth-child(2) {
+.menu-open span:nth-child(2) {
     opacity: 0;
     transform: scaleX(0);
 }
 
-.menuOpen span:nth-child(3) {
+.menu-open span:nth-child(3) {
     transform: translateY(-7.5px) rotate(-45deg);
 }
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-    .mobileMenuToggle {
+    .mobile-menu-toggle {
         display: flex;
     }
 
-    .navMenu {
+    .nav-menu {
         position: absolute;
         top: 100%;
         left: 0;
@@ -182,29 +182,29 @@
         pointer-events: none;
     }
 
-    .navMenuActive {
+    .nav-menu-active {
         transform: translateY(0);
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
     }
 
-    .navLink {
+    .nav-link {
         padding: var(--spacing-sm) var(--spacing-sm);
         border-radius: var(--radius-md);
         width: 100%;
         display: block;
     }
 
-    .navLink::after {
+    .nav-link::after {
         display: none;
     }
 
-    .navLink:hover {
+    .nav-link:hover {
         background-color: rgba(201, 162, 39, 0.08);
     }
 
-    .active {
+    .nav-link-active {
         background-color: rgba(201, 162, 39, 0.1);
         border-left: 3px solid var(--accent-color);
     }

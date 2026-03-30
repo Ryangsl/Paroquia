@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import homeData from '../../data/home.json';
 import eventsData from '../../data/events.json';
 import { getTodayISO, formatDateShort, stripTimeEmoji } from '../../utils/dateUtils';
-import styles from './QuickInfo.module.css';
+import './QuickInfo.css';
 
 function getNextEvent() {
   const today = getTodayISO();
@@ -25,20 +25,20 @@ export default function QuickInfo() {
   const nextEvent = getNextEvent();
 
   return (
-    <section className={styles.quickInfo}>
+    <section className="quick-info">
       <div className="container">
-        <div className={styles.quickInfoGrid}>
+        <div className="quick-info-grid">
           {quickInfo.map((item, i) => (
-            <div key={i} className={styles.quickInfoItem}>
+            <div key={i} className="quick-info-item">
               <h3>{item.icon} {item.title}</h3>
               <p>{item.text}</p>
             </div>
           ))}
           {nextEvent && (
-            <Link to="/eventos" className={styles.quickInfoItem} style={{ textDecoration: 'none' }}>
+            <Link to="/eventos" className="quick-info-item" style={{ textDecoration: 'none' }}>
               <h3>📌 Próximo Evento</h3>
-              <p className={styles.eventTitle}>{nextEvent.title}</p>
-              <p className={styles.eventMeta}>{nextEvent.date} — {nextEvent.time}</p>
+              <p className="quick-info-event-title">{nextEvent.title}</p>
+              <p className="quick-info-event-meta">{nextEvent.date} — {nextEvent.time}</p>
             </Link>
           )}
         </div>

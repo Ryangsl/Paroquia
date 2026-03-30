@@ -1,13 +1,13 @@
-.events {
+.events-list {
     background-color: var(--primary-color);
 }
 
-.eventsGrid {
+.events-list-grid {
     display: grid;
     gap: var(--spacing-md);
 }
 
-.eventCard {
+.event-card {
     display: flex;
     gap: var(--spacing-md);
     background-color: var(--secondary-color);
@@ -18,22 +18,22 @@
     box-shadow: var(--shadow-xs);
 }
 
-.eventCard:hover {
+.event-card:hover {
     transform: translateX(5px) scale(1.01);
     box-shadow: var(--shadow-md);
 }
 
-.hidden {
+.event-card-hidden {
     opacity: 0;
     transform: translateY(20px);
 }
 
-.visible {
+.event-card-visible {
     opacity: 1;
     transform: translateY(0);
 }
 
-.eventDate {
+.event-card-date {
     background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-dark) 100%);
     color: var(--primary-color);
     padding: var(--spacing-sm);
@@ -46,19 +46,19 @@
     box-shadow: var(--shadow-gold);
 }
 
-.day {
+.event-card-day {
     font-size: 2rem;
     font-weight: bold;
     line-height: 1;
 }
 
-.month {
+.event-card-month {
     font-size: 1rem;
     text-transform: uppercase;
     opacity: 0.9;
 }
 
-.eventTitleRow {
+.event-card-title-row {
     display: flex;
     align-items: flex-start;
     gap: var(--spacing-sm);
@@ -66,11 +66,11 @@
     margin-bottom: var(--spacing-xs);
 }
 
-.eventTitleRow h3 {
+.event-card-title-row h3 {
     margin-bottom: 0;
 }
 
-.featuredBadge {
+.event-card-featured-badge {
     background: linear-gradient(135deg, var(--accent-color), var(--accent-dark));
     color: var(--primary-color);
     font-size: 0.75rem;
@@ -81,14 +81,14 @@
     align-self: center;
 }
 
-.monthFilter {
+.events-list-month-filter {
     display: flex;
     gap: var(--spacing-xs);
     flex-wrap: wrap;
     margin-bottom: var(--spacing-md);
 }
 
-.filterBtn {
+.events-list-filter-btn {
     background: transparent;
     border: 2px solid var(--accent-color);
     color: var(--accent-color);
@@ -100,44 +100,44 @@
     transition: all var(--transition-speed) var(--ease-out);
 }
 
-.filterBtn:hover {
+.events-list-filter-btn:hover {
     background: var(--accent-color);
     color: var(--primary-color);
 }
 
-.filterBtnActive {
+.events-list-filter-btn-active {
     background: var(--accent-color);
     color: var(--primary-color);
 }
 
-.eventInfo h3 {
+.event-card-info h3 {
     font-family: var(--font-heading);
     color: var(--text-primary);
     margin-bottom: var(--spacing-xs);
 }
 
-.eventTime {
+.event-card-time {
     color: var(--accent-color);
     font-weight: 600;
     margin-bottom: var(--spacing-xs);
 }
 
-.eventLocation {
+.event-card-location {
     color: var(--text-secondary);
     margin-bottom: var(--spacing-xs);
 }
 
-.eventDescription {
+.event-card-description {
     color: var(--text-secondary);
     line-height: 1.6;
 }
 
 @media (max-width: 480px) {
-    .eventCard {
+    .event-card {
         flex-direction: column;
     }
 
-    .eventDate {
+    .event-card-date {
         width: 100%;
     }
 }

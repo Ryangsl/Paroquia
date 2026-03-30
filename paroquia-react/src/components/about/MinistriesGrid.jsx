@@ -1,17 +1,17 @@
 import SectionHeader from '../ui/SectionHeader';
 import aboutData from '../../data/about.json';
-import styles from './MinistriesGrid.module.css';
+import './MinistriesGrid.css';
 
 export default function MinistriesGrid() {
   const { ministries } = aboutData;
 
   return (
-    <section className={styles.ministries}>
+    <section className="ministries">
       <div className="container">
         <SectionHeader title={ministries.sectionTitle} description={ministries.description} />
-        <div className={styles.ministriesGrid}>
+        <div className="ministries-grid">
           {ministries.items.map((item, i) => (
-            <div key={i} className={styles.ministryCard}>
+            <div key={i} className="ministry-card">
               <h3>{item.title}</h3>
               <p>{item.description}</p>
             </div>

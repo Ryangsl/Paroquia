@@ -1,9 +1,9 @@
-.importantNotes {
+.important-notes {
     padding: var(--spacing-xl) 0;
     background-color: var(--bg-warm);
 }
 
-.notesContent {
+.important-notes-content {
     background: linear-gradient(135deg, var(--secondary-color) 0%, var(--bg-warm) 100%);
     padding: var(--spacing-lg);
     border-radius: var(--radius-lg);
@@ -11,20 +11,20 @@
     box-shadow: var(--shadow-sm);
 }
 
-.notesContent h2 {
+.important-notes-content h2 {
     font-family: var(--font-heading);
     color: var(--text-primary);
     margin-bottom: var(--spacing-md);
     font-size: 1.5rem;
 }
 
-.notesGrid {
+.important-notes-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: var(--spacing-sm);
 }
 
-.noteItem {
+.important-notes-item {
     display: flex;
     align-items: flex-start;
     gap: var(--spacing-xs);
@@ -33,11 +33,11 @@
     transition: background-color var(--transition-speed) var(--ease-out);
 }
 
-.noteItem:hover {
+.important-notes-item:hover {
     background-color: var(--bg-accent-subtle);
 }
 
-.noteIcon {
+.important-notes-icon {
     font-size: 1.3rem;
     flex-shrink: 0;
     width: 32px;
@@ -48,27 +48,27 @@
     line-height: 1;
 }
 
-.noteText {
+.important-notes-text {
     display: flex;
     flex-direction: column;
     gap: 2px;
     min-width: 0;
 }
 
-.noteLabel {
+.important-notes-label {
     font-weight: 600;
     color: var(--text-primary);
     font-size: 0.9rem;
     letter-spacing: 0.02em;
 }
 
-.noteValue {
+.important-notes-value {
     color: var(--text-secondary);
     font-size: 0.95rem;
     line-height: 1.5;
 }
 
-.noteLink {
+.important-notes-link {
     color: var(--accent-dark);
     font-size: 0.95rem;
     line-height: 1.5;
@@ -77,13 +77,13 @@
     transition: color var(--transition-speed) var(--ease-out);
 }
 
-.noteLink:hover {
+.important-notes-link:hover {
     color: var(--accent-color);
     text-decoration: underline;
 }
 
 @media (max-width: 600px) {
-    .notesGrid {
+    .important-notes-grid {
         grid-template-columns: 1fr;
     }
 }

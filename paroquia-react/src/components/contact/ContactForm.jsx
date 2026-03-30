@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import contactData from '../../data/contact.json';
-import styles from './ContactForm.module.css';
+import './ContactForm.css';
 
 export default function ContactForm() {
   const { form } = contactData;
@@ -19,26 +19,26 @@ export default function ContactForm() {
   };
 
   return (
-    <div className={styles.contactFormWrapper}>
+    <div className="contact-form-wrapper">
       <h2>{form.title}</h2>
-      <p className={styles.formIntro}>{form.intro}</p>
-      <form className={styles.contactForm} onSubmit={handleSubmit}>
-        <div className={styles.formGroup}>
+      <p className="contact-form-intro">{form.intro}</p>
+      <form className="contact-form" onSubmit={handleSubmit}>
+        <div className="contact-form-group">
           <label htmlFor="name">Nome Completo *</label>
           <input type="text" id="name" name="name" required placeholder="Seu nome completo"
             value={formData.name} onChange={handleChange} />
         </div>
-        <div className={styles.formGroup}>
+        <div className="contact-form-group">
           <label htmlFor="email">Email *</label>
           <input type="email" id="email" name="email" required placeholder="seu@email.com"
             value={formData.email} onChange={handleChange} />
         </div>
-        <div className={styles.formGroup}>
+        <div className="contact-form-group">
           <label htmlFor="phone">Telefone</label>
           <input type="tel" id="phone" name="phone" placeholder="(34) 99999-9999"
             value={formData.phone} onChange={handleChange} />
         </div>
-        <div className={styles.formGroup}>
+        <div className="contact-form-group">
           <label htmlFor="subject">Assunto *</label>
           <select id="subject" name="subject" required value={formData.subject} onChange={handleChange}>
             {form.subjects.map((s, i) => (
@@ -46,13 +46,13 @@ export default function ContactForm() {
             ))}
           </select>
         </div>
-        <div className={styles.formGroup}>
+        <div className="contact-form-group">
           <label htmlFor="message">Mensagem *</label>
           <textarea id="message" name="message" rows="6" required placeholder="Escreva sua mensagem aqui..."
             value={formData.message} onChange={handleChange}></textarea>
         </div>
-        <button type="submit" className={styles.submitBtn}>Enviar Mensagem</button>
-        <p className={styles.formNote}>* Campos obrigatórios</p>
+        <button type="submit" className="contact-form-submit-btn">Enviar Mensagem</button>
+        <p className="contact-form-note">* Campos obrigatórios</p>
       </form>
     </div>
   );

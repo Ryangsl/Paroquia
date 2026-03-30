@@ -1,17 +1,17 @@
 import SectionHeader from '../ui/SectionHeader';
 import scheduleData from '../../data/schedule.json';
-import styles from './SacramentsGrid.module.css';
+import './SacramentsGrid.css';
 
 export default function SacramentsGrid() {
   const { sacraments } = scheduleData;
 
   return (
-    <section className={styles.sacraments}>
+    <section className="sacraments">
       <div className="container">
         <SectionHeader title={sacraments.sectionTitle} description={sacraments.description} />
-        <div className={styles.sacramentsGrid}>
+        <div className="sacraments-grid">
           {sacraments.cards.map((card, i) => (
-            <div key={i} className={styles.sacramentCard}>
+            <div key={i} className="sacraments-card">
               <h3>{card.title}</h3>
               {card.details.map((d, j) => (
                 <p key={j}><strong>{d.label}:</strong> {d.value}</p>

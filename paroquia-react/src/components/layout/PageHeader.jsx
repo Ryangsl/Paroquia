@@ -1,11 +1,11 @@
-import styles from './PageHeader.module.css';
+import './PageHeader.css';
 
 export default function PageHeader({ title, subtitle }) {
   return (
-    <section className={styles.pageHeader}>
+    <section className="page-header">
       <div className="container">
-        <h1 className={styles.pageTitle}>{title}</h1>
-        <p className={styles.pageSubtitle}>{subtitle}</p>
+        <h1 className="page-title">{title}</h1>
+        <p className="page-subtitle">{subtitle}</p>
       </div>
     </section>
   );

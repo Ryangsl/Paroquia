@@ -1,19 +1,19 @@
 import { Link } from 'react-router-dom';
-import styles from './CTASection.module.css';
+import './CTASection.css';
 
 export default function CTASection({ title, text, buttons }) {
   return (
-    <section className={styles.cta}>
+    <section className="cta">
       <div className="container">
-        <div className={styles.ctaContent}>
+        <div className="cta-content">
           <h2>{title}</h2>
           <p>{text}</p>
-          <div className={styles.ctaButtons}>
+          <div className="cta-buttons">
             {buttons.map((btn, i) => (
               <Link
                 key={i}
                 to={btn.href}
-                className={`${styles.ctaBtn} ${btn.variant === 'primary' ? styles.ctaBtnPrimary : styles.ctaBtnSecondary}`}
+                className={`cta-btn ${btn.variant === 'primary' ? 'cta-btn-primary' : 'cta-btn-secondary'}`}
               >
                 {btn.label}
               </Link>

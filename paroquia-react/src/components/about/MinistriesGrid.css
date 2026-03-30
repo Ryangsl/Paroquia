@@ -3,14 +3,14 @@
     background-color: var(--primary-color);
 }
 
-.ministriesGrid {
+.ministries-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--spacing-md);
     margin-top: var(--spacing-lg);
 }
 
-.ministryCard {
+.ministry-card {
     background-color: var(--secondary-color);
     padding: var(--spacing-md) var(--spacing-md) var(--spacing-md) calc(var(--spacing-md) + 5px);
     border-radius: var(--radius-md);
@@ -20,19 +20,19 @@
                 background var(--transition-speed) var(--ease-out);
 }
 
-.ministryCard:hover {
+.ministry-card:hover {
     transform: translateX(5px) scale(1.01);
     box-shadow: var(--shadow-md);
     background: linear-gradient(135deg, var(--secondary-color) 0%, var(--bg-warm) 100%);
 }
 
-.ministryCard h3 {
+.ministry-card h3 {
     color: var(--text-primary);
     margin-bottom: var(--spacing-xs);
     font-size: 1.15rem;
 }
 
-.ministryCard p {
+.ministry-card p {
     color: var(--text-secondary);
     line-height: 1.6;
 }

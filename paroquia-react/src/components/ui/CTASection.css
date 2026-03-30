@@ -28,7 +28,7 @@
     z-index: 0;
 }
 
-.ctaContent {
+.cta-content {
     position: relative;
     z-index: 1;
     max-width: 700px;
@@ -36,7 +36,7 @@
     padding: 0 var(--spacing-md);
 }
 
-.ctaContent h2 {
+.cta-content h2 {
     font-family: var(--font-heading);
     font-size: 2.8rem;
     color: #fff;
@@ -45,7 +45,7 @@
     line-height: 1.2;
 }
 
-.ctaContent p {
+.cta-content p {
     font-size: 1.2rem;
     color: rgba(255, 255, 255, 0.8);
     margin-bottom: var(--spacing-xl);
@@ -55,7 +55,7 @@
     margin-right: auto;
 }
 
-.ctaButtons {
+.cta-buttons {
     display: flex;
     gap: var(--spacing-md);
     justify-content: center;
@@ -63,7 +63,7 @@
 }
 
 /* CTA Buttons */
-.ctaBtn {
+.cta-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -79,30 +79,30 @@
     min-width: 180px;
 }
 
-.ctaBtn:active {
+.cta-btn:active {
     transform: scale(0.97);
 }
 
-.ctaBtnPrimary {
+.cta-btn-primary {
     background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-dark) 100%);
     color: #fff;
     border-color: var(--accent-color);
     box-shadow: var(--shadow-gold);
 }
 
-.ctaBtnPrimary:hover {
+.cta-btn-primary:hover {
     background: linear-gradient(135deg, var(--accent-light) 0%, var(--accent-color) 100%);
     transform: translateY(-2px);
     box-shadow: var(--shadow-gold-lg);
 }
 
-.ctaBtnSecondary {
+.cta-btn-secondary {
     background-color: transparent;
     color: #fff;
     border-color: rgba(255, 255, 255, 0.5);
 }
 
-.ctaBtnSecondary:hover {
+.cta-btn-secondary:hover {
     background-color: rgba(255, 255, 255, 0.1);
     border-color: #fff;
     color: #fff;
@@ -115,21 +115,21 @@
         padding: 3.5rem 0;
     }
 
-    .ctaContent h2 {
+    .cta-content h2 {
         font-size: 2rem;
     }
 
-    .ctaContent p {
+    .cta-content p {
         font-size: 1.05rem;
     }
 
-    .ctaButtons {
+    .cta-buttons {
         flex-direction: column;
         align-items: center;
         gap: var(--spacing-sm);
     }
 
-    .ctaBtn {
+    .cta-btn {
         width: 100%;
         max-width: 320px;
     }

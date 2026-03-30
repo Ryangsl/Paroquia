@@ -1,22 +1,22 @@
-.contactInfo {
+.contact-info {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-md);
 }
 
-.contactInfo h2 {
+.contact-info h2 {
     font-family: var(--font-heading);
     color: var(--text-primary);
     font-size: 1.8rem;
 }
 
-.contactIntro {
+.contact-info-intro {
     color: var(--text-secondary);
     margin-bottom: var(--spacing-md);
     line-height: 1.7;
 }
 
-.contactItem {
+.contact-info-item {
     display: flex;
     gap: var(--spacing-sm);
     align-items: flex-start;
@@ -27,12 +27,12 @@
                 transform var(--transition-speed) var(--ease-out);
 }
 
-.contactItem:hover {
+.contact-info-item:hover {
     box-shadow: var(--shadow-sm);
     transform: translateY(-2px);
 }
 
-.contactIcon {
+.contact-info-icon {
     font-size: 1.6rem;
     width: 48px;
     height: 48px;
@@ -45,27 +45,27 @@
     color: var(--accent-color);
 }
 
-.contactItem h3 {
+.contact-info-item h3 {
     font-family: var(--font-heading);
     color: var(--text-primary);
     margin-bottom: 4px;
     font-size: 1.05rem;
 }
 
-.contactItem p,
-.contactItem span {
+.contact-info-item p,
+.contact-info-item span {
     color: var(--text-secondary);
     line-height: 1.6;
 }
 
-.socialLinksContact {
+.contact-info-social-links {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-xs);
     margin-top: var(--spacing-xs);
 }
 
-.socialBtn {
+.contact-info-social-btn {
     display: inline-block;
     padding: var(--spacing-xs) var(--spacing-sm);
     background-color: var(--secondary-color);
@@ -76,7 +76,7 @@
     transition: all var(--transition-speed) var(--ease-out);
 }
 
-.socialBtn:hover {
+.contact-info-social-btn:hover {
     background-color: var(--accent-color);
     color: var(--primary-color);
     transform: translateX(4px);
