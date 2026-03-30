@@ -8,6 +8,20 @@
       { "label": "Entre em Contato", "href": "/contato", "variant": "secondary" }
     ]
   },
+  "notices": {
+    "sectionTitle": "Avisos Importantes",
+    "items": [
+      {
+        "id": 1,
+        "image": "",
+        "title": "Semana Santa 2026",
+        "text": "Confira a programação completa das celebrações da Semana Santa. Participe e viva a Páscoa com a nossa comunidade!",
+        "linkText": "Ver Eventos",
+        "linkHref": "/eventos",
+        "active": true
+      }
+    ]
+  },
   "highlights": {
     "sectionTitle": "Bem-vindo à Nossa Paróquia",
     "items": [
