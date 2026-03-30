@@ -21,7 +21,7 @@
     "items": [
       {
         "id": 1774893101771,
-        "image": "/src/assets/images/avisos/aviso.png",
+        "image": "/images/avisos/aviso.png",
         "title": "Teste de aviso",
         "text": "Teste de aviso",
         "linkText": "Saiba mais",
