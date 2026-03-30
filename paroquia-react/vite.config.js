@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
 import { readFileSync, writeFileSync } from 'fs'
 import { resolve } from 'path'
 import { fileURLToPath } from 'url'
@@ -64,5 +65,5 @@ function adminApiPlugin() {
 }
 
 export default defineConfig({
-  plugins: [react(), adminApiPlugin()],
+  plugins: [react(), tailwindcss(), adminApiPlugin()],
 })

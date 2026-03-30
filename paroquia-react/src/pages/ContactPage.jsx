@@ -5,15 +5,14 @@ import MapSection from '../components/contact/MapSection';
 import FAQGrid from '../components/contact/FAQGrid';
 import CTASection from '../components/ui/CTASection';
 import contactData from '../data/contact.json';
-import styles from './ContactPage.module.css';
 
 export default function ContactPage() {
   return (
     <>
       <PageHeader title={contactData.pageHeader.title} subtitle={contactData.pageHeader.subtitle} />
-      <section className={styles.contact}>
+      <section className="bg-warm">
         <div className="container">
-          <div className={styles.contactContent}>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
             <ContactInfo />
             <ContactForm />
           </div>
