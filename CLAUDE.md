@@ -22,7 +22,8 @@ npm run lint       # linting com ESLint
 - **CSS regular com prefixo por componente**: cada componente tem seu `.css` ao lado, com classes prefixadas em kebab-case para evitar colisoes (ex: `.hero-title`, `.btn-primary`, `.admin-tab`)
 - **JSON como fonte de dados**: todo conteudo editavel esta em `src/data/*.json` — separado do codigo React
 - **Design tokens**: variaveis CSS centralizadas em `src/assets/styles/variables.css`
-- **Hooks customizados**: `useScrollShadow` (sombra no header ao rolar), `useScrollReveal` (animacao de entrada com IntersectionObserver)
+- **Hooks customizados**: `useScrollShadow` (sombra no header ao rolar), `useScrollReveal` (animacao de entrada com IntersectionObserver), `useCarousel` (carrossel com CSS scroll-snap)
+- **Componentes UI reutilizaveis**: `Button`, `SectionHeader`, `CTASection`, `Modal` (portal com lightbox)
 - **Utilitarios de data**: `src/utils/dateUtils.js` — funcoes compartilhadas para formatar e filtrar datas
 - **Eventos dinamicos**: avisos e eventos em destaque na home, filtro por mes na pagina de eventos (`events.json` usa campo `date` ISO `YYYY-MM-DD`)
 - **Painel Admin**: rota `/admin` (oculta da navegacao) para gerenciar avisos e eventos via interface grafica (somente em dev)
@@ -34,15 +35,15 @@ paroquia-react/src/
 ├── assets/styles/       → variables.css, global.css, animations.css
 ├── components/
 │   ├── layout/          → Header, Footer, Layout (Outlet), PageHeader, ScrollToTop
-│   ├── ui/              → Button, SectionHeader, CTASection (reutilizaveis)
-│   ├── home/            → Hero, NoticesSection, Highlights, FeaturedEvents, QuickInfo
+│   ├── ui/              → Button, SectionHeader, CTASection, Modal (reutilizaveis)
+│   ├── home/            → Hero, NoticesSection (carrossel), NoticeDetail, Highlights, FeaturedEvents, QuickInfo
 │   ├── about/           → AboutContent, ValuesGrid, MinistriesGrid
 │   ├── schedule/        → ScheduleGrid, CelebrationsGrid, SacramentsGrid, ImportantNotes
 │   ├── events/          → EventsList (com filtro por mes e badge de destaque), ActivitiesGrid, GroupsGrid
 │   ├── communities/     → CommunityCard
 │   └── contact/         → ContactInfo, ContactForm, MapSection, FAQGrid
 ├── data/                → JSON com todo conteudo do site
-├── hooks/               → useScrollShadow, useScrollReveal
+├── hooks/               → useScrollShadow, useScrollReveal, useCarousel
 ├── utils/               → dateUtils.js (MONTHS, parseEventDate, getTodayISO, etc.)
 └── pages/               → HomePage, AboutPage, SchedulePage, EventsPage, ContactPage,
                            CommunitiesPage, AdminPage
@@ -53,7 +54,7 @@ paroquia-react/src/
 - `/` → HomePage
 - `/sobre` → AboutPage
 - `/horarios` → SchedulePage
-- `/eventos` → EventsPage
+- `/eventos` → EventsPage (inclui secao de avisos importantes)
 - `/contato` → ContactPage
 - `/comunidades` → CommunitiesPage (padroeiros, capelas e horarios das celebracoes)
 - `/admin` → AdminPage (oculta da navegacao — somente acesso direto via URL em dev)
@@ -81,7 +82,10 @@ O painel permite criar, editar e excluir avisos e eventos sem editar JSON manual
 ### Avisos Importantes
 
 Edite o bloco `notices` em `home.json`. Cada aviso tem o campo `"active": true/false` para
-ativar ou desativar sem remover o item. Avisos inativos nao aparecem na home.
+ativar ou desativar sem remover o item. Avisos inativos nao aparecem na home nem na pagina de eventos.
+
+Os avisos sao exibidos em carrossel com navegacao por swipe (mobile) e botoes (desktop).
+Clicar na imagem ou no botao "Ver mais" abre um modal/lightbox com a imagem ampliada e o texto completo.
 
 ### Eventos em Destaque
 

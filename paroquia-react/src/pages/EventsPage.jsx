@@ -2,6 +2,7 @@ import PageHeader from '../components/layout/PageHeader';
 import EventsList from '../components/events/EventsList';
 import ActivitiesGrid from '../components/events/ActivitiesGrid';
 import GroupsGrid from '../components/events/GroupsGrid';
+import NoticesSection from '../components/home/NoticesSection';
 import CTASection from '../components/ui/CTASection';
 import eventsData from '../data/events.json';
 
@@ -10,6 +11,7 @@ export default function EventsPage() {
     <>
       <PageHeader title={eventsData.pageHeader.title} subtitle={eventsData.pageHeader.subtitle} />
       <EventsList />
+      <NoticesSection />
       <ActivitiesGrid />
       <GroupsGrid />
       <CTASection {...eventsData.cta} />
