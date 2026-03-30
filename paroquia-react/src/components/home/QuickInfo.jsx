@@ -30,13 +30,13 @@ export default function QuickInfo() {
         <div className="quick-info-grid">
           {quickInfo.map((item, i) => (
             <div key={i} className="quick-info-item">
-              <h3>{item.icon} {item.title}</h3>
+              <h3><img src={item.icon} alt={item.title} /></h3>
               <p>{item.text}</p>
             </div>
           ))}
           {nextEvent && (
             <Link to="/eventos" className="quick-info-item" style={{ textDecoration: 'none' }}>
-              <h3>📌 Próximo Evento</h3>
+              <h3>Próximo Evento</h3>
               <p className="quick-info-event-title">{nextEvent.title}</p>
               <p className="quick-info-event-meta">{nextEvent.date} — {nextEvent.time}</p>
             </Link>

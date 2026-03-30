@@ -13,7 +13,7 @@ export default function Highlights() {
         <div className="highlights-grid">
           {highlights.items.map((item, i) => (
             <div key={i} className="highlight-card">
-              <div className="highlight-icon">{item.icon}</div>
+              <div className="highlight-icon"><img src={item.icon} alt={item.title} /></div>
               <h3>{item.title}</h3>
               <p>{item.description}</p>
               <Link to={item.linkHref} className="highlight-link">{item.linkText}</Link>

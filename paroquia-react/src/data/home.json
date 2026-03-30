@@ -34,21 +34,21 @@
     "sectionTitle": "Bem-vindo à Nossa Paróquia",
     "items": [
       {
-        "icon": "⛪",
+        "icon": "/images/icons/church.svg",
         "title": "Nossa Paróquia",
         "description": "Conheça a história, missão e valores da Paróquia Nossa Senhora Aparecida.",
         "linkText": "Saiba Mais →",
         "linkHref": "/sobre"
       },
       {
-        "icon": "📅",
+        "icon": "/images/icons/calendar.svg",
         "title": "Horários das Missas",
         "description": "Confira os horários das missas matinais, noturnas e confissões.",
         "linkText": "Ver Horários →",
         "linkHref": "/horarios"
       },
       {
-        "icon": "🎉",
+        "icon": "/images/icons/party.svg",
         "title": "Eventos",
         "description": "Participe dos eventos, grupos de oração e atividades da nossa comunidade.",
         "linkText": "Ver Eventos →",
@@ -58,17 +58,17 @@
   },
   "quickInfo": [
     {
-      "icon": "📍",
+      "icon": "/images/icons/location.svg",
       "title": "Localização",
       "text": "Rua Augusto Steembock, 100 — Curitiba, PR"
     },
     {
-      "icon": "⏰",
+      "icon": "/images/icons/clock.svg",
       "title": "Próxima Missa",
       "text": "Domingo às 08h30, 10h30 e 19h"
     },
     {
-      "icon": "📞",
+      "icon": "/images/icons/telefone.svg",
       "title": "Contato",
       "text": "(41) 98508-7251 | (41) 3369-2143"
     }
