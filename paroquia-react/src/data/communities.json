@@ -6,7 +6,7 @@
   "communities": [
     {
       "name": "Rogacionistas do Coração de Jesus",
-      "image": "",
+      "image": "/src/assets/images/rogacionistas.png",
       "details": [
         { "label": "Fundador", "value": "Santo Aníbal Maria Di Francia" },
         { "label": "Missa e Adoração Vocacional", "value": "Quinta-feira às 19h" }
@@ -14,7 +14,7 @@
     },
     {
       "name": "Capela São José Operário",
-      "image": "",
+      "image": "/src/assets/images/saojose_operario.png",
       "details": [
         { "label": "Festa do Padroeiro", "value": "01 de maio" },
         { "label": "Missa", "value": "Sábados às 19h" }
@@ -22,7 +22,7 @@
     },
     {
       "name": "Capela Sagrado Coração de Jesus",
-      "image": "",
+      "image": "/src/assets/images/sagrado_coracao.jpg",
       "details": [
         { "label": "Festa do Padroeiro", "value": "Móvel, sexta-feira da semana seguinte a Corpus Christi" },
         { "label": "Missas", "value": "1ª Sexta-feira do mês às 19h30 e Domingos às 9h" }
@@ -37,7 +37,7 @@
     },
     {
       "name": "Capela Divino Espírito Santo",
-      "image": "",
+      "image": "/src/assets/images/divino_espiritosanto.jpg",
       "details": [
         { "label": "Festa do Padroeiro", "value": "Pentecostes (50 dias depois da Páscoa)" },
         { "label": "Missa", "value": "Domingo às 10h" }
@@ -45,7 +45,7 @@
     },
     {
       "name": "Capela Nossa Senhora Rainha",
-      "image": "",
+      "image": "/src/assets/images/nossa_senhorarainha.jpg",
       "details": [
         { "label": "Festa da Padroeira", "value": "22 de agosto" },
         { "label": "Missas", "value": "Domingos às 9h" },
@@ -62,7 +62,7 @@
     },
     {
       "name": "Capela Santo Aníbal Maria Di Francia",
-      "image": "",
+      "image": "/src/assets/images/anibal_maria.jpg",
       "details": [
         { "label": "Festa do Padroeiro", "value": "01 de junho" },
         { "label": "Festa da Copadroeira", "value": "29 de maio" },
@@ -71,7 +71,7 @@
     },
     {
       "name": "Capela Bem-aventurada Maria Ângela",
-      "image": "",
+      "image": "/src/assets/images/maria_angela.jpg",
       "details": [
         { "label": "Festa da Padroeira", "value": "10 de outubro" },
         { "label": "Missa", "value": "Sábado às 19h" }
@@ -79,7 +79,7 @@
     },
     {
       "name": "Capela Santa Bernadete",
-      "image": "",
+      "image": "/src/assets/images/santa_bernadete.jpg",
       "details": [
         { "label": "Festa da Padroeira", "value": "16 de abril" },
         { "label": "Missa", "value": "Sábado às 19h" }
