@@ -12,7 +12,7 @@ export default function CelebrationsGrid() {
         <div className="celebrations-grid">
           {specialCelebrations.cards.map((card, i) => (
             <div key={i} className="celebrations-card">
-              <div className="celebrations-icon">{card.icon}</div>
+              <div className="celebrations-icon"><img src={card.icon} alt={card.title} /></div>
               <h3>{card.title}</h3>
               <p>{card.description}</p>
               <p className="celebrations-time">{card.time}</p>

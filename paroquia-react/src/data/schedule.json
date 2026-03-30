@@ -7,14 +7,14 @@
     "sectionTitle": "Horário das Missas",
     "cards": [
       {
-        "icon": "☀️",
+        "icon": "/images/icons/sun.svg",
         "title": "Missas Dominicais",
         "times": [
           { "day": "Domingo", "time": "08h30, 10h30 e 19h" }
         ]
       },
       {
-        "icon": "📅",
+        "icon": "/images/icons/calendar.svg",
         "title": "Missas na Semana",
         "times": [
           { "day": "Quarta-feira", "time": "16h e 19h (com novena perpétua de N. Sra. Aparecida)" },
@@ -24,7 +24,7 @@
         ]
       },
       {
-        "icon": "❤️",
+        "icon": "/images/icons/hearth.svg",
         "title": "Missas para Doentes e Idosos",
         "times": [
           { "day": "Terças-feiras", "time": "19h30" }
@@ -37,25 +37,25 @@
     "sectionTitle": "Celebrações e Devoções",
     "cards": [
       {
-        "icon": "✨",
+        "icon": "/images/icons/sparkles.svg",
         "title": "Adoração ao Santíssimo Sacramento",
         "description": "Primeira sexta-feira do mês",
         "time": "Das 6h às 18h50"
       },
       {
-        "icon": "✚",
+        "icon": "/images/icons/plus.svg",
         "title": "Confissões",
         "description": "Segunda a sexta-feira",
         "time": "Horário comercial"
       },
       {
-        "icon": "💐",
+        "icon": "/images/icons/flower.svg",
         "title": "Terço das Mulheres",
         "description": "Todas as quartas-feiras",
         "time": "15h"
       },
       {
-        "icon": "🗣️",
+        "icon": "/images/icons/speech.svg",
         "title": "Terço dos Homens",
         "description": "Todas as quartas-feiras",
         "time": "Após a missa das 19h"
