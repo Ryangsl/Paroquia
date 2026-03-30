@@ -4,20 +4,46 @@
     "subtitle": "Paraná - Brasil",
     "text": "Venha celebrar sua fé conosco. Todos são bem-vindos!",
     "buttons": [
-      { "label": "Ver Horários das Missas", "href": "/horarios", "variant": "primary" },
-      { "label": "Entre em Contato", "href": "/contato", "variant": "secondary" }
+      {
+        "label": "Ver Horários das Missas",
+        "href": "/horarios",
+        "variant": "primary"
+      },
+      {
+        "label": "Entre em Contato",
+        "href": "/contato",
+        "variant": "secondary"
+      }
     ]
   },
   "notices": {
     "sectionTitle": "Avisos Importantes",
     "items": [
       {
-        "id": 1,
-        "image": "",
-        "title": "Semana Santa 2026",
-        "text": "Confira a programação completa das celebrações da Semana Santa. Participe e viva a Páscoa com a nossa comunidade!",
-        "linkText": "Ver Eventos",
+        "id": 1774893101771,
+        "image": "/src/assets/images/avisos/aviso.png",
+        "title": "Teste de aviso",
+        "text": "Teste de aviso",
+        "linkText": "Saiba mais",
         "linkHref": "/eventos",
+        "active": true
+      },
+      {
+        "id": 1774893375894,
+        "image": "",
+        "title": "Testes segundo aviso",
+        "text": "1234",
+        "linkText": "",
+        "linkHref": "",
+        "active": true
+      },
+      {
+        "id": 1774893400100,
+        "image": "",
+        "title": "Test123213123",
+        "text": "123123123",
+        "linkText": "",
+        "linkHref": "",
         "active": true
       }
     ]
@@ -49,8 +75,20 @@
     ]
   },
   "quickInfo": [
-    { "icon": "📍", "title": "Localização", "text": "Rua Augusto Steembock, 100 — Curitiba, PR" },
-    { "icon": "⏰", "title": "Próxima Missa", "text": "Domingo às 08h30, 10h30 e 19h" },
-    { "icon": "📞", "title": "Contato", "text": "(41) 98508-7251 | (41) 3369-2143" }
+    {
+      "icon": "📍",
+      "title": "Localização",
+      "text": "Rua Augusto Steembock, 100 — Curitiba, PR"
+    },
+    {
+      "icon": "⏰",
+      "title": "Próxima Missa",
+      "text": "Domingo às 08h30, 10h30 e 19h"
+    },
+    {
+      "icon": "📞",
+      "title": "Contato",
+      "text": "(41) 98508-7251 | (41) 3369-2143"
+    }
   ]
 }
