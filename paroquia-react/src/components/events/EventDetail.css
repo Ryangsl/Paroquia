@@ -1,0 +1,124 @@
+.event-detail-image-wrapper {
+    width: 100%;
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+    overflow: hidden;
+    background-color: var(--secondary-color);
+}
+
+.event-detail-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    max-height: 55vh;
+}
+
+.event-detail-body {
+    padding: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.event-detail-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.event-detail-date-box {
+    background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-dark) 100%);
+    color: var(--primary-color);
+    padding: var(--spacing-sm);
+    border-radius: var(--radius-md);
+    text-align: center;
+    min-width: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: var(--shadow-gold);
+    flex-shrink: 0;
+}
+
+.event-detail-day {
+    font-size: 1.75rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.event-detail-month {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+.event-detail-title {
+    font-family: var(--font-heading);
+    color: var(--text-primary);
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.event-detail-date-full {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin: 0.25rem 0 0;
+}
+
+.event-detail-featured {
+    display: inline-block;
+    align-self: flex-start;
+    background: linear-gradient(135deg, var(--accent-color), var(--accent-dark));
+    color: var(--primary-color);
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 4px 14px;
+    border-radius: var(--radius-full);
+    box-shadow: var(--shadow-gold);
+}
+
+.event-detail-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.event-detail-time {
+    color: var(--accent-color);
+    font-weight: 600;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.event-detail-location {
+    color: var(--text-secondary);
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.event-detail-description {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin: 0;
+    white-space: pre-line;
+    font-size: 1rem;
+}
+
+@media (max-width: 480px) {
+    .event-detail-body {
+        padding: var(--spacing-sm);
+    }
+
+    .event-detail-title {
+        font-size: 1.2rem;
+    }
+
+    .event-detail-date-box {
+        min-width: 56px;
+        padding: var(--spacing-xs);
+    }
+
+    .event-detail-day {
+        font-size: 1.5rem;
+    }
+}

@@ -39,7 +39,7 @@ paroquia-react/src/
 │   ├── home/            → Hero, NoticesSection (carrossel), NoticeDetail, Highlights, FeaturedEvents, QuickInfo
 │   ├── about/           → AboutContent, ValuesGrid, MinistriesGrid
 │   ├── schedule/        → ScheduleGrid, CelebrationsGrid, SacramentsGrid, ImportantNotes
-│   ├── events/          → EventsList (com filtro por mes e badge de destaque), ActivitiesGrid, GroupsGrid
+│   ├── events/          → EventsList (filtro por mes, imagem, modal), EventDetail, ActivitiesGrid, GroupsGrid
 │   ├── communities/     → CommunityCard
 │   └── contact/         → ContactInfo, ContactForm, MapSection, FAQGrid
 ├── data/                → JSON com todo conteudo do site
@@ -99,6 +99,10 @@ Para adicionar imagens dos padroeiros nas comunidades, edite `communities.json` 
 ### Eventos
 
 Para adicionar eventos, edite `events.json`. Cada evento deve ter o campo `"date"` no formato ISO `"YYYY-MM-DD"`. Eventos passados sao filtrados automaticamente.
+
+Cada evento suporta o campo opcional `"image"` com o caminho da imagem (ex: `"/images/eventos/festa.jpg"`).
+Coloque as imagens na pasta `public/images/eventos/`. Eventos com imagem exibem a imagem no card
+e no modal de detalhes. Clicar em "Ver detalhes" ou na imagem abre um modal com todas as informacoes do evento.
 
 ## Informacoes da Paroquia
 

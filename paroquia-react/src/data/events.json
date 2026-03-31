@@ -15,6 +15,7 @@
         "time": "⏰ 6h às 18h50",
         "location": "📍 Igreja Matriz",
         "description": "Primeira sexta-feira do mês. Momento de adoração e contemplação diante do Santíssimo Sacramento.",
+        "image": "",
         "featured": false
       },
       {
@@ -23,6 +24,7 @@
         "time": "⏰ 08h30, 10h30 e 19h",
         "location": "📍 Igreja Matriz",
         "description": "Celebração especial com coro e adoração ao Santíssimo Sacramento. Após a missa, teremos confraternização no salão paroquial.",
+        "image": "",
         "featured": false
       },
       {
@@ -31,6 +33,7 @@
         "time": "⏰ 19:30h",
         "location": "📍 Salão Paroquial",
         "description": "Encontro semanal do grupo de oração com louvor, partilha da Palavra e intercessão. Todos são bem-vindos!",
+        "image": "",
         "featured": false
       },
       {
@@ -39,6 +42,7 @@
         "time": "⏰ 15:00h",
         "location": "📍 Salas de Catequese",
         "description": "Aulas de catequese para crianças e preparação para primeira comunhão. Inscrições abertas na secretaria.",
+        "image": "",
         "featured": true
       },
       {
@@ -47,6 +51,7 @@
         "time": "⏰ 6h às 18h50",
         "location": "📍 Igreja Matriz",
         "description": "Primeira sexta-feira do mês. Adoração e contemplação.",
+        "image": "",
         "featured": false
       },
       {
@@ -55,6 +60,7 @@
         "time": "⏰ 16:00h",
         "location": "📍 Igreja Matriz",
         "description": "Celebração especial em honra a Nossa Senhora com procissão, missa solene e bênção.",
+        "image": "",
         "featured": false
       }
     ]
