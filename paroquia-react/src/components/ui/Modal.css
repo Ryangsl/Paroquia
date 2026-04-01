@@ -23,9 +23,10 @@
 }
 
 .modal-close {
-    position: absolute;
-    top: 0.75rem;
-    right: 0.75rem;
+    position: sticky;
+    top: 0.5rem;
+    float: right;
+    margin: 0.5rem 0.5rem -2rem 0;
     z-index: 10;
     width: 36px;
     height: 36px;
@@ -44,6 +45,14 @@
 
 .modal-close:hover {
     background-color: rgba(0, 0, 0, 0.85);
+}
+
+@media (max-width: 600px) {
+    .modal-content {
+        max-height: 85vh;
+        max-height: 85dvh;
+        border-radius: var(--radius-lg);
+    }
 }
 
 @keyframes modal-fadeIn {

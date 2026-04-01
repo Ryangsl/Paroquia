@@ -47,7 +47,12 @@
     color: var(--accent-dark);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
+    .notice-detail-image {
+        max-height: 40vh;
+        max-height: 40dvh;
+    }
+
     .notice-detail-body {
         padding: var(--spacing-sm);
     }
