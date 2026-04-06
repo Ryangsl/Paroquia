@@ -44,7 +44,24 @@
 }
 
 .map-embed iframe {
-    max-width: 100%;
+    width: 100%;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-sm);
+}
+
+@media (max-width: 768px) {
+    .map-placeholder {
+        min-height: unset;
+        padding: var(--spacing-md);
+    }
+
+    .map-embed iframe {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .map-embed iframe {
+        height: 250px;
+    }
 }

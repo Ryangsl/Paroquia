@@ -54,3 +54,13 @@
     font-size: 0.9rem;
     letter-spacing: 0.02em;
 }
+
+@media (max-width: 480px) {
+    .celebrations-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .celebrations-card {
+        padding: var(--spacing-md);
+    }
+}

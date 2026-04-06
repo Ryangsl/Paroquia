@@ -76,3 +76,23 @@
     margin-top: var(--spacing-xs);
     color: var(--text-secondary);
 }
+
+@media (max-width: 480px) {
+    .schedule-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .schedule-card {
+        padding: var(--spacing-md);
+    }
+
+    .schedule-icon {
+        width: 56px;
+        height: 56px;
+        font-size: 2.2rem;
+    }
+
+    .schedule-card h3 {
+        font-size: 1.2rem;
+    }
+}

@@ -94,6 +94,24 @@
     font-style: italic;
 }
 
+@media (max-width: 768px) {
+    .contact-form-group input,
+    .contact-form-group textarea,
+    .contact-form-group select {
+        font-size: 16px; /* Previne zoom automático no iOS */
+        min-height: 48px;
+    }
+
+    .contact-form-group textarea {
+        min-height: 120px;
+    }
+
+    .contact-form-submit-btn {
+        min-height: 48px;
+        width: 100%;
+    }
+}
+
 .contact-form-submit-btn:disabled {
     opacity: 0.7;
     cursor: not-allowed;

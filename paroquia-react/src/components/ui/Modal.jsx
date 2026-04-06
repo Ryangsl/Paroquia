@@ -4,12 +4,14 @@ import './Modal.css';
 
 export default function Modal({ isOpen, onClose, children }) {
   const overlayRef = useRef(null);
+  const dialogRef = useRef(null);
   const previousFocus = useRef(null);
 
   useEffect(() => {
     if (!isOpen) return;
 
     previousFocus.current = document.activeElement;
+    dialogRef.current?.focus();
 
     const scrollY = window.scrollY;
     document.body.style.position = 'fixed';
@@ -39,7 +41,7 @@ export default function Modal({ isOpen, onClose, children }) {
 
   return createPortal(
     <div className="modal-overlay" ref={overlayRef} onClick={handleOverlayClick}>
-      <div className="modal-content" role="dialog" aria-modal="true">
+      <div className="modal-content" role="dialog" aria-modal="true" ref={dialogRef} tabIndex={-1}>
         <button className="modal-close" onClick={onClose} aria-label="Fechar">
           &times;
         </button>

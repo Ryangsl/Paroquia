@@ -100,4 +100,12 @@
     .about-content {
         grid-template-columns: 1fr;
     }
+
+    .about-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-cross-icon {
+        font-size: 5rem;
+    }
 }

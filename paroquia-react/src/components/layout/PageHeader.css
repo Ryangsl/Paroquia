@@ -49,3 +49,31 @@
     margin: 0 auto;
     line-height: 1.6;
 }
+
+@media (max-width: 768px) {
+    .page-header {
+        padding: calc(var(--spacing-lg) + 70px) 0 var(--spacing-lg);
+    }
+
+    .page-header::before {
+        font-size: 10rem;
+    }
+
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .page-subtitle {
+        font-size: 1.05rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-title {
+        font-size: 1.75rem;
+    }
+
+    .page-header::before {
+        font-size: 7rem;
+    }
+}

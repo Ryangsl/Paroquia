@@ -66,3 +66,15 @@
     color: var(--accent-dark);
     transform: translateX(4px);
 }
+
+@media (max-width: 768px) {
+    .highlight-icon {
+        width: 64px;
+        height: 64px;
+        font-size: 2.8rem;
+    }
+
+    .highlight-card h3 {
+        font-size: 1.2rem;
+    }
+}

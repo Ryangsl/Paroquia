@@ -46,3 +46,13 @@
     font-size: 0.9rem;
     font-weight: 500;
 }
+
+@media (max-width: 480px) {
+    .quick-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quick-info-event-meta {
+        font-size: 1rem;
+    }
+}
